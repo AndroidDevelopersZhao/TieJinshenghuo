@@ -3462,6 +3462,3468 @@
         ]
     },
     {
+        "outputFile": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 22,
+                    "endColumn": 19,
+                    "endOffset": 1197
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 22,
+                        "endColumn": 19,
+                        "endOffset": 1197
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1202,
+                    "endLine": 49,
+                    "endColumn": 19,
+                    "endOffset": 2606
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1202,
+                        "endLine": 49,
+                        "endColumn": 19,
+                        "endOffset": 2606
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 2611,
+                    "endLine": 53,
+                    "endColumn": 19,
+                    "endOffset": 2747
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 50,
+                        "startColumn": 4,
+                        "startOffset": 2611,
+                        "endLine": 53,
+                        "endColumn": 19,
+                        "endOffset": 2747
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 2752,
+                    "endLine": 61,
+                    "endColumn": 19,
+                    "endOffset": 3224
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 54,
+                        "startColumn": 4,
+                        "startOffset": 2752,
+                        "endLine": 61,
+                        "endColumn": 19,
+                        "endOffset": 3224
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 62,
+                    "startColumn": 4,
+                    "startOffset": 3229,
+                    "endLine": 65,
+                    "endColumn": 19,
+                    "endOffset": 3422
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 62,
+                        "startColumn": 4,
+                        "startOffset": 3229,
+                        "endLine": 65,
+                        "endColumn": 19,
+                        "endOffset": 3422
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 66,
+                    "startColumn": 4,
+                    "startOffset": 3427,
+                    "endLine": 73,
+                    "endColumn": 19,
+                    "endOffset": 3910
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 66,
+                        "startColumn": 4,
+                        "startOffset": 3427,
+                        "endLine": 73,
+                        "endColumn": 19,
+                        "endOffset": 3910
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 74,
+                    "startColumn": 4,
+                    "startOffset": 3915,
+                    "endLine": 88,
+                    "endColumn": 19,
+                    "endOffset": 4598
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 74,
+                        "startColumn": 4,
+                        "startOffset": 3915,
+                        "endLine": 88,
+                        "endColumn": 19,
+                        "endOffset": 4598
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 89,
+                    "startColumn": 4,
+                    "startOffset": 4603,
+                    "endLine": 97,
+                    "endColumn": 19,
+                    "endOffset": 5148
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 89,
+                        "startColumn": 4,
+                        "startOffset": 4603,
+                        "endLine": 97,
+                        "endColumn": 19,
+                        "endOffset": 5148
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 98,
+                    "startColumn": 4,
+                    "startOffset": 5153,
+                    "endLine": 100,
+                    "endColumn": 16,
+                    "endOffset": 5220
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 98,
+                        "startColumn": 4,
+                        "startOffset": 5153,
+                        "endLine": 100,
+                        "endColumn": 16,
+                        "endOffset": 5220
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 5225,
+                    "endLine": 113,
+                    "endColumn": 19,
+                    "endOffset": 5994
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 101,
+                        "startColumn": 4,
+                        "startOffset": 5225,
+                        "endLine": 113,
+                        "endColumn": 19,
+                        "endOffset": 5994
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 114,
+                    "startColumn": 4,
+                    "startOffset": 5999,
+                    "endLine": 124,
+                    "endColumn": 19,
+                    "endOffset": 6447
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 114,
+                        "startColumn": 4,
+                        "startOffset": 5999,
+                        "endLine": 124,
+                        "endColumn": 19,
+                        "endOffset": 6447
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 125,
+                    "startColumn": 4,
+                    "startOffset": 6452,
+                    "endLine": 138,
+                    "endColumn": 19,
+                    "endOffset": 7104
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 125,
+                        "startColumn": 4,
+                        "startOffset": 6452,
+                        "endLine": 138,
+                        "endColumn": 19,
+                        "endOffset": 7104
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 139,
+                    "startColumn": 4,
+                    "startOffset": 7109,
+                    "endLine": 162,
+                    "endColumn": 19,
+                    "endOffset": 8787
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 139,
+                        "startColumn": 4,
+                        "startOffset": 7109,
+                        "endLine": 162,
+                        "endColumn": 19,
+                        "endOffset": 8787
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 163,
+                    "startColumn": 4,
+                    "startOffset": 8792,
+                    "endLine": 172,
+                    "endColumn": 19,
+                    "endOffset": 9289
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 163,
+                        "startColumn": 4,
+                        "startOffset": 8792,
+                        "endLine": 172,
+                        "endColumn": 19,
+                        "endOffset": 9289
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 173,
+                    "startColumn": 4,
+                    "startOffset": 9294,
+                    "endLine": 175,
+                    "endColumn": 16,
+                    "endOffset": 9361
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 173,
+                        "startColumn": 4,
+                        "startOffset": 9294,
+                        "endLine": 175,
+                        "endColumn": 16,
+                        "endOffset": 9361
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 176,
+                    "startColumn": 4,
+                    "startOffset": 9366,
+                    "endLine": 179,
+                    "endColumn": 19,
+                    "endOffset": 9519
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 176,
+                        "startColumn": 4,
+                        "startOffset": 9366,
+                        "endLine": 179,
+                        "endColumn": 19,
+                        "endOffset": 9519
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 180,
+                    "startColumn": 4,
+                    "startOffset": 9524,
+                    "endLine": 181,
+                    "endColumn": 16,
+                    "endOffset": 9585
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 180,
+                        "startColumn": 4,
+                        "startOffset": 9524,
+                        "endLine": 181,
+                        "endColumn": 16,
+                        "endOffset": 9585
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 182,
+                    "startColumn": 4,
+                    "startOffset": 9590,
+                    "endLine": 186,
+                    "endColumn": 19,
+                    "endOffset": 10656
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 182,
+                        "startColumn": 4,
+                        "startOffset": 9590,
+                        "endLine": 186,
+                        "endColumn": 19,
+                        "endOffset": 10656
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 187,
+                    "startColumn": 4,
+                    "startOffset": 10661,
+                    "endLine": 210,
+                    "endColumn": 19,
+                    "endOffset": 11745
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 187,
+                        "startColumn": 4,
+                        "startOffset": 10661,
+                        "endLine": 210,
+                        "endColumn": 19,
+                        "endOffset": 11745
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 211,
+                    "startColumn": 4,
+                    "startOffset": 11750,
+                    "endLine": 222,
+                    "endColumn": 19,
+                    "endOffset": 12426
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 211,
+                        "startColumn": 4,
+                        "startOffset": 11750,
+                        "endLine": 222,
+                        "endColumn": 19,
+                        "endOffset": 12426
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 223,
+                    "startColumn": 4,
+                    "startOffset": 12431,
+                    "endLine": 225,
+                    "endColumn": 16,
+                    "endOffset": 12498
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 223,
+                        "startColumn": 4,
+                        "startOffset": 12431,
+                        "endLine": 225,
+                        "endColumn": 16,
+                        "endOffset": 12498
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 226,
+                    "startColumn": 4,
+                    "startOffset": 12503,
+                    "endLine": 228,
+                    "endColumn": 16,
+                    "endOffset": 12570
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 226,
+                        "startColumn": 4,
+                        "startOffset": 12503,
+                        "endLine": 228,
+                        "endColumn": 16,
+                        "endOffset": 12570
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 229,
+                    "startColumn": 4,
+                    "startOffset": 12575,
+                    "endLine": 240,
+                    "endColumn": 19,
+                    "endOffset": 13174
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 229,
+                        "startColumn": 4,
+                        "startOffset": 12575,
+                        "endLine": 240,
+                        "endColumn": 19,
+                        "endOffset": 13174
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 241,
+                    "startColumn": 4,
+                    "startOffset": 13179,
+                    "endLine": 250,
+                    "endColumn": 19,
+                    "endOffset": 13827
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 241,
+                        "startColumn": 4,
+                        "startOffset": 13179,
+                        "endLine": 250,
+                        "endColumn": 19,
+                        "endOffset": 13827
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 251,
+                    "startColumn": 4,
+                    "startOffset": 13832,
+                    "endLine": 264,
+                    "endColumn": 19,
+                    "endOffset": 16585
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 251,
+                        "startColumn": 4,
+                        "startOffset": 13832,
+                        "endLine": 264,
+                        "endColumn": 19,
+                        "endOffset": 16585
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 265,
+                    "startColumn": 4,
+                    "startOffset": 16590,
+                    "endLine": 273,
+                    "endColumn": 19,
+                    "endOffset": 17008
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 265,
+                        "startColumn": 4,
+                        "startOffset": 16590,
+                        "endLine": 273,
+                        "endColumn": 19,
+                        "endOffset": 17008
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 274,
+                    "startColumn": 4,
+                    "startOffset": 17013,
+                    "endColumn": 48,
+                    "endOffset": 17057
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 274,
+                        "startColumn": 4,
+                        "startOffset": 17013,
+                        "endColumn": 48,
+                        "endOffset": 17057
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 275,
+                    "startColumn": 4,
+                    "startOffset": 17062,
+                    "endColumn": 47,
+                    "endOffset": 17105
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 275,
+                        "startColumn": 4,
+                        "startOffset": 17062,
+                        "endColumn": 47,
+                        "endOffset": 17105
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 276,
+                    "startColumn": 4,
+                    "startOffset": 17110,
+                    "endColumn": 53,
+                    "endOffset": 17159
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 276,
+                        "startColumn": 4,
+                        "startOffset": 17110,
+                        "endColumn": 53,
+                        "endOffset": 17159
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 277,
+                    "startColumn": 4,
+                    "startOffset": 17164,
+                    "endColumn": 58,
+                    "endOffset": 17218
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 277,
+                        "startColumn": 4,
+                        "startOffset": 17164,
+                        "endColumn": 58,
+                        "endOffset": 17218
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 278,
+                    "startColumn": 4,
+                    "startOffset": 17223,
+                    "endColumn": 57,
+                    "endOffset": 17276
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 278,
+                        "startColumn": 4,
+                        "startOffset": 17223,
+                        "endColumn": 57,
+                        "endOffset": 17276
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 279,
+                    "startColumn": 4,
+                    "startOffset": 17281,
+                    "endColumn": 57,
+                    "endOffset": 17334
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 279,
+                        "startColumn": 4,
+                        "startOffset": 17281,
+                        "endColumn": 57,
+                        "endOffset": 17334
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 280,
+                    "startColumn": 4,
+                    "startOffset": 17339,
+                    "endColumn": 54,
+                    "endOffset": 17389
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 280,
+                        "startColumn": 4,
+                        "startOffset": 17339,
+                        "endColumn": 54,
+                        "endOffset": 17389
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 281,
+                    "startColumn": 4,
+                    "startOffset": 17394,
+                    "endColumn": 54,
+                    "endOffset": 17444
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 281,
+                        "startColumn": 4,
+                        "startOffset": 17394,
+                        "endColumn": 54,
+                        "endOffset": 17444
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 282,
+                    "startColumn": 4,
+                    "startOffset": 17449,
+                    "endColumn": 48,
+                    "endOffset": 17493
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 282,
+                        "startColumn": 4,
+                        "startOffset": 17449,
+                        "endColumn": 48,
+                        "endOffset": 17493
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 283,
+                    "startColumn": 4,
+                    "startOffset": 17498,
+                    "endColumn": 63,
+                    "endOffset": 17557
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 283,
+                        "startColumn": 4,
+                        "startOffset": 17498,
+                        "endColumn": 63,
+                        "endOffset": 17557
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 284,
+                    "startColumn": 4,
+                    "startOffset": 17562,
+                    "endColumn": 63,
+                    "endOffset": 17621
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 284,
+                        "startColumn": 4,
+                        "startOffset": 17562,
+                        "endColumn": 63,
+                        "endOffset": 17621
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 285,
+                    "startColumn": 4,
+                    "startOffset": 17626,
+                    "endColumn": 49,
+                    "endOffset": 17671
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 285,
+                        "startColumn": 4,
+                        "startOffset": 17626,
+                        "endColumn": 49,
+                        "endOffset": 17671
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 286,
+                    "startColumn": 4,
+                    "startOffset": 17676,
+                    "endColumn": 43,
+                    "endOffset": 17715
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 286,
+                        "startColumn": 4,
+                        "startOffset": 17676,
+                        "endColumn": 43,
+                        "endOffset": 17715
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 287,
+                    "startColumn": 4,
+                    "startOffset": 17720,
+                    "endColumn": 44,
+                    "endOffset": 17760
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 287,
+                        "startColumn": 4,
+                        "startOffset": 17720,
+                        "endColumn": 44,
+                        "endOffset": 17760
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 288,
+                    "startColumn": 4,
+                    "startOffset": 17765,
+                    "endColumn": 66,
+                    "endOffset": 17827
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 288,
+                        "startColumn": 4,
+                        "startOffset": 17765,
+                        "endColumn": 66,
+                        "endOffset": 17827
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 289,
+                    "startColumn": 4,
+                    "startOffset": 17832,
+                    "endColumn": 59,
+                    "endOffset": 17887
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 289,
+                        "startColumn": 4,
+                        "startOffset": 17832,
+                        "endColumn": 59,
+                        "endOffset": 17887
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 290,
+                    "startColumn": 4,
+                    "startOffset": 17892,
+                    "endColumn": 84,
+                    "endOffset": 17972
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 290,
+                        "startColumn": 4,
+                        "startOffset": 17892,
+                        "endColumn": 84,
+                        "endOffset": 17972
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 291,
+                    "startColumn": 4,
+                    "startOffset": 17977,
+                    "endColumn": 55,
+                    "endOffset": 18028
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 291,
+                        "startColumn": 4,
+                        "startOffset": 17977,
+                        "endColumn": 55,
+                        "endOffset": 18028
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 292,
+                    "startColumn": 4,
+                    "startOffset": 18033,
+                    "endColumn": 57,
+                    "endOffset": 18086
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 292,
+                        "startColumn": 4,
+                        "startOffset": 18033,
+                        "endColumn": 57,
+                        "endOffset": 18086
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 293,
+                    "startColumn": 4,
+                    "startOffset": 18091,
+                    "endColumn": 58,
+                    "endOffset": 18145
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 293,
+                        "startColumn": 4,
+                        "startOffset": 18091,
+                        "endColumn": 58,
+                        "endOffset": 18145
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 294,
+                    "startColumn": 4,
+                    "startOffset": 18150,
+                    "endColumn": 57,
+                    "endOffset": 18203
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 294,
+                        "startColumn": 4,
+                        "startOffset": 18150,
+                        "endColumn": 57,
+                        "endOffset": 18203
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 295,
+                    "startColumn": 4,
+                    "startOffset": 18208,
+                    "endColumn": 48,
+                    "endOffset": 18252
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 295,
+                        "startColumn": 4,
+                        "startOffset": 18208,
+                        "endColumn": 48,
+                        "endOffset": 18252
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 296,
+                    "startColumn": 4,
+                    "startOffset": 18257,
+                    "endColumn": 84,
+                    "endOffset": 18337
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 296,
+                        "startColumn": 4,
+                        "startOffset": 18257,
+                        "endColumn": 84,
+                        "endOffset": 18337
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 297,
+                    "startColumn": 4,
+                    "startOffset": 18342,
+                    "endColumn": 54,
+                    "endOffset": 18392
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 297,
+                        "startColumn": 4,
+                        "startOffset": 18342,
+                        "endColumn": 54,
+                        "endOffset": 18392
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 298,
+                    "startColumn": 4,
+                    "startOffset": 18397,
+                    "endColumn": 57,
+                    "endOffset": 18450
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 298,
+                        "startColumn": 4,
+                        "startOffset": 18397,
+                        "endColumn": 57,
+                        "endOffset": 18450
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 299,
+                    "startColumn": 4,
+                    "startOffset": 18455,
+                    "endColumn": 58,
+                    "endOffset": 18509
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 299,
+                        "startColumn": 4,
+                        "startOffset": 18455,
+                        "endColumn": 58,
+                        "endOffset": 18509
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 300,
+                    "startColumn": 4,
+                    "startOffset": 18514,
+                    "endColumn": 57,
+                    "endOffset": 18567
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 300,
+                        "startColumn": 4,
+                        "startOffset": 18514,
+                        "endColumn": 57,
+                        "endOffset": 18567
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 301,
+                    "startColumn": 4,
+                    "startOffset": 18572,
+                    "endColumn": 57,
+                    "endOffset": 18625
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 301,
+                        "startColumn": 4,
+                        "startOffset": 18572,
+                        "endColumn": 57,
+                        "endOffset": 18625
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 302,
+                    "startColumn": 4,
+                    "startOffset": 18630,
+                    "endColumn": 58,
+                    "endOffset": 18684
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 302,
+                        "startColumn": 4,
+                        "startOffset": 18630,
+                        "endColumn": 58,
+                        "endOffset": 18684
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 303,
+                    "startColumn": 4,
+                    "startOffset": 18689,
+                    "endColumn": 58,
+                    "endOffset": 18743
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 303,
+                        "startColumn": 4,
+                        "startOffset": 18689,
+                        "endColumn": 58,
+                        "endOffset": 18743
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 304,
+                    "startColumn": 4,
+                    "startOffset": 18748,
+                    "endColumn": 54,
+                    "endOffset": 18798
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 304,
+                        "startColumn": 4,
+                        "startOffset": 18748,
+                        "endColumn": 54,
+                        "endOffset": 18798
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 305,
+                    "startColumn": 4,
+                    "startOffset": 18803,
+                    "endColumn": 55,
+                    "endOffset": 18854
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 305,
+                        "startColumn": 4,
+                        "startOffset": 18803,
+                        "endColumn": 55,
+                        "endOffset": 18854
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 306,
+                    "startColumn": 4,
+                    "startOffset": 18859,
+                    "endColumn": 58,
+                    "endOffset": 18913
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 306,
+                        "startColumn": 4,
+                        "startOffset": 18859,
+                        "endColumn": 58,
+                        "endOffset": 18913
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 307,
+                    "startColumn": 4,
+                    "startOffset": 18918,
+                    "endColumn": 65,
+                    "endOffset": 18979
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 307,
+                        "startColumn": 4,
+                        "startOffset": 18918,
+                        "endColumn": 65,
+                        "endOffset": 18979
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 308,
+                    "startColumn": 4,
+                    "startOffset": 18984,
+                    "endColumn": 54,
+                    "endOffset": 19034
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 308,
+                        "startColumn": 4,
+                        "startOffset": 18984,
+                        "endColumn": 54,
+                        "endOffset": 19034
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 309,
+                    "startColumn": 4,
+                    "startOffset": 19039,
+                    "endColumn": 62,
+                    "endOffset": 19097
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 309,
+                        "startColumn": 4,
+                        "startOffset": 19039,
+                        "endColumn": 62,
+                        "endOffset": 19097
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 310,
+                    "startColumn": 4,
+                    "startOffset": 19102,
+                    "endColumn": 64,
+                    "endOffset": 19162
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 310,
+                        "startColumn": 4,
+                        "startOffset": 19102,
+                        "endColumn": 64,
+                        "endOffset": 19162
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 311,
+                    "startColumn": 4,
+                    "startOffset": 19167,
+                    "endColumn": 54,
+                    "endOffset": 19217
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 311,
+                        "startColumn": 4,
+                        "startOffset": 19167,
+                        "endColumn": 54,
+                        "endOffset": 19217
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 312,
+                    "startColumn": 4,
+                    "startOffset": 19222,
+                    "endColumn": 56,
+                    "endOffset": 19274
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 312,
+                        "startColumn": 4,
+                        "startOffset": 19222,
+                        "endColumn": 56,
+                        "endOffset": 19274
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 313,
+                    "startColumn": 4,
+                    "startOffset": 19279,
+                    "endColumn": 54,
+                    "endOffset": 19329
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 313,
+                        "startColumn": 4,
+                        "startOffset": 19279,
+                        "endColumn": 54,
+                        "endOffset": 19329
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 314,
+                    "startColumn": 4,
+                    "startOffset": 19334,
+                    "endColumn": 56,
+                    "endOffset": 19386
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 314,
+                        "startColumn": 4,
+                        "startOffset": 19334,
+                        "endColumn": 56,
+                        "endOffset": 19386
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 315,
+                    "startColumn": 4,
+                    "startOffset": 19391,
+                    "endColumn": 55,
+                    "endOffset": 19442
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 315,
+                        "startColumn": 4,
+                        "startOffset": 19391,
+                        "endColumn": 55,
+                        "endOffset": 19442
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 316,
+                    "startColumn": 4,
+                    "startOffset": 19447,
+                    "endColumn": 59,
+                    "endOffset": 19502
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 316,
+                        "startColumn": 4,
+                        "startOffset": 19447,
+                        "endColumn": 59,
+                        "endOffset": 19502
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 317,
+                    "startColumn": 4,
+                    "startOffset": 19507,
+                    "endColumn": 62,
+                    "endOffset": 19565
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 317,
+                        "startColumn": 4,
+                        "startOffset": 19507,
+                        "endColumn": 62,
+                        "endOffset": 19565
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 318,
+                    "startColumn": 4,
+                    "startOffset": 19570,
+                    "endColumn": 57,
+                    "endOffset": 19623
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 318,
+                        "startColumn": 4,
+                        "startOffset": 19570,
+                        "endColumn": 57,
+                        "endOffset": 19623
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 319,
+                    "startColumn": 4,
+                    "startOffset": 19628,
+                    "endColumn": 60,
+                    "endOffset": 19684
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 319,
+                        "startColumn": 4,
+                        "startOffset": 19628,
+                        "endColumn": 60,
+                        "endOffset": 19684
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 320,
+                    "startColumn": 4,
+                    "startOffset": 19689,
+                    "endColumn": 59,
+                    "endOffset": 19744
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 320,
+                        "startColumn": 4,
+                        "startOffset": 19689,
+                        "endColumn": 59,
+                        "endOffset": 19744
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 321,
+                    "startColumn": 4,
+                    "startOffset": 19749,
+                    "endColumn": 62,
+                    "endOffset": 19807
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 321,
+                        "startColumn": 4,
+                        "startOffset": 19749,
+                        "endColumn": 62,
+                        "endOffset": 19807
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 322,
+                    "startColumn": 4,
+                    "startOffset": 19812,
+                    "endColumn": 62,
+                    "endOffset": 19870
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 322,
+                        "startColumn": 4,
+                        "startOffset": 19812,
+                        "endColumn": 62,
+                        "endOffset": 19870
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 323,
+                    "startColumn": 4,
+                    "startOffset": 19875,
+                    "endColumn": 68,
+                    "endOffset": 19939
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 323,
+                        "startColumn": 4,
+                        "startOffset": 19875,
+                        "endColumn": 68,
+                        "endOffset": 19939
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 324,
+                    "startColumn": 4,
+                    "startOffset": 19944,
+                    "endColumn": 58,
+                    "endOffset": 19998
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 324,
+                        "startColumn": 4,
+                        "startOffset": 19944,
+                        "endColumn": 58,
+                        "endOffset": 19998
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 325,
+                    "startColumn": 4,
+                    "startOffset": 20003,
+                    "endColumn": 59,
+                    "endOffset": 20058
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 325,
+                        "startColumn": 4,
+                        "startOffset": 20003,
+                        "endColumn": 59,
+                        "endOffset": 20058
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 326,
+                    "startColumn": 4,
+                    "startOffset": 20063,
+                    "endColumn": 60,
+                    "endOffset": 20119
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 326,
+                        "startColumn": 4,
+                        "startOffset": 20063,
+                        "endColumn": 60,
+                        "endOffset": 20119
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 327,
+                    "startColumn": 4,
+                    "startOffset": 20124,
+                    "endColumn": 60,
+                    "endOffset": 20180
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 327,
+                        "startColumn": 4,
+                        "startOffset": 20124,
+                        "endColumn": 60,
+                        "endOffset": 20180
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 328,
+                    "startColumn": 4,
+                    "startOffset": 20185,
+                    "endColumn": 56,
+                    "endOffset": 20237
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 328,
+                        "startColumn": 4,
+                        "startOffset": 20185,
+                        "endColumn": 56,
+                        "endOffset": 20237
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 329,
+                    "startColumn": 4,
+                    "startOffset": 20242,
+                    "endColumn": 56,
+                    "endOffset": 20294
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 329,
+                        "startColumn": 4,
+                        "startOffset": 20242,
+                        "endColumn": 56,
+                        "endOffset": 20294
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 330,
+                    "startColumn": 4,
+                    "startOffset": 20299,
+                    "endColumn": 59,
+                    "endOffset": 20354
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 330,
+                        "startColumn": 4,
+                        "startOffset": 20299,
+                        "endColumn": 59,
+                        "endOffset": 20354
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 331,
+                    "startColumn": 4,
+                    "startOffset": 20359,
+                    "endColumn": 66,
+                    "endOffset": 20421
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 331,
+                        "startColumn": 4,
+                        "startOffset": 20359,
+                        "endColumn": 66,
+                        "endOffset": 20421
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 332,
+                    "startColumn": 4,
+                    "startOffset": 20426,
+                    "endColumn": 61,
+                    "endOffset": 20483
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 332,
+                        "startColumn": 4,
+                        "startOffset": 20426,
+                        "endColumn": 61,
+                        "endOffset": 20483
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 333,
+                    "startColumn": 4,
+                    "startOffset": 20488,
+                    "endColumn": 64,
+                    "endOffset": 20548
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 333,
+                        "startColumn": 4,
+                        "startOffset": 20488,
+                        "endColumn": 64,
+                        "endOffset": 20548
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 334,
+                    "startColumn": 4,
+                    "startOffset": 20553,
+                    "endColumn": 69,
+                    "endOffset": 20618
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 334,
+                        "startColumn": 4,
+                        "startOffset": 20553,
+                        "endColumn": 69,
+                        "endOffset": 20618
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 335,
+                    "startColumn": 4,
+                    "startOffset": 20623,
+                    "endColumn": 66,
+                    "endOffset": 20685
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 335,
+                        "startColumn": 4,
+                        "startOffset": 20623,
+                        "endColumn": 66,
+                        "endOffset": 20685
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 336,
+                    "startColumn": 4,
+                    "startOffset": 20690,
+                    "endColumn": 67,
+                    "endOffset": 20753
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 336,
+                        "startColumn": 4,
+                        "startOffset": 20690,
+                        "endColumn": 67,
+                        "endOffset": 20753
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 337,
+                    "startColumn": 4,
+                    "startOffset": 20758,
+                    "endColumn": 57,
+                    "endOffset": 20811
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 337,
+                        "startColumn": 4,
+                        "startOffset": 20758,
+                        "endColumn": 57,
+                        "endOffset": 20811
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 338,
+                    "startColumn": 4,
+                    "startOffset": 20816,
+                    "endColumn": 58,
+                    "endOffset": 20870
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 338,
+                        "startColumn": 4,
+                        "startOffset": 20816,
+                        "endColumn": 58,
+                        "endOffset": 20870
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 339,
+                    "startColumn": 4,
+                    "startOffset": 20875,
+                    "endColumn": 56,
+                    "endOffset": 20927
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 339,
+                        "startColumn": 4,
+                        "startOffset": 20875,
+                        "endColumn": 56,
+                        "endOffset": 20927
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 340,
+                    "startColumn": 4,
+                    "startOffset": 20932,
+                    "endColumn": 59,
+                    "endOffset": 20987
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 340,
+                        "startColumn": 4,
+                        "startOffset": 20932,
+                        "endColumn": 59,
+                        "endOffset": 20987
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 341,
+                    "startColumn": 4,
+                    "startOffset": 20992,
+                    "endColumn": 60,
+                    "endOffset": 21048
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 341,
+                        "startColumn": 4,
+                        "startOffset": 20992,
+                        "endColumn": 60,
+                        "endOffset": 21048
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 342,
+                    "startColumn": 4,
+                    "startOffset": 21053,
+                    "endColumn": 69,
+                    "endOffset": 21118
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 342,
+                        "startColumn": 4,
+                        "startOffset": 21053,
+                        "endColumn": 69,
+                        "endOffset": 21118
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 343,
+                    "startColumn": 4,
+                    "startOffset": 21123,
+                    "endColumn": 63,
+                    "endOffset": 21182
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 343,
+                        "startColumn": 4,
+                        "startOffset": 21123,
+                        "endColumn": 63,
+                        "endOffset": 21182
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 344,
+                    "startColumn": 4,
+                    "startOffset": 21187,
+                    "endColumn": 63,
+                    "endOffset": 21246
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 344,
+                        "startColumn": 4,
+                        "startOffset": 21187,
+                        "endColumn": 63,
+                        "endOffset": 21246
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 345,
+                    "startColumn": 4,
+                    "startOffset": 21251,
+                    "endColumn": 63,
+                    "endOffset": 21310
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 345,
+                        "startColumn": 4,
+                        "startOffset": 21251,
+                        "endColumn": 63,
+                        "endOffset": 21310
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 346,
+                    "startColumn": 4,
+                    "startOffset": 21315,
+                    "endColumn": 64,
+                    "endOffset": 21375
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 346,
+                        "startColumn": 4,
+                        "startOffset": 21315,
+                        "endColumn": 64,
+                        "endOffset": 21375
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 347,
+                    "startColumn": 4,
+                    "startOffset": 21380,
+                    "endColumn": 69,
+                    "endOffset": 21445
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 347,
+                        "startColumn": 4,
+                        "startOffset": 21380,
+                        "endColumn": 69,
+                        "endOffset": 21445
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 348,
+                    "startColumn": 4,
+                    "startOffset": 21450,
+                    "endColumn": 69,
+                    "endOffset": 21515
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 348,
+                        "startColumn": 4,
+                        "startOffset": 21450,
+                        "endColumn": 69,
+                        "endOffset": 21515
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 349,
+                    "startColumn": 4,
+                    "startOffset": 21520,
+                    "endColumn": 64,
+                    "endOffset": 21580
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 349,
+                        "startColumn": 4,
+                        "startOffset": 21520,
+                        "endColumn": 64,
+                        "endOffset": 21580
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 350,
+                    "startColumn": 4,
+                    "startOffset": 21585,
+                    "endColumn": 65,
+                    "endOffset": 21646
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 350,
+                        "startColumn": 4,
+                        "startOffset": 21585,
+                        "endColumn": 65,
+                        "endOffset": 21646
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 351,
+                    "startColumn": 4,
+                    "startOffset": 21651,
+                    "endColumn": 67,
+                    "endOffset": 21714
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 351,
+                        "startColumn": 4,
+                        "startOffset": 21651,
+                        "endColumn": 67,
+                        "endOffset": 21714
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 352,
+                    "startColumn": 4,
+                    "startOffset": 21719,
+                    "endColumn": 60,
+                    "endOffset": 21775
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 352,
+                        "startColumn": 4,
+                        "startOffset": 21719,
+                        "endColumn": 60,
+                        "endOffset": 21775
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 353,
+                    "startColumn": 4,
+                    "startOffset": 21780,
+                    "endColumn": 61,
+                    "endOffset": 21837
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 353,
+                        "startColumn": 4,
+                        "startOffset": 21780,
+                        "endColumn": 61,
+                        "endOffset": 21837
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 354,
+                    "startColumn": 4,
+                    "startOffset": 21842,
+                    "endColumn": 74,
+                    "endOffset": 21912
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 354,
+                        "startColumn": 4,
+                        "startOffset": 21842,
+                        "endColumn": 74,
+                        "endOffset": 21912
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 355,
+                    "startColumn": 4,
+                    "startOffset": 21917,
+                    "endColumn": 60,
+                    "endOffset": 21973
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 355,
+                        "startColumn": 4,
+                        "startOffset": 21917,
+                        "endColumn": 60,
+                        "endOffset": 21973
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 356,
+                    "startColumn": 4,
+                    "startOffset": 21978,
+                    "endColumn": 89,
+                    "endOffset": 22063
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 356,
+                        "startColumn": 4,
+                        "startOffset": 21978,
+                        "endColumn": 89,
+                        "endOffset": 22063
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 357,
+                    "startColumn": 4,
+                    "startOffset": 22068,
+                    "endColumn": 72,
+                    "endOffset": 22136
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 357,
+                        "startColumn": 4,
+                        "startOffset": 22068,
+                        "endColumn": 72,
+                        "endOffset": 22136
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 358,
+                    "startColumn": 4,
+                    "startOffset": 22141,
+                    "endColumn": 61,
+                    "endOffset": 22198
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 358,
+                        "startColumn": 4,
+                        "startOffset": 22141,
+                        "endColumn": 61,
+                        "endOffset": 22198
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 359,
+                    "startColumn": 4,
+                    "startOffset": 22203,
+                    "endColumn": 82,
+                    "endOffset": 22281
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 359,
+                        "startColumn": 4,
+                        "startOffset": 22203,
+                        "endColumn": 82,
+                        "endOffset": 22281
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 360,
+                    "startColumn": 4,
+                    "startOffset": 22286,
+                    "endColumn": 57,
+                    "endOffset": 22339
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 360,
+                        "startColumn": 4,
+                        "startOffset": 22286,
+                        "endColumn": 57,
+                        "endOffset": 22339
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 361,
+                    "startColumn": 4,
+                    "startOffset": 22344,
+                    "endColumn": 66,
+                    "endOffset": 22406
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 361,
+                        "startColumn": 4,
+                        "startOffset": 22344,
+                        "endColumn": 66,
+                        "endOffset": 22406
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 362,
+                    "startColumn": 4,
+                    "startOffset": 22411,
+                    "endColumn": 73,
+                    "endOffset": 22480
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 362,
+                        "startColumn": 4,
+                        "startOffset": 22411,
+                        "endColumn": 73,
+                        "endOffset": 22480
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 363,
+                    "startColumn": 4,
+                    "startOffset": 22485,
+                    "endColumn": 64,
+                    "endOffset": 22545
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 363,
+                        "startColumn": 4,
+                        "startOffset": 22485,
+                        "endColumn": 64,
+                        "endOffset": 22545
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 364,
+                    "startColumn": 4,
+                    "startOffset": 22550,
+                    "endColumn": 72,
+                    "endOffset": 22618
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 364,
+                        "startColumn": 4,
+                        "startOffset": 22550,
+                        "endColumn": 72,
+                        "endOffset": 22618
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 365,
+                    "startColumn": 4,
+                    "startOffset": 22623,
+                    "endColumn": 67,
+                    "endOffset": 22686
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 365,
+                        "startColumn": 4,
+                        "startOffset": 22623,
+                        "endColumn": 67,
+                        "endOffset": 22686
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 366,
+                    "startColumn": 4,
+                    "startOffset": 22691,
+                    "endColumn": 69,
+                    "endOffset": 22756
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 366,
+                        "startColumn": 4,
+                        "startOffset": 22691,
+                        "endColumn": 69,
+                        "endOffset": 22756
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 367,
+                    "startColumn": 4,
+                    "startOffset": 22761,
+                    "endColumn": 67,
+                    "endOffset": 22824
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 367,
+                        "startColumn": 4,
+                        "startOffset": 22761,
+                        "endColumn": 67,
+                        "endOffset": 22824
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 368,
+                    "startColumn": 4,
+                    "startOffset": 22829,
+                    "endColumn": 70,
+                    "endOffset": 22895
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 368,
+                        "startColumn": 4,
+                        "startOffset": 22829,
+                        "endColumn": 70,
+                        "endOffset": 22895
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 369,
+                    "startColumn": 4,
+                    "startOffset": 22900,
+                    "endColumn": 68,
+                    "endOffset": 22964
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 369,
+                        "startColumn": 4,
+                        "startOffset": 22900,
+                        "endColumn": 68,
+                        "endOffset": 22964
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 370,
+                    "startColumn": 4,
+                    "startOffset": 22969,
+                    "endColumn": 73,
+                    "endOffset": 23038
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 370,
+                        "startColumn": 4,
+                        "startOffset": 22969,
+                        "endColumn": 73,
+                        "endOffset": 23038
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 371,
+                    "startColumn": 4,
+                    "startOffset": 23043,
+                    "endColumn": 63,
+                    "endOffset": 23102
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 371,
+                        "startColumn": 4,
+                        "startOffset": 23043,
+                        "endColumn": 63,
+                        "endOffset": 23102
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 372,
+                    "startColumn": 4,
+                    "startOffset": 23107,
+                    "endColumn": 70,
+                    "endOffset": 23173
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 372,
+                        "startColumn": 4,
+                        "startOffset": 23107,
+                        "endColumn": 70,
+                        "endOffset": 23173
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 373,
+                    "startColumn": 4,
+                    "startOffset": 23178,
+                    "endColumn": 65,
+                    "endOffset": 23239
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 373,
+                        "startColumn": 4,
+                        "startOffset": 23178,
+                        "endColumn": 65,
+                        "endOffset": 23239
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 374,
+                    "startColumn": 4,
+                    "startOffset": 23244,
+                    "endColumn": 69,
+                    "endOffset": 23309
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 374,
+                        "startColumn": 4,
+                        "startOffset": 23244,
+                        "endColumn": 69,
+                        "endOffset": 23309
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 375,
+                    "startColumn": 4,
+                    "startOffset": 23314,
+                    "endColumn": 62,
+                    "endOffset": 23372
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 375,
+                        "startColumn": 4,
+                        "startOffset": 23314,
+                        "endColumn": 62,
+                        "endOffset": 23372
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 376,
+                    "startColumn": 4,
+                    "startOffset": 23377,
+                    "endColumn": 69,
+                    "endOffset": 23442
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 376,
+                        "startColumn": 4,
+                        "startOffset": 23377,
+                        "endColumn": 69,
+                        "endOffset": 23442
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 377,
+                    "startColumn": 4,
+                    "startOffset": 23447,
+                    "endColumn": 68,
+                    "endOffset": 23511
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 377,
+                        "startColumn": 4,
+                        "startOffset": 23447,
+                        "endColumn": 68,
+                        "endOffset": 23511
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 378,
+                    "startColumn": 4,
+                    "startOffset": 23516,
+                    "endColumn": 68,
+                    "endOffset": 23580
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 378,
+                        "startColumn": 4,
+                        "startOffset": 23516,
+                        "endColumn": 68,
+                        "endOffset": 23580
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 379,
+                    "startColumn": 4,
+                    "startOffset": 23585,
+                    "endColumn": 63,
+                    "endOffset": 23644
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 379,
+                        "startColumn": 4,
+                        "startOffset": 23585,
+                        "endColumn": 63,
+                        "endOffset": 23644
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 380,
+                    "startColumn": 4,
+                    "startOffset": 23649,
+                    "endColumn": 66,
+                    "endOffset": 23711
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 380,
+                        "startColumn": 4,
+                        "startOffset": 23649,
+                        "endColumn": 66,
+                        "endOffset": 23711
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 381,
+                    "startColumn": 4,
+                    "startOffset": 23716,
+                    "endColumn": 97,
+                    "endOffset": 23809
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 381,
+                        "startColumn": 4,
+                        "startOffset": 23716,
+                        "endColumn": 97,
+                        "endOffset": 23809
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 382,
+                    "startColumn": 4,
+                    "startOffset": 23814,
+                    "endColumn": 87,
+                    "endOffset": 23897
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 382,
+                        "startColumn": 4,
+                        "startOffset": 23814,
+                        "endColumn": 87,
+                        "endOffset": 23897
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 383,
+                    "startColumn": 4,
+                    "startOffset": 23902,
+                    "endColumn": 81,
+                    "endOffset": 23979
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 383,
+                        "startColumn": 4,
+                        "startOffset": 23902,
+                        "endColumn": 81,
+                        "endOffset": 23979
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 384,
+                    "startColumn": 4,
+                    "startOffset": 23984,
+                    "endColumn": 60,
+                    "endOffset": 24040
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 384,
+                        "startColumn": 4,
+                        "startOffset": 23984,
+                        "endColumn": 60,
+                        "endOffset": 24040
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 385,
+                    "startColumn": 4,
+                    "startOffset": 24045,
+                    "endColumn": 60,
+                    "endOffset": 24101
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 385,
+                        "startColumn": 4,
+                        "startOffset": 24045,
+                        "endColumn": 60,
+                        "endOffset": 24101
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 386,
+                    "startColumn": 4,
+                    "startOffset": 24106,
+                    "endColumn": 58,
+                    "endOffset": 24160
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 386,
+                        "startColumn": 4,
+                        "startOffset": 24106,
+                        "endColumn": 58,
+                        "endOffset": 24160
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 387,
+                    "startColumn": 4,
+                    "startOffset": 24165,
+                    "endColumn": 61,
+                    "endOffset": 24222
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 387,
+                        "startColumn": 4,
+                        "startOffset": 24165,
+                        "endColumn": 61,
+                        "endOffset": 24222
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 388,
+                    "startColumn": 4,
+                    "startOffset": 24227,
+                    "endColumn": 62,
+                    "endOffset": 24285
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 388,
+                        "startColumn": 4,
+                        "startOffset": 24227,
+                        "endColumn": 62,
+                        "endOffset": 24285
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 389,
+                    "startColumn": 4,
+                    "startOffset": 24290,
+                    "endColumn": 71,
+                    "endOffset": 24357
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 389,
+                        "startColumn": 4,
+                        "startOffset": 24290,
+                        "endColumn": 71,
+                        "endOffset": 24357
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 390,
+                    "startColumn": 4,
+                    "startOffset": 24362,
+                    "endColumn": 98,
+                    "endOffset": 24456
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 390,
+                        "startColumn": 4,
+                        "startOffset": 24362,
+                        "endColumn": 98,
+                        "endOffset": 24456
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 391,
+                    "startColumn": 4,
+                    "startOffset": 24461,
+                    "endColumn": 77,
+                    "endOffset": 24534
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 391,
+                        "startColumn": 4,
+                        "startOffset": 24461,
+                        "endColumn": 77,
+                        "endOffset": 24534
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 392,
+                    "startColumn": 4,
+                    "startOffset": 24539,
+                    "endColumn": 52,
+                    "endOffset": 24587
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 392,
+                        "startColumn": 4,
+                        "startOffset": 24539,
+                        "endColumn": 52,
+                        "endOffset": 24587
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 393,
+                    "startColumn": 4,
+                    "startOffset": 24592,
+                    "endColumn": 44,
+                    "endOffset": 24632
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 393,
+                        "startColumn": 4,
+                        "startOffset": 24592,
+                        "endColumn": 44,
+                        "endOffset": 24632
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 394,
+                    "startColumn": 4,
+                    "startOffset": 24637,
+                    "endColumn": 102,
+                    "endOffset": 24735
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 394,
+                        "startColumn": 4,
+                        "startOffset": 24637,
+                        "endColumn": 102,
+                        "endOffset": 24735
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 395,
+                    "startColumn": 4,
+                    "startOffset": 24740,
+                    "endColumn": 77,
+                    "endOffset": 24813
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 395,
+                        "startColumn": 4,
+                        "startOffset": 24740,
+                        "endColumn": 77,
+                        "endOffset": 24813
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 396,
+                    "startColumn": 4,
+                    "startOffset": 24818,
+                    "endColumn": 121,
+                    "endOffset": 24935
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 396,
+                        "startColumn": 4,
+                        "startOffset": 24818,
+                        "endColumn": 121,
+                        "endOffset": 24935
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 397,
+                    "startColumn": 4,
+                    "startOffset": 24940,
+                    "endColumn": 62,
+                    "endOffset": 24998
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 397,
+                        "startColumn": 4,
+                        "startOffset": 24940,
+                        "endColumn": 62,
+                        "endOffset": 24998
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 398,
+                    "startColumn": 4,
+                    "startOffset": 25003,
+                    "endColumn": 62,
+                    "endOffset": 25061
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 398,
+                        "startColumn": 4,
+                        "startOffset": 25003,
+                        "endColumn": 62,
+                        "endOffset": 25061
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 399,
+                    "startColumn": 4,
+                    "startOffset": 25066,
+                    "endColumn": 59,
+                    "endOffset": 25121
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 399,
+                        "startColumn": 4,
+                        "startOffset": 25066,
+                        "endColumn": 59,
+                        "endOffset": 25121
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 400,
+                    "startColumn": 4,
+                    "startOffset": 25126,
+                    "endColumn": 43,
+                    "endOffset": 25165
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 400,
+                        "startColumn": 4,
+                        "startOffset": 25126,
+                        "endColumn": 43,
+                        "endOffset": 25165
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 401,
+                    "startColumn": 4,
+                    "startOffset": 25170,
+                    "endColumn": 100,
+                    "endOffset": 25266
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 401,
+                        "startColumn": 4,
+                        "startOffset": 25170,
+                        "endColumn": 100,
+                        "endOffset": 25266
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 402,
+                    "startColumn": 4,
+                    "startOffset": 25271,
+                    "endColumn": 39,
+                    "endOffset": 25306
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 402,
+                        "startColumn": 4,
+                        "startOffset": 25271,
+                        "endColumn": 39,
+                        "endOffset": 25306
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 403,
+                    "startColumn": 4,
+                    "startOffset": 25311,
+                    "endColumn": 104,
+                    "endOffset": 25411
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 403,
+                        "startColumn": 4,
+                        "startOffset": 25311,
+                        "endColumn": 104,
+                        "endOffset": 25411
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 404,
+                    "startColumn": 4,
+                    "startOffset": 25416,
+                    "endColumn": 50,
+                    "endOffset": 25462
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 404,
+                        "startColumn": 4,
+                        "startOffset": 25416,
+                        "endColumn": 50,
+                        "endOffset": 25462
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 405,
+                    "startColumn": 4,
+                    "startOffset": 25467,
+                    "endColumn": 63,
+                    "endOffset": 25526
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 405,
+                        "startColumn": 4,
+                        "startOffset": 25467,
+                        "endColumn": 63,
+                        "endOffset": 25526
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 406,
+                    "startColumn": 4,
+                    "startOffset": 25531,
+                    "endColumn": 44,
+                    "endOffset": 25571
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 406,
+                        "startColumn": 4,
+                        "startOffset": 25531,
+                        "endColumn": 44,
+                        "endOffset": 25571
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 407,
+                    "startColumn": 4,
+                    "startOffset": 25576,
+                    "endColumn": 54,
+                    "endOffset": 25626
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 407,
+                        "startColumn": 4,
+                        "startOffset": 25576,
+                        "endColumn": 54,
+                        "endOffset": 25626
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 408,
+                    "startColumn": 4,
+                    "startOffset": 25631,
+                    "endColumn": 55,
+                    "endOffset": 25682
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 408,
+                        "startColumn": 4,
+                        "startOffset": 25631,
+                        "endColumn": 55,
+                        "endOffset": 25682
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 409,
+                    "startColumn": 4,
+                    "startOffset": 25687,
+                    "endColumn": 116,
+                    "endOffset": 25799
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 409,
+                        "startColumn": 4,
+                        "startOffset": 25687,
+                        "endColumn": 116,
+                        "endOffset": 25799
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 410,
+                    "startColumn": 4,
+                    "startOffset": 25804,
+                    "endColumn": 55,
+                    "endOffset": 25855
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 410,
+                        "startColumn": 4,
+                        "startOffset": 25804,
+                        "endColumn": 55,
+                        "endOffset": 25855
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 411,
+                    "startColumn": 4,
+                    "startOffset": 25860,
+                    "endColumn": 101,
+                    "endOffset": 25957
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 411,
+                        "startColumn": 4,
+                        "startOffset": 25860,
+                        "endColumn": 101,
+                        "endOffset": 25957
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 412,
+                    "startColumn": 4,
+                    "startOffset": 25962,
+                    "endColumn": 64,
+                    "endOffset": 26022
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 412,
+                        "startColumn": 4,
+                        "startOffset": 25962,
+                        "endColumn": 64,
+                        "endOffset": 26022
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 413,
+                    "startColumn": 4,
+                    "startOffset": 26027,
+                    "endColumn": 67,
+                    "endOffset": 26090
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 413,
+                        "startColumn": 4,
+                        "startOffset": 26027,
+                        "endColumn": 67,
+                        "endOffset": 26090
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 414,
+                    "startColumn": 4,
+                    "startOffset": 26095,
+                    "endColumn": 70,
+                    "endOffset": 26161
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 414,
+                        "startColumn": 4,
+                        "startOffset": 26095,
+                        "endColumn": 70,
+                        "endOffset": 26161
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 415,
+                    "startColumn": 4,
+                    "startOffset": 26166,
+                    "endColumn": 44,
+                    "endOffset": 26206
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 415,
+                        "startColumn": 4,
+                        "startOffset": 26166,
+                        "endColumn": 44,
+                        "endOffset": 26206
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 416,
+                    "startColumn": 4,
+                    "startOffset": 26211,
+                    "endColumn": 113,
+                    "endOffset": 26320
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 416,
+                        "startColumn": 4,
+                        "startOffset": 26211,
+                        "endColumn": 113,
+                        "endOffset": 26320
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 417,
+                    "startColumn": 4,
+                    "startOffset": 26325,
+                    "endColumn": 61,
+                    "endOffset": 26382
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 417,
+                        "startColumn": 4,
+                        "startOffset": 26325,
+                        "endColumn": 61,
+                        "endOffset": 26382
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 418,
+                    "startColumn": 4,
+                    "startOffset": 26387,
+                    "endColumn": 65,
+                    "endOffset": 26448
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 418,
+                        "startColumn": 4,
+                        "startOffset": 26387,
+                        "endColumn": 65,
+                        "endOffset": 26448
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 419,
+                    "startColumn": 4,
+                    "startOffset": 26453,
+                    "endColumn": 72,
+                    "endOffset": 26521
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 419,
+                        "startColumn": 4,
+                        "startOffset": 26453,
+                        "endColumn": 72,
+                        "endOffset": 26521
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 420,
+                    "startColumn": 4,
+                    "startOffset": 26526,
+                    "endColumn": 43,
+                    "endOffset": 26565
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 420,
+                        "startColumn": 4,
+                        "startOffset": 26526,
+                        "endColumn": 43,
+                        "endOffset": 26565
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 421,
+                    "startColumn": 4,
+                    "startOffset": 26570,
+                    "endColumn": 60,
+                    "endOffset": 26626
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 421,
+                        "startColumn": 4,
+                        "startOffset": 26570,
+                        "endColumn": 60,
+                        "endOffset": 26626
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 422,
+                    "startColumn": 4,
+                    "startOffset": 26631,
+                    "endColumn": 61,
+                    "endOffset": 26688
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 422,
+                        "startColumn": 4,
+                        "startOffset": 26631,
+                        "endColumn": 61,
+                        "endOffset": 26688
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 423,
+                    "startColumn": 4,
+                    "startOffset": 26693,
+                    "endColumn": 70,
+                    "endOffset": 26759
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 423,
+                        "startColumn": 4,
+                        "startOffset": 26693,
+                        "endColumn": 70,
+                        "endOffset": 26759
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 424,
+                    "startColumn": 4,
+                    "startOffset": 26764,
+                    "endColumn": 63,
+                    "endOffset": 26823
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 424,
+                        "startColumn": 4,
+                        "startOffset": 26764,
+                        "endColumn": 63,
+                        "endOffset": 26823
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 425,
+                    "startColumn": 4,
+                    "startOffset": 26828,
+                    "endLine": 427,
+                    "endColumn": 12,
+                    "endOffset": 26948
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 425,
+                        "startColumn": 4,
+                        "startOffset": 26828,
+                        "endLine": 427,
+                        "endColumn": 12,
+                        "endOffset": 26948
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 428,
+                    "startColumn": 4,
+                    "startOffset": 26953,
+                    "endLine": 431,
+                    "endColumn": 12,
+                    "endOffset": 27165
+                },
+                "from": {
+                    "file": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 428,
+                        "startColumn": 4,
+                        "startOffset": 26953,
+                        "endLine": 431,
+                        "endColumn": 12,
+                        "endOffset": 27165
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
         "map": [
             {

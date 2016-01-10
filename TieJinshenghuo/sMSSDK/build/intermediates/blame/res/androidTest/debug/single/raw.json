@@ -4,6 +4,10 @@
         "source": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\raw\\smssdk_pydb"
     },
     {
+        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\smssdk_pydb",
+        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\raw\\smssdk_pydb"
+    },
+    {
         "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\smssdk_pydb",
         "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\raw\\smssdk_pydb"
     },

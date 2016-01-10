@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="debug"><source path="G:\GithubPu\MyPublicProject\TieJinshenghuo\sMSSDK\build\intermediates\bundles\debug\assets"/></dataSet><dataSet config="main"><source path="G:\GithubPu\MyPublicProject\TieJinshenghuo\sMSSDK\src\androidTest\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="debug"><source path="G:\Github\TieJinshenghuo\TieJinshenghuo\sMSSDK\build\intermediates\bundles\debug\assets"/></dataSet><dataSet config="main"><source path="G:\Github\TieJinshenghuo\TieJinshenghuo\sMSSDK\src\androidTest\assets"/></dataSet></merger>
