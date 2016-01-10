@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_snacbay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+
+    tools:showIn="@layout/activity_main">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!--//android.support.design.widget.CollapsingToolbarLayout-->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/cool"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="#77db93"
+            app:expandedTitleMarginStart="80dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/test"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.8" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tb"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+
+                android:minHeight="20sp"
+                android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/jbshape"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:background="#68bf21"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_play"
+                    android:layout_width="100sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="#829181"
+                    android:text="更多"
+                    android:textColor="#FFFFFF" />
+
+                <com.shanghai.AlwaysMarqueeTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30px"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:focusable="true"
+                    android:text="抢票神器页面待编写   抢票神器页面待编写   抢票神器页面待编写   抢票神器页面待编写   抢票神器页面待编写   抢票神器页面待编写   "
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/tv_newsHome"
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/news" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="新闻客户端"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tv_weatherHome"
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/weather" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="天气预报"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tv_trainsTimeTable"
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/trainicon" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="火车时刻表"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/tv_tvTimeTable"
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tvlist" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="电视节目表"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tv_youdao"
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/youdao" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="有道词典"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tv_video"
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/zuixin" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="影讯相关"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="5sp"
+                android:gravity="center|right">
+
+                <View
+                    android:id="@+id/v_view"
+                    android:layout_width="180sp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/wechat"
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/weixin" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="微信精选"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/yuliu_1"
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/news" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="抢票神器"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/yuliu_2"
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/news" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="预留功能"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/yuliu_3"
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/appicon" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="预留功能"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/yuliu_4"
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/appicon" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="预留功能"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/yuliu_5"
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/appicon" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="预留功能"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="5sp"
+                android:gravity="center|right">
+
+                <View
+                    android:id="@+id/v_view2"
+                    android:layout_width="180sp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/appicon" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="预留功能"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/appicon" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="预留功能"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/appicon" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="预留功能"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/appicon" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="预留功能"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/appicon" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="预留功能"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/appicon" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="预留功能"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="5sp"
+                android:gravity="center|right">
+
+                <View
+                    android:id="@+id/v_view3"
+                    android:layout_width="180sp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/appicon" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="预留功能"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/appicon" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="预留功能"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45sp"
+                        android:layout_height="45sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/appicon" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="2sp"
+                        android:gravity="center"
+                        android:text="预留功能"
+                        android:textColor="#FF002556"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--</FrameLayout>-->
+
+
+        <!--<View-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#949790" />-->
+
+
+        <!--<View-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#949790" />-->
+
+
+        <!--</LinearLayout>-->
+        <!--</RelativeLayout>-->
+        <!--<HorizontalScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0sp"-->
+        <!--android:layout_weight="1"-->
+        <!-->-->
+
+
+        <!--</HorizontalScrollView>-->
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_weight="9"-->
+    <!--android:layout_height="0sp">-->
+
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#949790" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+
+</android.support.design.widget.CoordinatorLayout>

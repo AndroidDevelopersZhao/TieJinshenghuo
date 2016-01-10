@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="200sp"
+        android:layout_height="35sp"
+        android:gravity="center"
+        android:text="列车信息："
+        android:textColor="#d023fc"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="车次：" />
+
+            <TextView
+                android:id="@+id/tv_order_checi"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="T118" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="乘车日期：" />
+
+            <TextView
+                android:id="@+id/tv_order_train_date"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:gravity="center|left"
+                android:text="2015-05-02" />
+
+            <View
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="出发站：" />
+
+            <TextView
+                android:id="@+id/tv_order_from_station_name"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="上海" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="到站：" />
+
+            <TextView
+                android:id="@+id/tv_order_to_station_name"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:gravity="center|left"
+                android:text="西安" />
+
+            <View
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FF777777"/>
+
+    <TextView
+        android:layout_width="200sp"
+        android:layout_height="35sp"
+        android:gravity="center"
+        android:text="订单信息："
+        android:textColor="#d023fc"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="订单号：" />
+
+        <TextView
+            android:id="@+id/tv_order_orderid"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center|left"
+            android:text="1444357324918" />
+
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="订单状态：" />
+
+        <com.shanghai.AlwaysMarqueeTextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:gravity="center|left"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="1444357324918" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="票价：" />
+
+        <TextView
+
+            android:id="@+id/tv_order_price"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="222" />
+
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="订单提交时间：" />
+
+        <TextView
+            android:id="@+id/tv_order_submit_time"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|left"
+            android:text="1444357324918" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/view_piaohao"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <TextView
+
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="票号：" />
+
+        <TextView
+            android:id="@+id/tv_order_ticket_no"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|left"
+            android:text="--" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/view_zuoweihao"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="座位号：" />
+
+        <TextView
+            android:id="@+id/tv_order_cxin"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|left"
+            android:text="--"  />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取票订单号：" />
+
+        <TextView
+            android:id="@+id/tv_order_ordernumber"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|left"
+            android:text="--"  />
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FF777777"/>
+    <TextView
+        android:layout_width="200sp"
+        android:layout_height="35sp"
+        android:gravity="center"
+        android:text="乘车人信息："
+        android:textColor="#d023fc"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="姓名：" />
+
+        <TextView
+            android:id="@+id/tv_order_passengersename"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="张三" />
+
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="证件类型：" />
+
+        <TextView
+
+            android:id="@+id/tv_order_passporttypeseidname"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="二代身份证" />
+
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="证件号码：" />
+
+        <TextView
+
+            android:id="@+id/tv_order_passportseno"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center|left"
+            android:text="321201200512120415" />
+
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_order_sub"
+        android:layout_width="100sp"
+        android:layout_height="45sp"
+        android:layout_gravity="center"
+        android:text="付款" />
+
+</LinearLayout>

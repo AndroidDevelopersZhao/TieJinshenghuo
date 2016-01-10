@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d2cdcd"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="始发站：" />
+
+                <TextView
+                    android:id="@+id/from_station_name"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---"
+                    android:textColor="#c32ace" />
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="到站：" />
+
+                <TextView
+                    android:id="@+id/to_station_name"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---"
+                    android:textColor="#0c09ef" />
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="商务座票价：" />
+
+                <TextView
+                    android:id="@+id/swz_price"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---"
+                    android:textColor="#d73627" />
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="商务座余票数量：" />
+
+                <TextView
+                    android:id="@+id/swz_num"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <Button
+                    android:id="@+id/btn_pay_swz"
+                    android:enabled="false"
+                    android:layout_width="0sp"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="购票" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="一等座票价：" />
+
+                <TextView
+                    android:id="@+id/ydz_price"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="一等座余票数量：" />
+
+                <TextView
+                    android:id="@+id/ydz_num"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <Button
+                    android:enabled="false"
+                    android:id="@+id/btn_pay_ydz"
+                    android:layout_width="0sp"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="购票" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="硬座票价：" />
+
+                <TextView
+                    android:id="@+id/yz_price"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="硬座的余票数量：" />
+
+                <TextView
+                    android:id="@+id/yz_num"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <Button
+                    android:id="@+id/btn_pay_yz"
+                    android:enabled="false"
+                    android:layout_width="0sp"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="购票" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="特等座票价：" />
+
+                <TextView
+                    android:id="@+id/tdz_price"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="特等座余票数量：" />
+
+                <TextView
+                    android:id="@+id/tdz_num"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <Button
+                    android:id="@+id/btn_pay_tdz"
+                    android:layout_width="0sp"
+                    android:enabled="false"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="购票" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="高级软卧票价：" />
+
+                <TextView
+                    android:id="@+id/gjrw_price"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="高级软卧余票数量：" />
+
+                <TextView
+                    android:id="@+id/gjrw_num"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <Button
+                    android:layout_width="0sp"
+                    android:id="@+id/btn_pay_gjrw"
+                    android:enabled="false"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="购票" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="软座的票价：" />
+
+                <TextView
+                    android:id="@+id/rz_price"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="软座的余票数量" />
+
+                <TextView
+                    android:id="@+id/rz_num"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <Button
+                    android:id="@+id/btn_pay_rz"
+                    android:layout_width="0sp"
+                    android:enabled="false"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="购票" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="软卧（下）票价：" />
+
+                <TextView
+                    android:id="@+id/rw_price"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="软卧（下）余票数量" />
+
+                <TextView
+                    android:id="@+id/rw_num"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <Button
+                    android:id="@+id/btn_pay_rwx"
+                    android:layout_width="0sp"
+                    android:enabled="false"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="购票" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="硬卧（中）票价：" />
+
+                <TextView
+                    android:id="@+id/yw_price"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="硬卧（中）的余票数量" />
+
+                <TextView
+                    android:id="@+id/yw_num"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <Button
+                    android:id="@+id/btn_pay_ywz"
+                    android:layout_width="0sp"
+                    android:enabled="false"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="购票" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="无座票价：" />
+
+                <TextView
+                    android:id="@+id/wz_price"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="无座的余票数量" />
+
+                <TextView
+                    android:id="@+id/wz_num"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <Button
+                    android:id="@+id/btn_pay_wz"
+                    android:layout_width="0sp"
+                    android:layout_height="45sp"
+                    android:enabled="false"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="购票" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="历时（出发站到目的站）：" />
+
+                <TextView
+                    android:id="@+id/run_time"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="当前是否可以接受预定" />
+
+                <TextView
+                    android:id="@+id/can_buy_now"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="出发时刻" />
+
+                <TextView
+                    android:id="@+id/start_time"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="5sp"
+                android:background="#fffcfc"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="到达时刻" />
+
+                <TextView
+                    android:id="@+id/arrive_time"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="---" />
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="95sp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--/>-->
+
+        <!--<ProgressBar-->
+        <!--android:id="@+id/progressbar"-->
+        <!--style="?android:attr/progressBarStyleSmall"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:visibility="gone" />-->
+
+        <ImageView
+            android:id="@+id/head_arrow"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/image__001" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/head_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:text="刷新数据"
+                android:textColor="#666666"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/head_last_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="3dp"
+                android:text="最后更新时间:"
+                android:textColor="#666666"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>  

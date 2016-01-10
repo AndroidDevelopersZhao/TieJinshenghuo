@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/layout_find"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="65sp"
+        android:gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_videi_select"
+            android:layout_width="0sp"
+            android:layout_height="45sp"
+            android:layout_weight="4"
+            android:text="火星救援"
+            android:background="@drawable/input"
+            android:hint="请输入电影名称进行查询" />
+
+        <Button
+            android:id="@+id/btn_video_get"
+            android:layout_width="0sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:background="@drawable/btn"
+            android:text="查询" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25sp"
+        android:layout_marginLeft="2sp"
+        android:gravity="center_vertical"
+        android:text="热门"
+        android:textColor="#e14428"
+        android:textSize="19sp" />
+
+    <ListView
+        android:id="@+id/listView_video_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

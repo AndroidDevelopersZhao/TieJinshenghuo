@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65sp"
+        android:background="#FF888888"
+        android:gravity="center"
+        android:text="找回密码"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/view_setMsg"
+            android:layout_width="match_parent"
+            android:layout_height="65sp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:digits="0123456789"
+                android:id="@+id/et_forgotpsw_phonenumber"
+                android:layout_width="200sp"
+                android:layout_height="match_parent"
+                android:hint="手机号码" />
+
+            <Button
+
+                android:id="@+id/btn_forgotpsw_sendMsg"
+                android:layout_width="150sp"
+                android:layout_height="match_parent"
+                android:text="发送验证码" />
+        </LinearLayout>
+
+            <TextView
+                android:background="#FF789654"
+                android:id="@+id/tv_forgot_qq"
+                android:layout_width="200sp"
+                android:layout_height="40sp"
+                android:gravity="center"
+                android:text="忘记账号请点击这里" />
+
+        <LinearLayout
+            android:id="@+id/view_setNewPsw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_forgotpsw_newpsw1"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ~!@#$%^*-."
+                android:hint="新密码" />
+
+            <EditText
+                android:id="@+id/et_forgotpsw_newpsw2"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ~!@#$%^*-."
+                android:hint="重复新密码" />
+
+            <Button
+                android:id="@+id/btn_forgotpsw_updatapsw"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:hint="修改密码" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

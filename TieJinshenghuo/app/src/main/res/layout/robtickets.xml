@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65sp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_robtickets_startAdd"
+            android:text="西安北"
+            android:layout_width="100sp"
+            android:layout_height="match_parent"
+            android:hint="出发站点" />
+
+        <View
+            android:layout_width="50sp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#FF555555" />
+
+        <EditText
+            android:id="@+id/et_robtickets_stopAdd"
+            android:text="上海"
+            android:layout_width="100sp"
+            android:layout_height="match_parent"
+            android:hint="到达站点" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65sp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_robtickets_time"
+            android:text="2016-02-08"
+            android:layout_width="240sp"
+            android:layout_height="match_parent"
+            android:hint="出发日期" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_robtickets_select"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:layout_gravity="center_horizontal"
+        android:text="查询" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:textSize="18sp"
+        android:textColor="#F5594f"
+        android:gravity="center_vertical"
+        android:text="都是最新新闻，你懂得:" />
+
+    <ListView
+        android:id="@+id/listView_NewHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>
