@@ -3,7 +3,7 @@ package com.shanghai.data.data_robtickets;
 import android.util.Log;
 
 import com.google.gson.Gson;
-import com.shanghai.listener.GetTicktsSiteCodeListener;
+import com.shanghai.listener.listener_tickets.GetTicktsSiteCodeListener;
 import com.shanghai.soeasylib.util.XXHttpClient;
 import com.shanghai.utils.Util;
 

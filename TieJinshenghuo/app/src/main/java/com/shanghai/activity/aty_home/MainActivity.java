@@ -24,7 +24,7 @@ import com.shanghai.fragment.fmt_home_tv.TVTimeTableHome;
 import com.shanghai.fragment.fmt_home_trains.TrainsTimeTableHome;
 import com.shanghai.fragment.fmt_home_weather.WeatherHome;
 import com.shanghai.fragment.fmt_home_youdao.YoudaoHome;
-import com.shanghai.listener.Listener_location;
+import com.shanghai.listener.listener_location.Listener_location;
 import com.shanghai.soeasylib.util.XXHttpClient;
 import com.shanghai.soeasylib.util.XXUtils;
 

@@ -24,12 +24,10 @@ package com.shanghai.utils;
  * .
  */
 
-import android.support.annotation.NonNull;
-
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
-import com.shanghai.listener.GetDataListener;
+import com.shanghai.listener.listener_util.GetDataListener;
 
 import org.apache.http.Header;
 

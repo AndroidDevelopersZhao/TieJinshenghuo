@@ -41,7 +41,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.shanghai.data.data_video.Data_Video_Details;
-import com.shanghai.listener.GetDataListener;
+import com.shanghai.listener.listener_util.GetDataListener;
 import com.shanghai.soeasylib.adapter.XXListViewAdapter;
 
 import org.json.JSONArray;

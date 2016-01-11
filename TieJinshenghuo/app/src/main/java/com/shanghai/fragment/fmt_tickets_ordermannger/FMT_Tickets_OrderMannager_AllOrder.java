@@ -18,8 +18,11 @@ public class FMT_Tickets_OrderMannager_AllOrder extends android.support.v4.app.F
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view=inflater.inflate(R.layout.fmt_tickets_ordermannager_allorder,null);
+
         return view;
     }
+
+
 
 
 }

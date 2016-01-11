@@ -44,8 +44,8 @@ import android.widget.Toast;
 
 import com.shanghai.R;
 import com.shanghai.data.data_video.Data_Video_Home;
-import com.shanghai.listener.GetDataListener;
-import com.shanghai.listener.Listener_location;
+import com.shanghai.listener.listener_util.GetDataListener;
+import com.shanghai.listener.listener_location.Listener_location;
 import com.shanghai.soeasylib.adapter.XXListViewAdapter;
 import com.shanghai.utils.GetDataFromService;
 import com.shanghai.utils.Location_Client;

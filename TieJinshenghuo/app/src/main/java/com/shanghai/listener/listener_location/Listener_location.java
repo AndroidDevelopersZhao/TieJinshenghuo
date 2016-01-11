@@ -1,4 +1,4 @@
-package com.shanghai.listener;
+package com.shanghai.listener.listener_location;
 /**
  * .   如果你认为你败了，那你就一败涂地；
  * .   如果你认为你不敢，那你就会退缩；
@@ -22,24 +22,23 @@ package com.shanghai.listener;
  * .
  * .   You can you do.  No can no bb.
  * .
+ * <p/>
+ * 项目名称： NewsClient
+ * 创建日期： 2015/12/16  10:22
+ * 项目作者： 赵文贇
+ * 项目包名： xinfu.com.newsclient
  */
 
 /**
  * 项目名称： NewsClient
- * 创建日期： 2015/12/16  10:42
+ * 创建日期： 2015/12/16  10:22
  * 项目作者： 赵文贇
- * 项目包名： xinfu.com.newsclient.listener
+ * 项目包名： xinfu.com.newsclient
  */
-public interface GetDataListener {
-    /**
-     * 成功时返回服务器返回的字符串
-     *
-     * @param data
-     */
-    void onSucc(byte[] data);
 
-    /**
-     * 失败时返回原因
-     */
-    void onError(String errorMsg);
+/**
+ * 在定位成功后自动停止定位，默认定位次数1000次
+ */
+public interface Listener_location {
+    void Location(String... strings);//0 :当前地点
 }

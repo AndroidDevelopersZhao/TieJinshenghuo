@@ -15,7 +15,7 @@ import android.widget.Toast;
 import com.shanghai.R;
 import com.shanghai.data.data_robtickets.GetSelectTickets;
 import com.shanghai.data.data_robtickets.GetSelectTicketsArrDdata;
-import com.shanghai.listener.GetSelectTicketsListener;
+import com.shanghai.listener.listener_tickets.GetSelectTicketsListener;
 import com.shanghai.soeasylib.adapter.XXListViewAdapter;
 import com.shanghai.view.CustomListView;
 
