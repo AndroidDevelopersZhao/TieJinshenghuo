@@ -58,7 +58,7 @@
             android:value="3VkDKkstm986eYzSBsiouF2z" />
         <!-- 首页-->
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".activity.aty_home.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
 
@@ -66,32 +66,32 @@
         </activity>
         <!-- 引导页面-->
         <activity
-            android:name=".activity.WelcomeAty"
+            android:name=".activity.aty_home.WelcomeAty"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
 
         </activity>
         <!-- 等待页-->
         <activity
-            android:name=".activity.WaitAty"
+            android:name=".activity.aty_home.WaitAty"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-
-
-        </activity>
-        <!--登陆页-->
-        <activity
-            android:name=".activity.Login"
-            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <!--登陆页-->
+        <activity
+            android:name=".activity.aty_home.Login"
+            android:screenOrientation="portrait">
+
         </activity>
         <!-- 注册-->
         <activity
-            android:name=".activity.Register"
+            android:name=".activity.aty_home.Register"
             android:screenOrientation="portrait">
 
         </activity>
@@ -101,9 +101,9 @@
 
         </activity>
         <!-- 主页下页-->
-        <activity android:name=".activity.Activity_Parent" />
+        <activity android:name=".activity.aty_home.Activity_Parent" />
         <!-- 忘记密码页面-->
-        <activity android:name=".activity.ForgotPasswordAty">
+        <activity android:name=".activity.aty_home.ForgotPasswordAty">
 
         </activity>
         <service
@@ -117,15 +117,17 @@
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <!-- 个人中心页面-->
-        <activity android:name=".activity.MyInfo_Aty">
+        <activity android:name=".activity.aty_home_myinfo.myinfo_myinfo.MyInfo_Aty">
 
         </activity>
         <!-- 账户余额页面-->
-        <activity android:name=".activity.Amount_Aty"></activity>
+        <activity android:name=".activity.aty_home_myinfo.Amount_Aty"></activity>
         <!-- 我的信息页面-->
-        <activity android:name=".activity.MyInfoDetails_Aty"></activity>
+        <activity android:name=".activity.aty_home_myinfo.myinfo_myinfo.MyInfoDetails_Aty"></activity>
         <!-- 增加用户信息页面-->
-        <activity android:name=".activity.MyInfo_Details_Add"></activity>
+        <activity android:name=".activity.aty_home_myinfo.myinfo_myinfo.MyInfo_Details_Add"></activity>
+        <!-- 用户信息页面中的订单中中心页面-->
+        <activity android:name=".activity.aty_home_myinfo.OrderInfo_Aty"></activity>
     </application>
 
 </manifest>

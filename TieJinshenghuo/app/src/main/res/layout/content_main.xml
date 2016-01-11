@@ -6,7 +6,7 @@
     android:id="@+id/view_snacbay"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MainActivity"
+    tools:context=".activity.aty_home.MainActivity"
 
     tools:showIn="@layout/activity_main">
 
@@ -70,7 +70,7 @@
                     android:text="更多"
                     android:textColor="#FFFFFF" />
 
-                <com.shanghai.AlwaysMarqueeTextView
+                <com.shanghai.view.AlwaysMarqueeTextView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:textSize="30px"

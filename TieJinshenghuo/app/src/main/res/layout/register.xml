@@ -22,7 +22,7 @@
         android:layout_height="80sp"
         android:gravity="center">
 
-        <com.shanghai.utils.RoundImageView
+        <com.shanghai.view.RoundImageView
             android:layout_width="80sp"
             android:layout_height="80sp"
             android:src="@drawable/test" />

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <com.shanghai.utils.CustomListView
+    <com.shanghai.view.CustomListView
         android:id="@+id/lv_robtickets_Selected"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

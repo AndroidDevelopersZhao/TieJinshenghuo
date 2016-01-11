@@ -24,8 +24,8 @@
         android:layout_height="45sp"
         android:textSize="12sp"
         android:text="点击添加一个个人信息（购票时需要）"/>
-    <com.shanghai.utils.CustomListView
+    <com.shanghai.view.CustomListView
         android:id="@+id/listview_aty_Myinfo_Details"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></com.shanghai.utils.CustomListView>
+        android:layout_height="match_parent"></com.shanghai.view.CustomListView>
 </LinearLayout>

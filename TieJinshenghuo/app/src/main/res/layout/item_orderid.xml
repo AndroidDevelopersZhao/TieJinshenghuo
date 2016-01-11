@@ -172,7 +172,7 @@
             android:gravity="center"
             android:text="订单状态：" />
 
-        <com.shanghai.AlwaysMarqueeTextView
+        <com.shanghai.view.AlwaysMarqueeTextView
             android:id="@+id/tv_order_status"
             android:layout_width="0sp"
             android:layout_height="match_parent"
