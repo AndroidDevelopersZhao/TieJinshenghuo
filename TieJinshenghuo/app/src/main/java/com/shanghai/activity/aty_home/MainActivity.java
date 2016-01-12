@@ -304,11 +304,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     public void run() {
                         try {
                             Thread.sleep(400);
-                            if (!alertView.isShowing()){
+//                            if (!alertView.isShowing()){
                                 Intent intent = new Intent(MainActivity.this, MyInfo_Aty.class);
                                 intent.putExtra("username", username);
                                 startActivity(intent);
-                            }
+//                            }
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }

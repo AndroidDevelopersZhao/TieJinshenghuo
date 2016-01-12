@@ -26,22 +26,22 @@ public class FMT_Tickets_OrderMannager_NoPayOrder extends android.support.v4.app
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view=inflater.inflate(R.layout.fmt_tickets_ordermannager_nopayorder,container);
+        view=inflater.inflate(R.layout.fmt_tickets_ordermannager_nopayorder,null);
         Log.w(TAG,"进入未支付订单页面");
-        if (App.username != null) {
-//            Log.d(TAG, "开始请求未支付订单");
-            Util.getOrderId(App.username, 11, new OnGetOrderIdListener() {
-                @Override
-                public void onSucc(ArrayList<String> orders) {
-                    Toast.makeText(getActivity(),"该账户的未支付订单:"+ orders.toString(), Toast.LENGTH_SHORT).show();
-                }
-
-                @Override
-                public void onError(String errorMsg) {
-                    Toast.makeText(getActivity(), errorMsg, Toast.LENGTH_SHORT).show();
-                }
-            });
-        }
+//        if (App.username != null) {
+////            Log.d(TAG, "开始请求未支付订单");
+//            Util.getOrderId(App.username, 11, new OnGetOrderIdListener() {
+//                @Override
+//                public void onSucc(ArrayList<String> orders) {
+//                    Toast.makeText(getActivity(),"该账户的未支付订单:"+ orders.toString(), Toast.LENGTH_SHORT).show();
+//                }
+//
+//                @Override
+//                public void onError(String errorMsg) {
+//                    Toast.makeText(getActivity(), errorMsg, Toast.LENGTH_SHORT).show();
+//                }
+//            });
+//        }
         return view;
     }
 }

@@ -1,26 +1,15 @@
 package com.shanghai.fragment.fmt_tickets_ordermannger;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Message;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
-import com.google.gson.Gson;
-import com.shanghai.App;
 import com.shanghai.R;
-import com.shanghai.data.data_robtickets.OrderStatus_O_Data;
-import com.shanghai.data.data_robtickets.RespData_order;
-import com.shanghai.listener.listener_tickets.OnGetOrderIdListener;
-import com.shanghai.soeasylib.util.XXHttpClient;
 import com.shanghai.utils.Util;
-
-import java.util.ArrayList;
 
 
 /**
@@ -47,27 +36,29 @@ public class FMT_Tickets_OrderMannager_AllOrder extends android.support.v4.app.F
      * 12.获取待出票订单
      * 13.获取出票成功的订单
      */
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fmt_tickets_ordermannager_allorder,null);
+        view = inflater.inflate(R.layout.fmt_tickets_ordermannager_allorder,container,false);
 
 
         Log.w(TAG,"进入全部订单页面");
-        if (App.username != null) {
-//            Log.d(TAG, "开始请求全部订单");
-            Util.getOrderId(App.username, 10, new OnGetOrderIdListener() {
-                @Override
-                public void onSucc(ArrayList<String> orders) {
-                    Toast.makeText(getActivity(),"该账户的全部订单:"+orders.toString(),Toast.LENGTH_SHORT).show();
-                }
-
-                @Override
-                public void onError(String errorMsg) {
-                    Toast.makeText(getActivity(),errorMsg,Toast.LENGTH_SHORT).show();
-                }
-            });
-        }
+//        if (App.username != null) {
+////            Log.d(TAG, "开始请求全部订单");
+//            Util.getOrderId(App.username, 10, new OnGetOrderIdListener() {
+//                @Override
+//                public void onSucc(ArrayList<String> orders) {
+//                    Toast.makeText(getActivity(),"该账户的全部订单:"+orders.toString(),Toast.LENGTH_SHORT).show();
+//                }
+//
+//                @Override
+//                public void onError(String errorMsg) {
+//                    Toast.makeText(getActivity(),errorMsg,Toast.LENGTH_SHORT).show();
+//                }
+//            });
+//        }
         return view;
     }
 
