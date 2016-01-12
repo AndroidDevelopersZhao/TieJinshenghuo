@@ -54,8 +54,8 @@ public class OrderInfo_Aty extends FragmentActivity {
         tabs.addTab(tabs.newTab().setText("待出行"));
         TableFragmentAdapter adapter =new TableFragmentAdapter(getSupportFragmentManager(),strs,fragments);
         vp.setAdapter(adapter);
-        tabs.setupWithViewPager(vp);
-        tabs.setTabsFromPagerAdapter(adapter);
+//        tabs.setupWithViewPager(vp);
+//        tabs.setTabsFromPagerAdapter(adapter);
         adapter.notifyDataSetChanged();
 
 
