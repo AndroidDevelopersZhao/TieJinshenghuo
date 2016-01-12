@@ -16,6 +16,7 @@ import com.google.gson.Gson;
 import com.shanghai.R;
 import com.shanghai.data.data_utils.RespData;
 import com.shanghai.soeasylib.util.XXHttpClient;
+import com.shanghai.utils.Util;
 
 /**
  * Created by Administrator on 2016/1/9.
@@ -26,7 +27,7 @@ public class Amount_Aty extends Activity implements View.OnClickListener {
     private TextView tv_amount_username, tv_amount_amount;
     private Button brn_amount_pay;
     private Handler handler = null;
-    private String url = "http://221.228.88.249:8080/NewClient_Service/getPK_Service";
+    private String url = Util.url_my;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

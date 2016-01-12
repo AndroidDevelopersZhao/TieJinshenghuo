@@ -1,8 +1,6 @@
 package com.shanghai.fragment.fmt_tickets_ordermannger;
 
-import android.app.Fragment;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -18,22 +16,22 @@ import com.shanghai.utils.Util;
 import java.util.ArrayList;
 
 /**
- * Created by Administrator on 2016/1/11.
+ * Created by Administrator on 2016/1/12.
  */
-public class FMT_Tickets_OrderMannager_NoPayOrder extends android.support.v4.app.Fragment{
+public class FMT_Tickets_OrderMannager_SuccOrder extends android.support.v4.app.Fragment {
     private View view;
     private final String TAG = "NewClient";
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view=inflater.inflate(R.layout.fmt_tickets_ordermannager_nopayorder,container);
-        Log.w(TAG,"进入未支付订单页面");
+        view=inflater.inflate(R.layout.fmt_tickets_ordermannager_cancleorder,container);
+        Log.w(TAG,"进入出票成功页面");
         if (App.username != null) {
-//            Log.d(TAG, "开始请求未支付订单");
-            Util.getOrderId(App.username, 11, new OnGetOrderIdListener() {
+//            Log.d(TAG, "开始请求待出行订单");
+            Util.getOrderId(App.username, 12, new OnGetOrderIdListener() {
                 @Override
                 public void onSucc(ArrayList<String> orders) {
-                    Toast.makeText(getActivity(),"该账户的未支付订单:"+ orders.toString(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "该账户的待出行订单:" + orders.toString(), Toast.LENGTH_SHORT).show();
                 }
 
                 @Override

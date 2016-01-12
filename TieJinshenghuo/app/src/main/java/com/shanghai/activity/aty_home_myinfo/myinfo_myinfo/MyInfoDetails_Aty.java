@@ -23,7 +23,7 @@ import xinfu.com.pidanview.alerterview.progress.SVProgressHUD;
 /**
  * Created by Administrator on 2016/1/9.
  */
-public class MyInfoDetails_Aty extends Activity implements View.OnClickListener {
+public class MyInfoDetails_Aty extends Activity implements View.OnClickListener, CustomListView.OnRefreshListner {
     private String username = null;
     private Button btn_addInfo;
     private CustomListView listView;
@@ -62,6 +62,7 @@ public class MyInfoDetails_Aty extends Activity implements View.OnClickListener 
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
+                        listView.onRefreshComplete();
                         if (svProgressHUD.isShowing(MyInfoDetails_Aty.this)) {
 
                             svProgressHUD.dismiss(MyInfoDetails_Aty.this);
@@ -84,6 +85,7 @@ public class MyInfoDetails_Aty extends Activity implements View.OnClickListener 
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
+                        listView.onRefreshComplete();
                         if (svProgressHUD.isShowing(MyInfoDetails_Aty.this)) {
 
                             svProgressHUD.dismiss(MyInfoDetails_Aty.this);
@@ -126,6 +128,7 @@ public class MyInfoDetails_Aty extends Activity implements View.OnClickListener 
             }
         };
         listView.setAdapter(adapter);
+        listView.setOnRefreshListner(this);
     }
 
     @Override
@@ -134,5 +137,11 @@ public class MyInfoDetails_Aty extends Activity implements View.OnClickListener 
         intent.putExtra("username", username);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_in_from_right);
+    }
+
+    @Override
+    public void onRefresh() {
+        adapter.removeAll();
+        getDataFromService(username);
     }
 }

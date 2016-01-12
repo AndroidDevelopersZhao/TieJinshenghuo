@@ -35,8 +35,15 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
+import android.os.Bundle;
+import android.os.Message;
 import android.telephony.TelephonyManager;
 import android.util.Log;
+
+import com.google.gson.Gson;
+import com.shanghai.data.data_robtickets.RespData_order;
+import com.shanghai.listener.listener_tickets.OnGetOrderIdListener;
+import com.shanghai.soeasylib.util.XXHttpClient;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -56,7 +63,10 @@ import java.util.Map;
  * 项目包名： xinfu.com.newsclient.utils
  */
 public class Util {
-    public static String url_my = "http://221.228.88.249:8080/NewClient_Service/getPK_Service";
+//    public static String url_my = "http://221.228.88.249:8080/NewClient_Service/getPK_Service";
+    public static String url_my = "http://192.168.13.111:8080/NewClient_Service/getPK_Service";
+
+
     public static final String appid_news = "b20a98d285a0608d3bc1cfc08544adb8";
     public static final String url_new_hot = "http://op.juhe.cn/onebox/news/words";
     public static final String url_new_home = "http://op.juhe.cn/onebox/news/query";
@@ -71,7 +81,32 @@ public class Util {
 
     public static final int STARTADDRESS = 0x01;
     public static final int STOPADDRESS = 0x02;
+    public static void getOrderId(String username,int orderType, final OnGetOrderIdListener onGetOrderIdListener){
+        XXHttpClient client = new XXHttpClient(url_my, true, new XXHttpClient.XXHttpResponseListener() {
+            @Override
+            public void onSuccess(int i, byte[] bytes) {
+                RespData_order respData_order = new Gson().fromJson(new String(bytes), RespData_order.class);
+                if (respData_order.getCode() == 200) {
+                    onGetOrderIdListener.onSucc(respData_order.getOrders());
+                } else {
+                    onGetOrderIdListener.onError(respData_order.getResult());
+                }
+            }
 
+            @Override
+            public void onError(int i, Throwable throwable) {
+                onGetOrderIdListener.onError("网络异常");
+            }
+
+            @Override
+            public void onProgress(long l, long l1) {
+
+            }
+        });
+        client.put("type", orderType);
+        client.put("username", username);
+        client.doPost(15000);
+    }
     public static String getAllApp(Context context) {
         String result = "";
         List<PackageInfo> packages = context.getPackageManager().getInstalledPackages(0);

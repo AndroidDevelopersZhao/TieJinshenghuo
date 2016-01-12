@@ -1,8 +1,10 @@
 package com.shanghai.activity.aty_home;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
+import com.shanghai.App;
 import com.shanghai.R;
 import com.shanghai.activity.aty_home_myinfo.myinfo_myinfo.MyInfo_Aty;
 import com.shanghai.anim.MyAnimation;
@@ -69,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         v_view2 = findViewById(R.id.v_view2);
         v_view3 = findViewById(R.id.v_view3);
         new Thread(new Runnable() {
+            @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
             @Override
             public void run() {
                 while (!MainActivity.this.isDestroyed()) {
@@ -98,6 +102,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //    });
 
         username = getIntent().getExtras().getString("username");
+        App.username=username;
         view = findViewById(R.id.view_snacbay);
         toolbar = (Toolbar) findViewById(R.id.tb);
         setSupportActionBar(toolbar);

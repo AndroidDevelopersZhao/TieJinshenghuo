@@ -24,6 +24,7 @@ import com.shanghai.soeasylib.util.XXHttpClient;
 import com.shanghai.soeasylib.util.XXRSAUtils;
 import com.shanghai.soeasylib.util.XXSharedPreferences;
 import com.shanghai.soeasylib.util.XXUtils;
+import com.shanghai.utils.Util;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -43,7 +44,7 @@ public class ForgotPasswordAty extends Activity implements View.OnClickListener,
     private TextView tv_forgot_qq;
     private LinearLayout view_setNewPsw, view_setMsg;
     private SVProgressHUD svProgressHUD = new SVProgressHUD();
-    private String url = "http://221.228.88.249:8080/NewClient_Service/getPK_Service";
+    private String url = Util.url_my;
     private XXSharedPreferences sharedPreferences;
 
     @Override

@@ -56,7 +56,6 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         SMSSDK.initSDK(getApplicationContext(), appkey, acept);
-
-
     }
+    public static String username = null;
 }

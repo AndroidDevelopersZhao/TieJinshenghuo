@@ -44,6 +44,7 @@ import com.shanghai.soeasylib.util.Base64Utils;
 import com.shanghai.soeasylib.util.XXHttpClient;
 import com.shanghai.soeasylib.util.XXRSAUtils;
 import com.shanghai.soeasylib.util.XXSharedPreferences;
+import com.shanghai.utils.Util;
 
 import xinfu.com.pidanview.alerterview.progress.SVProgressHUD;
 
@@ -61,7 +62,7 @@ public class Login extends Activity implements View.OnClickListener {
     private SVProgressHUD svProgressHUD = new SVProgressHUD();
     private final String TAG = "NewClient";
     private CheckBox cb;
-    private String url = "http://221.228.88.249:8080/NewClient_Service/getPK_Service";
+    private String url = Util.url_my;
     private TextView et_register, tv_forgotpsw;
 //    private String url = "http://192.168.51.112:8080/NewClient_Service/getPK_Service";
 

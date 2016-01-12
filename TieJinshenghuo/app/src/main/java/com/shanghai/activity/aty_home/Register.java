@@ -54,6 +54,8 @@ import cn.smssdk.EventHandler;
 import cn.smssdk.SMSSDK;
 import xinfu.com.pidanview.alerterview.progress.SVProgressHUD;
 import com.shanghai.R;
+import com.shanghai.utils.Util;
+
 /**
  * 项目名称： NewsClient
  * 创建日期： 2015/12/27  0:12
@@ -72,7 +74,7 @@ public class Register extends Activity implements View.OnClickListener {
     private int NetWorkType = -1;
     private final String TAG = "NewClient";
     private XXSharedPreferences sharedPreferences;
-    private String url = "http://221.228.88.249:8080/NewClient_Service/getPK_Service";
+    private String url = Util.url_my;
 //private String url = "http://192.168.51.112:8080/NewClient_Service/getPK_Service";
     private boolean isRegister = false;//验证是否通过
 
