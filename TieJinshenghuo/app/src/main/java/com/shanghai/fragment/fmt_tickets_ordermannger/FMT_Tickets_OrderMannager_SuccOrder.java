@@ -8,12 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.google.gson.Gson;
 import com.shanghai.App;
 import com.shanghai.R;
-import com.shanghai.data.data_robtickets.RespData_order;
 import com.shanghai.listener.listener_tickets.OnGetOrderIdListener;
-import com.shanghai.soeasylib.util.XXHttpClient;
 import com.shanghai.utils.Util;
 
 import java.util.ArrayList;
@@ -23,44 +20,26 @@ import java.util.ArrayList;
  */
 public class FMT_Tickets_OrderMannager_SuccOrder extends android.support.v4.app.Fragment {
     private View view;
-    private String url = Util.url_my;
     private final String TAG = "NewClient";
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view=inflater.inflate(R.layout.fmt_tickets_ordermannager_cancleorder,null);
-
+        view=inflater.inflate(R.layout.fmt_tickets_ordermannager_cancleorder,container);
+        Log.w(TAG,"进入出票成功页面");
         if (App.username != null) {
-            getSuccOrder(App.username);
+//            Log.d(TAG, "开始请求待出行订单");
+            Util.getOrderId(App.username, 12, new OnGetOrderIdListener() {
+                @Override
+                public void onSucc(ArrayList<String> orders) {
+                    Toast.makeText(getActivity(), "该账户的待出行订单:" + orders.toString(), Toast.LENGTH_SHORT).show();
+                }
+
+                @Override
+                public void onError(String errorMsg) {
+                    Toast.makeText(getActivity(), errorMsg, Toast.LENGTH_SHORT).show();
+                }
+            });
         }
         return view;
-    }
-
-    /**
-     * 获取出票成功的订单
-     * @param username
-     */
-    private void getSuccOrder(String username) {
-        XXHttpClient client = new XXHttpClient(url, true, new XXHttpClient.XXHttpResponseListener() {
-            @Override
-            public void onSuccess(int i, byte[] bytes) {
-                Log.d(TAG, "出票成功的订单请求成功，返回：" + new String(bytes));
-                RespData_order respData_order = new Gson().fromJson(new String(bytes), RespData_order.class);
-                Log.w(TAG,respData_order.getResult());
-            }
-
-            @Override
-            public void onError(int i, Throwable throwable) {
-                Log.d(TAG, "出票成功的订单请求失败");
-            }
-
-            @Override
-            public void onProgress(long l, long l1) {
-
-            }
-        });
-        client.put("type", 13);
-        client.put("username", username);
-        client.doPost(15000);
     }
 }

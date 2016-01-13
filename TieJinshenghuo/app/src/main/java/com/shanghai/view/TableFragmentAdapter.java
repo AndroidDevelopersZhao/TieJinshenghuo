@@ -3,6 +3,7 @@ package com.shanghai.view;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.util.Log;
 
 import java.util.List;
 
@@ -12,7 +13,7 @@ import java.util.List;
 public class TableFragmentAdapter extends FragmentStatePagerAdapter {
     private List<String> titles;
     private List<Fragment> fragments;
-
+    private String TAG = "NewClient";
     public TableFragmentAdapter(FragmentManager fm, List<String> titles, List<Fragment> fragments) {
 
         super(fm);
@@ -22,6 +23,7 @@ public class TableFragmentAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
+        Log.d(TAG,"po"+position);
         return fragments.get(position);
     }
 
@@ -34,4 +36,6 @@ public class TableFragmentAdapter extends FragmentStatePagerAdapter {
     public CharSequence getPageTitle(int position) {
         return titles.get(position);
     }
+
+
 }
