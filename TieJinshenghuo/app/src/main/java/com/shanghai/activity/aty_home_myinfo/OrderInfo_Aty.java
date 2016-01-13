@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.shanghai.R;
@@ -12,7 +11,6 @@ import com.shanghai.fragment.fmt_tickets_ordermannger.FMT_Tickets_OrderMannager_
 import com.shanghai.fragment.fmt_tickets_ordermannger.FMT_Tickets_OrderMannager_SuccOrder;
 import com.shanghai.fragment.fmt_tickets_ordermannger.FMT_Tickets_OrderMannager_NoPayOrder;
 import com.shanghai.fragment.fmt_tickets_ordermannger.FMT_Tickets_OrderMannager_PayedOrder;
-import com.shanghai.fragment.fmt_tickets_ordermannger.Fr;
 import com.shanghai.view.TableFragmentAdapter;
 
 import java.util.ArrayList;
@@ -47,14 +45,6 @@ public class OrderInfo_Aty extends FragmentActivity{
         strs.add("待支付");
         strs.add("待出票");
         strs.add("待出行");
-//        for (int i = 0; i < 4; i++) {
-//            String a  ="T-"+i;
-////            tabs.addTab(tabs.newTab().setText(a));
-//            strs.add(a);
-//            Fr f = new Fr(a);
-//            fragments.add(f);
-//
-//        }
 
         fragments.add(new FMT_Tickets_OrderMannager_AllOrder());
         fragments.add(new FMT_Tickets_OrderMannager_NoPayOrder());

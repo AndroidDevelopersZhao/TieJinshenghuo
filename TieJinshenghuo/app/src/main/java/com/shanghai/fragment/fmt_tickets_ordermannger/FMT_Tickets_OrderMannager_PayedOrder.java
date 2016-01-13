@@ -27,20 +27,20 @@ public class FMT_Tickets_OrderMannager_PayedOrder extends android.support.v4.app
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view=inflater.inflate(R.layout.fmt_tickets_ordermannager_payedorder,container);
         Log.w(TAG,"进入待出票订单页面");
-        if (App.username != null) {
-//            Log.d(TAG, "开始请求待出票订单");
-            Util.getOrderId(App.username, 12, new OnGetOrderIdListener() {
-                @Override
-                public void onSucc(ArrayList<String> orders) {
-                    Toast.makeText(getActivity(), "该账户的待出票订单:" + orders.toString(), Toast.LENGTH_SHORT).show();
-                }
-
-                @Override
-                public void onError(String errorMsg) {
-                    Toast.makeText(getActivity(), errorMsg, Toast.LENGTH_SHORT).show();
-                }
-            });
-        }
+//        if (App.username != null) {
+////            Log.d(TAG, "开始请求待出票订单");
+//            Util.getOrderId(App.username, 12, new OnGetOrderIdListener() {
+//                @Override
+//                public void onSucc(ArrayList<String> orders) {
+//                    Toast.makeText(getActivity(), "该账户的待出票订单:" + orders.toString(), Toast.LENGTH_SHORT).show();
+//                }
+//
+//                @Override
+//                public void onError(String errorMsg) {
+//                    Toast.makeText(getActivity(), errorMsg, Toast.LENGTH_SHORT).show();
+//                }
+//            });
+//        }
         return view;
     }
 }

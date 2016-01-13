@@ -54,20 +54,7 @@ public class FMT_Tickets_OrderMannager_AllOrder extends android.support.v4.app.F
 
 
         Log.w(TAG,"进入全部订单页面");
-        if (App.username != null) {
-//            Log.d(TAG, "开始请求全部订单");
-            Util.getOrderId(App.username, 10, new OnGetOrderIdListener() {
-                @Override
-                public void onSucc(ArrayList<String> orders) {
-                    Toast.makeText(getActivity(),"该账户的全部订单:"+orders.toString(),Toast.LENGTH_SHORT).show();
-                }
 
-                @Override
-                public void onError(String errorMsg) {
-                    Toast.makeText(getActivity(),errorMsg,Toast.LENGTH_SHORT).show();
-                }
-            });
-        }
         return view;
     }
 
