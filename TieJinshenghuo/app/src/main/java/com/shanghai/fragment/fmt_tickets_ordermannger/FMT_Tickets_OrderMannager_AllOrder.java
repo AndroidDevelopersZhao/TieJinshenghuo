@@ -52,7 +52,24 @@ public class FMT_Tickets_OrderMannager_AllOrder extends android.support.v4.app.F
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fmt_tickets_ordermannager_allorder,null);
 
+        XXHttpClient client= new XXHttpClient(Util.url_GetAllOrder, true, new XXHttpClient.XXHttpResponseListener() {
+            @Override
+            public void onSuccess(int i, byte[] bytes) {
+                Log.d(TAG,"全部订单返回："+new String(bytes));
+            }
 
+            @Override
+            public void onError(int i, Throwable throwable) {
+
+            }
+
+            @Override
+            public void onProgress(long l, long l1) {
+
+            }
+        });
+        client.put("username",App.username);
+        client.doPost(15000);
         Log.w(TAG,"进入全部订单页面");
 
         return view;

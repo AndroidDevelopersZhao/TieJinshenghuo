@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.shanghai.App;
 import com.shanghai.R;
 import com.shanghai.listener.listener_tickets.OnGetOrderIdListener;
+import com.shanghai.soeasylib.util.XXHttpClient;
 import com.shanghai.utils.Util;
 
 import java.util.ArrayList;
@@ -28,6 +29,28 @@ public class FMT_Tickets_OrderMannager_NoPayOrder extends android.support.v4.app
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view=inflater.inflate(R.layout.fmt_tickets_ordermannager_nopayorder,null);
         Log.w(TAG,"进入未支付订单页面");
+
+
+        XXHttpClient client= new XXHttpClient(Util.url_my,true, new XXHttpClient.XXHttpResponseListener() {
+            @Override
+            public void onSuccess(int i, byte[] bytes) {
+                Log.d(TAG,"未支付订单返回："+new String(bytes));
+
+            }
+
+            @Override
+            public void onError(int i, Throwable throwable) {
+
+            }
+
+            @Override
+            public void onProgress(long l, long l1) {
+
+            }
+        });
+        client.put("username",App.username);
+        client.put("type",11);
+        client.doPost(15000);
 //        if (App.username != null) {
 ////            Log.d(TAG, "开始请求未支付订单");
 //            Util.getOrderId(App.username, 11, new OnGetOrderIdListener() {
