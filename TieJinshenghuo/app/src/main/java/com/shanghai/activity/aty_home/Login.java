@@ -139,6 +139,7 @@ public class Login extends Activity implements View.OnClickListener {
                         XXHttpClient client = new XXHttpClient(url, true, new XXHttpClient.XXHttpResponseListener() {
                             @Override
                             public void onSuccess(int i, byte[] bytes) {
+
                                 RespData data = new Gson().fromJson(new String(bytes), RespData.class);
                                 if (data.getCode() == 200) {
                                     if (cb.isChecked()) {

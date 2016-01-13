@@ -6,6 +6,7 @@ import java.util.List;
 public class RespData_order {
 	private int code =-1;
 	private String result = null;
+	private ArrayList<String> orders=null;
 	public String getResult() {
 		return result;
 	}
@@ -13,7 +14,7 @@ public class RespData_order {
 	public void setResult(String result) {
 		this.result = result;
 	}
-	private ArrayList<String> orders=null;
+
 	
 	public RespData_order(int code,String result,ArrayList<String> orders) {
 		// TODO Auto-generated constructor stub

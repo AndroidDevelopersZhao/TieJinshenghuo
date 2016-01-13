@@ -63,8 +63,13 @@ import java.util.Map;
  * 项目包名： xinfu.com.newsclient.utils
  */
 public class Util {
-    public static String url_my = "http://221.228.88.249:8080/NewClient_Service/getPK_Service";
-//    public static String url_my = "http://192.168.13.111:8080/NewClient_Service/getPK_Service";
+//    public static String url_my = "http://221.228.88.249:8080/NewClient_Service/getPK_Service";
+//    public static String url_my_all = "http://221.228.88.249:8080/NewClient_Service/GetAllOrder";
+//    public static String url_my_UpOrder = "http://221.228.88.249:8080/NewClient_Service/UpDataOrder";
+
+    public static String url_my_all = "http://192.168.13.113:8080/NewClient_Service/GetAllOrder";
+    public static String url_my_UpOrder = "http://192.168.13.113:8080/NewClient_Service/UpDataOrder";
+    public static String url_my = "http://192.168.13.113:8080/NewClient_Service/getPK_Service";
 
 
     public static final String appid_news = "b20a98d285a0608d3bc1cfc08544adb8";
@@ -81,16 +86,27 @@ public class Util {
 
     public static final int STARTADDRESS = 0x01;
     public static final int STOPADDRESS = 0x02;
-    public static void getOrderId(String username,int orderType, final OnGetOrderIdListener onGetOrderIdListener){
+   synchronized public static void getOrderId(String username,int orderType, final OnGetOrderIdListener onGetOrderIdListener){
         XXHttpClient client = new XXHttpClient(url_my, true, new XXHttpClient.XXHttpResponseListener() {
             @Override
             public void onSuccess(int i, byte[] bytes) {
-                RespData_order respData_order = new Gson().fromJson(new String(bytes), RespData_order.class);
-                if (respData_order.getCode() == 200) {
-                    onGetOrderIdListener.onSucc(respData_order.getOrders());
-                } else {
-                    onGetOrderIdListener.onError(respData_order.getResult());
+                if (bytes.length==0 ||new String(bytes)==null){
+                    onGetOrderIdListener.onError("返回数据为空");
+                    return;
+                }else {
+                    Log.d("NewClient","fanhui:"+new String(bytes));
+                    RespData_order respData_order = new Gson().fromJson(new String(bytes), RespData_order.class);
+                    Log.d("NewClient","code:"+respData_order.getCode());
+                    Log.d("NewClient","result:"+respData_order.getResult());
+                    Log.d("NewClient","orders:"+respData_order.getOrders().toString());
+
+                    if (respData_order.getCode() == 200) {
+                        onGetOrderIdListener.onSucc(respData_order.getOrders());
+                    } else {
+                        onGetOrderIdListener.onError(respData_order.getResult());
+                    }
                 }
+
             }
 
             @Override
