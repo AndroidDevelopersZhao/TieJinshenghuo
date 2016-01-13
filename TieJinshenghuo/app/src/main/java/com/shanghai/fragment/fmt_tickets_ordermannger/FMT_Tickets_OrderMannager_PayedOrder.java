@@ -25,7 +25,7 @@ public class FMT_Tickets_OrderMannager_PayedOrder extends android.support.v4.app
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view=inflater.inflate(R.layout.fmt_tickets_ordermannager_payedorder,container);
+        view=inflater.inflate(R.layout.fmt_tickets_ordermannager_payedorder,null);
         Log.w(TAG,"进入待出票订单页面");
 //        if (App.username != null) {
 ////            Log.d(TAG, "开始请求待出票订单");
