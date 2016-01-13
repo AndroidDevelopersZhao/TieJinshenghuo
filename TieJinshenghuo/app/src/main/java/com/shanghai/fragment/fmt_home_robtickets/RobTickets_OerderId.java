@@ -269,7 +269,7 @@ public class RobTickets_OerderId extends Fragment implements View.OnClickListene
     private void sendTickestStatusAndDataToServiceMySQL(String username, String oerderId, OrderStatus_O_Result_Data result_data,
                                                         OrderStatus_O_Passengers_Data passengers,
                                                         OrderStatus_O_Passengers_Returntickets_Data returntickets_data) {
-        XXHttpClient client = new XXHttpClient(Util.url_Insert, true, new XXHttpClient.XXHttpResponseListener() {
+        XXHttpClient client = new XXHttpClient(Util.url_my, true, new XXHttpClient.XXHttpResponseListener() {
             @Override
             public void onSuccess(int i, byte[] bytes) {
                 RespData respData = new Gson().fromJson(new String(bytes), RespData.class);

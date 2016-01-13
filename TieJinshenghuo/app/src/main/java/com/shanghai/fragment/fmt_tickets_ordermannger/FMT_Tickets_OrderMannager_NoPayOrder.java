@@ -10,8 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
 import com.shanghai.App;
 import com.shanghai.R;
+import com.shanghai.data.data_robtickets.RespData_order;
 import com.shanghai.listener.listener_tickets.OnGetOrderIdListener;
 import com.shanghai.soeasylib.util.XXHttpClient;
 import com.shanghai.utils.Util;
@@ -28,14 +30,16 @@ public class FMT_Tickets_OrderMannager_NoPayOrder extends android.support.v4.app
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view=inflater.inflate(R.layout.fmt_tickets_ordermannager_nopayorder,null);
-        Log.w(TAG,"进入未支付订单页面");
+        Log.w(TAG, "进入未支付订单页面");
 
 
         XXHttpClient client= new XXHttpClient(Util.url_my,true, new XXHttpClient.XXHttpResponseListener() {
             @Override
             public void onSuccess(int i, byte[] bytes) {
                 Log.d(TAG,"未支付订单返回："+new String(bytes));
-
+                RespData_order order = new Gson().fromJson(new String(bytes), RespData_order.class);
+                Log.d(TAG,"用户未支付订单号："+order.getOrders().toString());
+                Log.d(TAG,"返回码："+order.getCode());
             }
 
             @Override
