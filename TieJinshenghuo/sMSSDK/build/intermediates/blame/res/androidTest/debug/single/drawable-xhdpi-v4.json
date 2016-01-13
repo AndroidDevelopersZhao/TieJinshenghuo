@@ -1,11 +1,11 @@
 [
     {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_back_arrow.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_back_arrow.png"
+        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_special_normal.9.png",
+        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_special_normal.9.png"
     },
     {
-        "merged": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_cl_divider.png",
-        "source": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_cl_divider.png"
+        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_back_arrow.png",
+        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_back_arrow.png"
     },
     {
         "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_cl_divider.png",
@@ -16,124 +16,16 @@
         "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_search_icon.png"
     },
     {
-        "merged": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_special_normal.9.png",
-        "source": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_special_normal.9.png"
+        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_clear_search.png",
+        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_clear_search.png"
     },
     {
-        "merged": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_back_arrow.png",
-        "source": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_back_arrow.png"
-    },
-    {
-        "merged": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_back_arrow.png",
-        "source": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_back_arrow.png"
-    },
-    {
-        "merged": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_sharesdk_icon.png",
-        "source": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_sharesdk_icon.png"
-    },
-    {
-        "merged": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_special_focus.9.png",
-        "source": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_special_focus.9.png"
-    },
-    {
-        "merged": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_cl_divider.png",
-        "source": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_cl_divider.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_search_icon.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_search_icon.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_focus.9.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_focus.9.png"
-    },
-    {
-        "merged": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_dialog_back.9.png",
-        "source": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_dialog_back.9.png"
-    },
-    {
-        "merged": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_cl_divider.png",
-        "source": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_cl_divider.png"
-    },
-    {
-        "merged": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_cl_divider.png",
-        "source": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_cl_divider.png"
-    },
-    {
-        "merged": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_special_normal.9.png",
-        "source": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_special_normal.9.png"
-    },
-    {
-        "merged": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_default_avatar.png",
-        "source": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_default_avatar.png"
-    },
-    {
-        "merged": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_focus.9.png",
-        "source": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_focus.9.png"
-    },
-    {
-        "merged": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_dialog_bg.9.png",
-        "source": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_dialog_bg.9.png"
-    },
-    {
-        "merged": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_normal.9.png",
-        "source": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_normal.9.png"
-    },
-    {
-        "merged": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_dialog_bg.9.png",
-        "source": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_dialog_bg.9.png"
-    },
-    {
-        "merged": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_cp_default_avatar.png",
-        "source": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_cp_default_avatar.png"
-    },
-    {
-        "merged": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_focus.9.png",
-        "source": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_focus.9.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_clear_search.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_clear_search.png"
-    },
-    {
-        "merged": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_clear_search.png",
-        "source": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_clear_search.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_sharesdk_icon.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_sharesdk_icon.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_dialog_bg.9.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_dialog_bg.9.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_cp_default_avatar.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_cp_default_avatar.png"
-    },
-    {
-        "merged": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_special_focus.9.png",
-        "source": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_special_focus.9.png"
-    },
-    {
-        "merged": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_default_avatar.png",
-        "source": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_default_avatar.png"
-    },
-    {
-        "merged": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_search_icon.png",
-        "source": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_search_icon.png"
+        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_sharesdk_icon.png",
+        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_sharesdk_icon.png"
     },
     {
         "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_normal.9.png",
         "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_normal.9.png"
-    },
-    {
-        "merged": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_focus.9.png",
-        "source": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_focus.9.png"
-    },
-    {
-        "merged": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_back_arrow2.png",
-        "source": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_back_arrow2.png"
     },
     {
         "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_default_avatar.png",
@@ -144,32 +36,16 @@
         "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_cp_default_avatar.png"
     },
     {
-        "merged": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_normal.9.png",
-        "source": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_normal.9.png"
+        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_special_focus.9.png",
+        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_special_focus.9.png"
     },
     {
-        "merged": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_special_normal.9.png",
-        "source": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_special_normal.9.png"
+        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_dialog_back.9.png",
+        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_dialog_back.9.png"
     },
     {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_cl_divider.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_cl_divider.png"
-    },
-    {
-        "merged": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_back_arrow.png",
-        "source": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_back_arrow.png"
-    },
-    {
-        "merged": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_dialog_back.9.png",
-        "source": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_dialog_back.9.png"
-    },
-    {
-        "merged": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_focus.9.png",
-        "source": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_focus.9.png"
-    },
-    {
-        "merged": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_back_arrow2.png",
-        "source": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_back_arrow2.png"
+        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_dialog_bg.9.png",
+        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_dialog_bg.9.png"
     },
     {
         "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_focus.9.png",
@@ -178,161 +54,5 @@
     {
         "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_back_arrow2.png",
         "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_back_arrow2.png"
-    },
-    {
-        "merged": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_back_arrow2.png",
-        "source": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_back_arrow2.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_dialog_back.9.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_dialog_back.9.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_special_normal.9.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_special_normal.9.png"
-    },
-    {
-        "merged": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_search_icon.png",
-        "source": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_search_icon.png"
-    },
-    {
-        "merged": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_default_avatar.png",
-        "source": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_default_avatar.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_back_arrow.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_back_arrow.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_special_focus.9.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_special_focus.9.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_clear_search.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_clear_search.png"
-    },
-    {
-        "merged": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_search_icon.png",
-        "source": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_search_icon.png"
-    },
-    {
-        "merged": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_special_focus.9.png",
-        "source": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_special_focus.9.png"
-    },
-    {
-        "merged": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_cp_default_avatar.png",
-        "source": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_cp_default_avatar.png"
-    },
-    {
-        "merged": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_special_normal.9.png",
-        "source": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_special_normal.9.png"
-    },
-    {
-        "merged": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_sharesdk_icon.png",
-        "source": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_sharesdk_icon.png"
-    },
-    {
-        "merged": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_dialog_back.9.png",
-        "source": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_dialog_back.9.png"
-    },
-    {
-        "merged": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_clear_search.png",
-        "source": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_clear_search.png"
-    },
-    {
-        "merged": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_cp_default_avatar.png",
-        "source": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_cp_default_avatar.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_dialog_back.9.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_dialog_back.9.png"
-    },
-    {
-        "merged": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_sharesdk_icon.png",
-        "source": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_sharesdk_icon.png"
-    },
-    {
-        "merged": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_back_arrow2.png",
-        "source": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_back_arrow2.png"
-    },
-    {
-        "merged": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_cp_default_avatar.png",
-        "source": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_cp_default_avatar.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_special_normal.9.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_special_normal.9.png"
-    },
-    {
-        "merged": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_sharesdk_icon.png",
-        "source": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_sharesdk_icon.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_normal.9.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_normal.9.png"
-    },
-    {
-        "merged": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_normal.9.png",
-        "source": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_normal.9.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_sharesdk_icon.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_sharesdk_icon.png"
-    },
-    {
-        "merged": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_clear_search.png",
-        "source": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_clear_search.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_default_avatar.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_default_avatar.png"
-    },
-    {
-        "merged": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_dialog_bg.9.png",
-        "source": "H:\\Test\\Text\\NewsClient\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_dialog_bg.9.png"
-    },
-    {
-        "merged": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_default_avatar.png",
-        "source": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_default_avatar.png"
-    },
-    {
-        "merged": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_back_arrow.png",
-        "source": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_back_arrow.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_back_arrow2.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_back_arrow2.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_special_focus.9.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_special_focus.9.png"
-    },
-    {
-        "merged": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_dialog_back.9.png",
-        "source": "G:\\GitHubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_dialog_back.9.png"
-    },
-    {
-        "merged": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_special_focus.9.png",
-        "source": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_special_focus.9.png"
-    },
-    {
-        "merged": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_search_icon.png",
-        "source": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_search_icon.png"
-    },
-    {
-        "merged": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_dialog_bg.9.png",
-        "source": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_dialog_bg.9.png"
-    },
-    {
-        "merged": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_input_bg_normal.9.png",
-        "source": "G:\\GithubPu\\MyPublicProject\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_input_bg_normal.9.png"
-    },
-    {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_dialog_bg.9.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_dialog_bg.9.png"
-    },
-    {
-        "merged": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\smssdk_clear_search.png",
-        "source": "G:\\Github\\NewsClientProject\\TieJinshenghuo\\TieJinshenghuo2\\sMSSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\smssdk_clear_search.png"
     }
 ]

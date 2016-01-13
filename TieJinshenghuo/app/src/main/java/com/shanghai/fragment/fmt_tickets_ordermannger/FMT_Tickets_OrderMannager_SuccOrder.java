@@ -6,14 +6,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
-import com.shanghai.App;
 import com.shanghai.R;
-import com.shanghai.listener.listener_tickets.OnGetOrderIdListener;
-import com.shanghai.utils.Util;
-
-import java.util.ArrayList;
 
 /**
  * Created by Administrator on 2016/1/12.
