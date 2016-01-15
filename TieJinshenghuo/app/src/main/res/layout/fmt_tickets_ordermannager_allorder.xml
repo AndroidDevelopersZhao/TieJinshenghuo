@@ -4,10 +4,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
+    <com.shanghai.view.CustomListView
+        android:id="@+id/lv_allorder"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="AllOrder" />
+        android:layout_height="match_parent" />
 
 </LinearLayout>

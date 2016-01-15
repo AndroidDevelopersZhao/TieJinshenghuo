@@ -20,6 +20,7 @@ import com.shanghai.listener.listener_aty_moudel.OnGetRobTicketsOrderListener;
 import com.shanghai.listener.listener_tickets.OnGetOrderIdListener;
 import com.shanghai.soeasylib.util.XXHttpClient;
 import com.shanghai.utils.Util;
+import com.shanghai.view.CustomListView;
 
 import java.util.ArrayList;
 
@@ -31,26 +32,54 @@ import cn.smssdk.gui.layout.Res;
  * Created by Administrator on 2016/1/11.
  */
 public class FMT_Tickets_OrderMannager_AllOrder extends android.support.v4.app.Fragment implements OnGetOrderIdListener {
-    private View view;
-    private final String TAG = "NewClient";
+    private static final String TAG = "NewClient";
     private String username = App.username;
+    private CustomListView lv_allorder;
+    private ArrayList<String> data;
+    private Handler handler_allorder = null;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fmt_tickets_ordermannager_allorder, null);
-        Util.getOrderIdFromService(username, 10, this);//获取所有订单
+        return initView(inflater);
+    }
+
+    private View initView(LayoutInflater inflater) {
+        View view = inflater.inflate(R.layout.fmt_tickets_ordermannager_allorder, null);
+        Util.getOrderIdFromService(username, 10, this);// 获取所有订单
+        lv_allorder = (CustomListView) view.findViewById(R.id.lv_allorder);
+        handler_allorder = new Handler() {
+            @Override
+            public void handleMessage(Message msg) {
+
+                switch (msg.what) {
+                    case 1://所有订单请求成功时，返回ArraList-String数组
+                        data = msg.getData().getStringArrayList("data");
+                        Log.d(TAG, "handler_allorder-Succ:" + data.toString());
+                        break;
+
+                    case -1://失败时返回原因
+                        String data = msg.getData().getString("data");
+                        Toast.makeText(getActivity(), data, Toast.LENGTH_SHORT).show();
+                        break;
+                }
+            }
+        };
         return view;
     }
 
 
     @Override
     public void onSucc(ArrayList<String> orders) {
-        Log.d(TAG, "所有订单获取成功，" + orders.toString());
+        Util.sendMsgToHandler(handler_allorder, orders, true);
+//        Log.d(TAG, "所有订单获取成功，" + orders.toString());
     }
 
     @Override
     public void onError(String errorMsg) {
-        Log.e(TAG, "所有订单获取失败," + errorMsg);
+        Util.sendMsgToHandler(handler_allorder, errorMsg, false);
+//        Log.e(TAG, "所有订单获取失败," + errorMsg);
     }
+
+
 }

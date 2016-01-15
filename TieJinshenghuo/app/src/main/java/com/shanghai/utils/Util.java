@@ -36,6 +36,7 @@ import android.net.Uri;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.Message;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -68,7 +69,7 @@ public class Util {
 //    public static String url_GetAllOrder = "http://221.228.88.249:8080/NewClient_Service/GetAllOrder";
 
     public static String url_my = "http://192.168.13.112:8080/NewClient_Service/getPK_Service";
-
+    public static final String TAG = "NewClient";
 
     public static final String appid_news = "b20a98d285a0608d3bc1cfc08544adb8";
     public static final String url_new_hot = "http://op.juhe.cn/onebox/news/words";
@@ -76,37 +77,62 @@ public class Util {
     public static final String appid_ticket = "f574f30dcbf7040be9aae8f853c51298";
     public static final String url_ticket1 = "http://op.juhe.cn/trainTickets/cityCode";
 
-    public static final String url_ticket2= "http://op.juhe.cn/trainTickets/ticketsAvailable";
-    public static final String url_ticket3= "http://op.juhe.cn/trainTickets/submit";
-    public static final String url_ticket4= "http://op.juhe.cn/trainTickets/pay";
-    public static final String url_ticket5= "http://op.juhe.cn/trainTickets/orderStatus";
+    public static final String url_ticket2 = "http://op.juhe.cn/trainTickets/ticketsAvailable";
+    public static final String url_ticket3 = "http://op.juhe.cn/trainTickets/submit";
+    public static final String url_ticket4 = "http://op.juhe.cn/trainTickets/pay";
+    public static final String url_ticket5 = "http://op.juhe.cn/trainTickets/orderStatus";
 
 
     public static final int STARTADDRESS = 0x01;
     public static final int STOPADDRESS = 0x02;
+
+    public static void sendMsgToHandler(Handler handler, Object object, boolean isSucc) {
+        if (handler == null || object == null) {
+            Log.e(TAG, "传入参数不能为空");
+            return;
+        }
+        Message message = handler.obtainMessage();
+        Bundle bundle = new Bundle();
+
+        if (object instanceof String) {
+            bundle.putString("data", object.toString());
+        } else if (object instanceof ArrayList<?>) {
+            bundle.putStringArrayList("data", (ArrayList) object);
+        } else {
+            bundle.putString("data", "参数类型未定义,请至工具类定义");
+        }
+        message.setData(bundle);
+        if (isSucc) {
+            message.what = 1;
+        } else {
+            message.what = -1;
+        }
+        handler.sendMessage(message);
+    }
+
     /**
      * 从服务器获取相应订单号
      *
-     * @param username                     用户名
-     * @param type                         要获取的订单号类型
-     * @param onGetOrderIdListener  获取结果回调
-     *                                     <p/>
-     *                                     * 1.交换秘钥    -----成功例子-----{"code"=200,"data"="key"}
-     *                                     2.注册账号    -----成功例子-----{"code"=200,"data"="注册成功"}
-     *                                     3.登陆账号    -----成功例子-----{"code"=200,"data"="验证通过"}
-     *                                     4.找回密码    -----成功例子-----{"code"=200,"data"="新密码设置成功"}
-     *                                     5.查询余额    -----成功例子-----{"code"=200,"data"="100.25"}
-     *                                     6.插入购票人信息  -----成功例子-----{"code"=200,"data"="数据插入成功"}
-     *                                     7.查询购票人信息       未支付、带出票、待出行、
-     *                                     8.插入订单信息
-     *                                     9.更新车票订单信息表
-     *                                     10.获取全部订单
-     *                                     11.获取未支付订单
-     *                                     12.获取待出票订单
-     *                                     13.获取出票成功的订单
+     * @param username             用户名
+     * @param type                 要获取的订单号类型
+     * @param onGetOrderIdListener 获取结果回调
+     *                             <p/>
+     *                             * 1.交换秘钥    -----成功例子-----{"code"=200,"data"="key"}
+     *                             2.注册账号    -----成功例子-----{"code"=200,"data"="注册成功"}
+     *                             3.登陆账号    -----成功例子-----{"code"=200,"data"="验证通过"}
+     *                             4.找回密码    -----成功例子-----{"code"=200,"data"="新密码设置成功"}
+     *                             5.查询余额    -----成功例子-----{"code"=200,"data"="100.25"}
+     *                             6.插入购票人信息  -----成功例子-----{"code"=200,"data"="数据插入成功"}
+     *                             7.查询购票人信息       未支付、带出票、待出行、
+     *                             8.插入订单信息
+     *                             9.更新车票订单信息表
+     *                             10.获取全部订单
+     *                             11.获取未支付订单
+     *                             12.获取待出票订单
+     *                             13.获取出票成功的订单
      */
     synchronized public static void getOrderIdFromService(String username, int type,
-                                                                  final OnGetOrderIdListener onGetOrderIdListener) {
+                                                          final OnGetOrderIdListener onGetOrderIdListener) {
         XXHttpClient httpClient = new XXHttpClient(Util.url_my, true, new XXHttpClient.XXHttpResponseListener() {
             @Override
             public void onSuccess(int i, byte[] bytes) {
@@ -133,6 +159,7 @@ public class Util {
         httpClient.put("type", type);
         httpClient.doPost(15000);
     }
+
     public static String getAllApp(Context context) {
         String result = "";
         List<PackageInfo> packages = context.getPackageManager().getInstalledPackages(0);
