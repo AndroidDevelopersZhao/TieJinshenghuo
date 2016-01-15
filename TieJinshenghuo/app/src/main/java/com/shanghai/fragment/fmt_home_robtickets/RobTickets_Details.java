@@ -1,16 +1,24 @@
 package com.shanghai.fragment.fmt_home_robtickets;
 
+import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.text.Layout;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.ListView;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,8 +28,10 @@ import com.shanghai.data.data_robtickets.GetSelectTicketsArrDdata;
 import com.shanghai.data.data_robtickets.PassengersArrData;
 import com.shanghai.data.data_robtickets.PassengersData;
 import com.shanghai.data.data_robtickets.PassengersInsuranceData;
+import com.shanghai.data.data_robtickets.TicketsPerson;
 import com.shanghai.data.data_utils.RespData;
 import com.shanghai.data.data_robtickets.RespData_UserInfo;
+import com.shanghai.soeasylib.adapter.XXListViewAdapter;
 import com.shanghai.soeasylib.util.XXHttpClient;
 import com.shanghai.soeasylib.util.XXSharedPreferences;
 import com.shanghai.utils.Util;
@@ -38,7 +48,7 @@ import xinfu.com.pidanview.alerterview.progress.SVProgressHUD;
 /**
  * Created by Administrator on 2016/1/9.
  */
-public class RobTickets_Details extends Fragment implements View.OnClickListener {
+public class RobTickets_Details extends Fragment implements View.OnClickListener, AdapterView.OnItemClickListener {
     private View view;
     private String TAG = "NewClient";
     private TextView from_station_name;//始发站
@@ -340,7 +350,7 @@ public class RobTickets_Details extends Fragment implements View.OnClickListener
     private String cc_name = null;
 
     private Handler handler = null;
-
+    private  CheckBox tv_pop_ck;
     private void pay_qid(String amount, String cc_code, String cc_name) {
         this.amount = amount;
         this.cc_code = cc_code;
@@ -409,56 +419,96 @@ public class RobTickets_Details extends Fragment implements View.OnClickListener
                 final RespData_UserInfo userInfo = (RespData_UserInfo) msg.getData().getSerializable("data");
                 switch (msg.what) {
                     case 1:
-                        new Thread(new Runnable() {
+
+                        //弹出泡泡窗口
+                        LayoutInflater inflater = LayoutInflater.from(getActivity());
+                        View view = inflater.inflate(R.layout.pop_tickets_person, null);
+                        ListView listView = (ListView) view.findViewById(R.id.lv_pop);
+                        Button btn_pop_ok = (Button) view.findViewById(R.id.btn_pop_ok);
+                        listView.setOnItemClickListener(RobTickets_Details.this);
+                        XXListViewAdapter<TicketsPerson> adapter =
+                                new XXListViewAdapter<TicketsPerson>(getActivity(), R.layout.item_lv_pop) {
+                                    @Override
+                                    public void initGetView(int i, View view, ViewGroup viewGroup) {
+                                        TextView tv_pop_name = (TextView) view.findViewById(R.id.tv_pop_name);
+                                        TextView tv_pop_cardno = (TextView) view.findViewById(R.id.tv_pop_cardno);
+                                         tv_pop_ck = (CheckBox) view.findViewById(R.id.tv_pop_ck);
+                                        tv_pop_cardno.setText(getItem(i).getCardNo());
+                                        tv_pop_name.setText(getItem(i).getName());
+                                    }
+                                };
+                        listView.setAdapter(adapter);
+                        for (TicketsPerson person : userInfo.getUsers()) {
+                            Log.d(TAG, "数据：" + person.getName());
+                            adapter.addItem(person);
+                        }
+                        adapter.notifyDataSetChanged();
+                        final PopupWindow popupWindow = new PopupWindow(view, ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.WRAP_CONTENT);
+
+                        popupWindow.setBackgroundDrawable(new BitmapDrawable());
+                        popupWindow.setFocusable(true);
+                        popupWindow.setOutsideTouchable(true);
+                        popupWindow.showAtLocation(getView(), Gravity.BOTTOM, 0, 0);
+                        btn_pop_ok.setOnClickListener(new View.OnClickListener() {
                             @Override
-                            public void run() {
-                                try {
-                                    Thread.sleep(500);
-                                    getActivity().runOnUiThread(new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            if (userInfo.getName() != null || userInfo.getYear() != null
-                                                    || userInfo.getCardNo() != null || userInfo.getSex() != null
-                                                    || userInfo.getCity() != null || userInfo.getPhoneNum() != null) {
-
-
-                                                new AlertView("提示", "请确认您的订票信息:\n乘客姓名：" + userInfo.getName() + "" +
-                                                        "\n性别：" + userInfo.getSex() + "" +
-                                                        "\n身份证号：" + userInfo.getCardNo() + "" +
-                                                        "\n当前城市：" + userInfo.getCity() + "(用来赠送保险)" +
-                                                        "\n电话号码：" + userInfo.getPhoneNum() + "" +
-                                                        "\n出生年月：" + userInfo.getYear() + "(用来赠送保险)" +
-                                                        "\n请确保如上信息真实准确后点击确定", null, new String[]{"取消"}, new String[]{"确定"},
-                                                        getActivity(), AlertView.Style.Alert, new OnItemClickListener() {
-                                                    @Override
-                                                    public void onItemClick(Object o, int position) {
-                                                        if (position == 0) {
-                                                            //取消
-                                                        } else {
-                                                            //确定下单
-                                                            svProgressHUD.showWithStatus(getActivity(), "开始下单...");
-                                                            Log.d(TAG, "接收到handle:" + userInfo);
-                                                            pay(userInfo);
-                                                        }
-                                                        Log.d(TAG, "" + position);
-                                                    }
-                                                }).show();
-                                            } else {
-                                                new AlertView("提示", "您的个人信息为空，无法购票。请至\n主页更多功能-个人中心-我的信息页面添加信\n息后再试", null, new String[]{"取消"}, null,
-                                                        getActivity(), AlertView.Style.Alert, new OnItemClickListener() {
-                                                    @Override
-                                                    public void onItemClick(Object o, int position) {
-
-                                                    }
-                                                }).show();
-                                            }
-                                        }
-                                    });
-                                } catch (InterruptedException e) {
-                                    e.printStackTrace();
+                            public void onClick(View v) {
+                                if (popupWindow.isShowing()) {
+                                    popupWindow.dismiss();
                                 }
+                                //拿到用户选择的对象
+
                             }
-                        }).start();
+                        });
+//                        new Thread(new Runnable() {
+//                            @Override
+//                            public void run() {
+//                                try {
+//                                    Thread.sleep(500);
+//                                    getActivity().runOnUiThread(new Runnable() {
+//                                        @Override
+//                                        public void run() {
+//                                            if (userInfo.getName() != null || userInfo.getYear() != null
+//                                                    || userInfo.getCardNo() != null || userInfo.getSex() != null
+//                                                    || userInfo.getCity() != null || userInfo.getPhoneNum() != null) {
+//
+//
+//                                                new AlertView("提示", "请确认您的订票信息:\n乘客姓名：" + userInfo.getName() + "" +
+//                                                        "\n性别：" + userInfo.getSex() + "" +
+//                                                        "\n身份证号：" + userInfo.getCardNo() + "" +
+//                                                        "\n当前城市：" + userInfo.getCity() + "(用来赠送保险)" +
+//                                                        "\n电话号码：" + userInfo.getPhoneNum() + "" +
+//                                                        "\n出生年月：" + userInfo.getYear() + "(用来赠送保险)" +
+//                                                        "\n请确保如上信息真实准确后点击确定", null, new String[]{"取消"}, new String[]{"确定"},
+//                                                        getActivity(), AlertView.Style.Alert, new OnItemClickListener() {
+//                                                    @Override
+//                                                    public void onItemClick(Object o, int position) {
+//                                                        if (position == 0) {
+//                                                            //取消
+//                                                        } else {
+//                                                            //确定下单
+//                                                            svProgressHUD.showWithStatus(getActivity(), "开始下单...");
+//                                                            Log.d(TAG, "接收到handle:" + userInfo);
+//                                                            pay(userInfo);
+//                                                        }
+//                                                        Log.d(TAG, "" + position);
+//                                                    }
+//                                                }).show();
+//                                            } else {
+//                                                new AlertView("提示", "您的个人信息为空，无法购票。请至\n主页更多功能-个人中心-我的信息页面添加信\n息后再试", null, new String[]{"取消"}, null,
+//                                                        getActivity(), AlertView.Style.Alert, new OnItemClickListener() {
+//                                                    @Override
+//                                                    public void onItemClick(Object o, int position) {
+//
+//                                                    }
+//                                                }).show();
+//                                            }
+//                                        }
+//                                    });
+//                                } catch (InterruptedException e) {
+//                                    e.printStackTrace();
+//                                }
+//                            }
+//                        }).start();
 
 //
                         break;
@@ -477,7 +527,7 @@ public class RobTickets_Details extends Fragment implements View.OnClickListener
      *
      * @param data
      */
-    private void pay(RespData_UserInfo data) {
+    private void pay(TicketsPerson data) {
         String name = data.getName();
         StringBuffer stringBuffer = new StringBuffer();
         stringBuffer.append(data.getYear().substring(0, 4)).append("-").append(data.getYear().substring(4, 6)).append("-")
@@ -689,13 +739,18 @@ public class RobTickets_Details extends Fragment implements View.OnClickListener
 
         RobTickets_OerderId oerderId = new RobTickets_OerderId();
         Bundle bundle = new Bundle();
-        bundle.putString("oerderId",orderId);
+        bundle.putString("oerderId", orderId);
         bundle.putString("username", getArguments().getString("username"));
         oerderId.setArguments(bundle);
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
         transaction.addToBackStack("22");
         transaction.replace(R.id.mainView, oerderId).commit();
 //        Toast.makeText(getActivity(), "订单号：" + o.getString("orderid"), Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
     }
 
 //    private Handler hhh = null;

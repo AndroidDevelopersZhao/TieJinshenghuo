@@ -14,10 +14,6 @@
             android:layout_height="35sp"
             android:orientation="horizontal">
 
-            <View
-                android:layout_width="0sp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.3" />
 
             <TextView
                 android:layout_width="0sp"
@@ -46,10 +42,6 @@
             android:layout_height="35sp"
             android:orientation="horizontal">
 
-            <View
-                android:layout_width="0sp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.3" />
 
             <TextView
                 android:layout_width="0sp"
@@ -62,7 +54,7 @@
                 android:id="@+id/tv_all_status"
                 android:layout_width="0sp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.9"
+                android:layout_weight="1.5"
                 android:ellipsize="marquee"
                 android:focusable="true"
                 android:gravity="center"
@@ -70,10 +62,6 @@
                 android:singleLine="true"
                 android:textSize="30px" />
 
-            <View
-                android:layout_width="0sp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5" />
 
             <TextView
                 android:layout_width="0sp"
@@ -97,10 +85,6 @@
             android:layout_height="35sp"
             android:orientation="horizontal">
 
-            <View
-                android:layout_width="0sp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.3" />
 
             <TextView
                 android:layout_width="0sp"
@@ -144,10 +128,6 @@
             android:layout_height="35sp"
             android:orientation="horizontal">
 
-            <View
-                android:layout_width="0sp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.3" />
 
             <TextView
                 android:layout_width="0sp"

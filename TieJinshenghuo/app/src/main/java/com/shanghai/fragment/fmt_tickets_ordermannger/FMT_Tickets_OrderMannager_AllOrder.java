@@ -115,6 +115,7 @@ public class FMT_Tickets_OrderMannager_AllOrder extends android.support.v4.app.F
      * 改变UI
      */
     private void setView(OrderStatus_O_Data odata) {
+
         adapter.addItem(odata);
         adapter.notifyDataSetChanged();
     }
@@ -394,6 +395,7 @@ public class FMT_Tickets_OrderMannager_AllOrder extends android.support.v4.app.F
      */
     @Override
     public void onRefresh() {
+        adapter.removeAll();
         Util.getOrderIdFromService(username, 10, this);// 获取所有订单
     }
 

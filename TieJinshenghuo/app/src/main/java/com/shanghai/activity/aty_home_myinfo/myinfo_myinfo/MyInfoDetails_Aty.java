@@ -13,10 +13,13 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.shanghai.R;
 import com.shanghai.data.data_robtickets.RespData_UserInfo;
+import com.shanghai.data.data_robtickets.TicketsPerson;
 import com.shanghai.soeasylib.adapter.XXListViewAdapter;
 import com.shanghai.soeasylib.util.XXHttpClient;
 import com.shanghai.view.CustomListView;
 import com.shanghai.utils.Util;
+
+import java.util.ArrayList;
 
 import xinfu.com.pidanview.alerterview.progress.SVProgressHUD;
 
@@ -27,7 +30,7 @@ public class MyInfoDetails_Aty extends Activity implements View.OnClickListener,
     private String username = null;
     private Button btn_addInfo;
     private CustomListView listView;
-    private XXListViewAdapter<RespData_UserInfo> adapter;
+    private XXListViewAdapter<TicketsPerson> adapter;
     private String TAG = "NewClient";
     private SVProgressHUD svProgressHUD = new SVProgressHUD();
 
@@ -69,8 +72,13 @@ public class MyInfoDetails_Aty extends Activity implements View.OnClickListener,
                         }
                         RespData_UserInfo respData_userInfo = new Gson().fromJson(new String(bytes), RespData_UserInfo.class);
                         if (respData_userInfo.getCode() == 200) {
-                            adapter.addItem(respData_userInfo);
-                            adapter.notifyDataSetChanged();
+                            ArrayList<TicketsPerson> persons = respData_userInfo.getUsers();
+                            for (TicketsPerson p : persons) {
+                                adapter.addItem(p);
+                                adapter.notifyDataSetChanged();
+                            }
+//                            adapter.addItem(respData_userInfo);
+//                            adapter.notifyDataSetChanged();
                         } else {
                             Toast.makeText(MyInfoDetails_Aty.this, "数据为空，请添加", Toast.LENGTH_LONG).show();
                         }
@@ -108,7 +116,7 @@ public class MyInfoDetails_Aty extends Activity implements View.OnClickListener,
         btn_addInfo = (Button) findViewById(R.id.btn_addInfo);
         btn_addInfo.setOnClickListener(this);
         listView = (CustomListView) findViewById(R.id.listview_aty_Myinfo_Details);
-        adapter = new XXListViewAdapter<RespData_UserInfo>(MyInfoDetails_Aty.this, R.layout.item_lv_userinfo) {
+        adapter = new XXListViewAdapter<TicketsPerson>(MyInfoDetails_Aty.this, R.layout.item_lv_userinfo) {
             @Override
             public void initGetView(int i, View view, ViewGroup viewGroup) {
                 TextView item_tv_name = (TextView) view.findViewById(R.id.item_tv_name);
