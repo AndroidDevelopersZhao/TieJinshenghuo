@@ -21,54 +21,30 @@ import com.shanghai.utils.Util;
 import java.util.ArrayList;
 
 /**
+ * TODO 待支付页面
  * Created by Administrator on 2016/1/11.
  */
-public class FMT_Tickets_OrderMannager_NoPayOrder extends android.support.v4.app.Fragment{
+public class FMT_Tickets_OrderMannager_NoPayOrder extends
+        android.support.v4.app.Fragment implements OnGetOrderIdListener {
     private View view;
     private final String TAG = "NewClient";
+    private String username = App.username;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view=inflater.inflate(R.layout.fmt_tickets_ordermannager_nopayorder,null);
-        Log.w(TAG, "进入未支付订单页面");
-
-
-        XXHttpClient client= new XXHttpClient(Util.url_my,true, new XXHttpClient.XXHttpResponseListener() {
-            @Override
-            public void onSuccess(int i, byte[] bytes) {
-                Log.d(TAG,"未支付订单返回："+new String(bytes));
-//                RespData_order order = new Gson().fromJson(new String(bytes), RespData_order.class);
-//                Log.d(TAG,"用户未支付订单号："+order.getOrders().toString());
-//                Log.d(TAG,"返回码："+order.getCode());
-            }
-
-            @Override
-            public void onError(int i, Throwable throwable) {
-
-            }
-
-            @Override
-            public void onProgress(long l, long l1) {
-
-            }
-        });
-        client.put("username",App.username);
-        client.put("type",11);
-        client.doPost(15000);
-//        if (App.username != null) {
-////            Log.d(TAG, "开始请求未支付订单");
-//            Util.getOrderId(App.username, 11, new OnGetOrderIdListener() {
-//                @Override
-//                public void onSucc(ArrayList<String> orders) {
-//                    Toast.makeText(getActivity(),"该账户的未支付订单:"+ orders.toString(), Toast.LENGTH_SHORT).show();
-//                }
-//
-//                @Override
-//                public void onError(String errorMsg) {
-//                    Toast.makeText(getActivity(), errorMsg, Toast.LENGTH_SHORT).show();
-//                }
-//            });
-//        }
+        view = inflater.inflate(R.layout.fmt_tickets_ordermannager_nopayorder, null);
+        Util.getOrderIdFromService(username, 11, this);//获取待支付订单
         return view;
+    }
+
+    @Override
+    public void onSucc(ArrayList<String> orders) {
+        Log.d(TAG, "待支付订单获取成功，" + orders.toString());
+    }
+
+    @Override
+    public void onError(String errorMsg) {
+        Log.e(TAG, "待支付订单获取失败," + errorMsg);
     }
 }

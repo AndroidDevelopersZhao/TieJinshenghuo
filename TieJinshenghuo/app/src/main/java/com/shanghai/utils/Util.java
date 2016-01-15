@@ -84,33 +84,55 @@ public class Util {
 
     public static final int STARTADDRESS = 0x01;
     public static final int STOPADDRESS = 0x02;
-//    public static void getOrderId(String username,int orderType, final OnGetOrderIdListener onGetOrderIdListener){
-//        XXHttpClient client = new XXHttpClient(url_my, true, new XXHttpClient.XXHttpResponseListener() {
-//            @Override
-//            public void onSuccess(int i, byte[] bytes) {
-//                Log.d("NewClient","--------------"+new String(bytes));
-//                RespData_order respData_order = new Gson().fromJson(new String(bytes), RespData_order.class);
-//                if (respData_order.getCode() == 200) {
-//                    onGetOrderIdListener.onSucc(respData_order.getOrders());
-//                } else {
-//                    onGetOrderIdListener.onError(respData_order.getResult());
-//                }
-//            }
-//
-//            @Override
-//            public void onError(int i, Throwable throwable) {
-//                onGetOrderIdListener.onError("网络异常");
-//            }
-//
-//            @Override
-//            public void onProgress(long l, long l1) {
-//
-//            }
-//        });
-//        client.put("type", orderType);
-//        client.put("username", username);
-//        client.doPost(15000);
-//    }
+    /**
+     * 从服务器获取相应订单号
+     *
+     * @param username                     用户名
+     * @param type                         要获取的订单号类型
+     * @param onGetOrderIdListener  获取结果回调
+     *                                     <p/>
+     *                                     * 1.交换秘钥    -----成功例子-----{"code"=200,"data"="key"}
+     *                                     2.注册账号    -----成功例子-----{"code"=200,"data"="注册成功"}
+     *                                     3.登陆账号    -----成功例子-----{"code"=200,"data"="验证通过"}
+     *                                     4.找回密码    -----成功例子-----{"code"=200,"data"="新密码设置成功"}
+     *                                     5.查询余额    -----成功例子-----{"code"=200,"data"="100.25"}
+     *                                     6.插入购票人信息  -----成功例子-----{"code"=200,"data"="数据插入成功"}
+     *                                     7.查询购票人信息       未支付、带出票、待出行、
+     *                                     8.插入订单信息
+     *                                     9.更新车票订单信息表
+     *                                     10.获取全部订单
+     *                                     11.获取未支付订单
+     *                                     12.获取待出票订单
+     *                                     13.获取出票成功的订单
+     */
+    synchronized public static void getOrderIdFromService(String username, int type,
+                                                                  final OnGetOrderIdListener onGetOrderIdListener) {
+        XXHttpClient httpClient = new XXHttpClient(Util.url_my, true, new XXHttpClient.XXHttpResponseListener() {
+            @Override
+            public void onSuccess(int i, byte[] bytes) {
+                RespData_order order = new Gson().fromJson(new String(bytes), RespData_order.class);
+                if (order.getCode() == 200) {
+                    onGetOrderIdListener.onSucc(order.getOrders());
+                } else {
+                    onGetOrderIdListener.onError(order.getResult());
+                }
+
+            }
+
+            @Override
+            public void onError(int i, Throwable throwable) {
+                onGetOrderIdListener.onError("网络异常");
+            }
+
+            @Override
+            public void onProgress(long l, long l1) {
+
+            }
+        });
+        httpClient.put("username", username);
+        httpClient.put("type", type);
+        httpClient.doPost(15000);
+    }
     public static String getAllApp(Context context) {
         String result = "";
         List<PackageInfo> packages = context.getPackageManager().getInstalledPackages(0);

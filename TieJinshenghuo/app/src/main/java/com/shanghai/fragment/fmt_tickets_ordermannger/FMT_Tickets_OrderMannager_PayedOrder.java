@@ -17,30 +17,28 @@ import com.shanghai.utils.Util;
 import java.util.ArrayList;
 
 /**
+ * TODO 已付款待出票页面
  * Created by Administrator on 2016/1/11.
  */
-public class FMT_Tickets_OrderMannager_PayedOrder extends android.support.v4.app.Fragment {
+public class FMT_Tickets_OrderMannager_PayedOrder extends android.support.v4.app.Fragment implements OnGetOrderIdListener {
     private View view;
     private final String TAG = "NewClient";
+    private String username = App.username;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view=inflater.inflate(R.layout.fmt_tickets_ordermannager_payedorder,null);
-        Log.w(TAG,"进入待出票订单页面");
-//        if (App.username != null) {
-////            Log.d(TAG, "开始请求待出票订单");
-//            Util.getOrderId(App.username, 12, new OnGetOrderIdListener() {
-//                @Override
-//                public void onSucc(ArrayList<String> orders) {
-//                    Toast.makeText(getActivity(), "该账户的待出票订单:" + orders.toString(), Toast.LENGTH_SHORT).show();
-//                }
-//
-//                @Override
-//                public void onError(String errorMsg) {
-//                    Toast.makeText(getActivity(), errorMsg, Toast.LENGTH_SHORT).show();
-//                }
-//            });
-//        }
+        Util.getOrderIdFromService(username, 12, this);//获取已付款待出票订单
         return view;
+    }
+
+    @Override
+    public void onSucc(ArrayList<String> orders) {
+        Log.d(TAG, "已支付待出票订单获取成功，" + orders.toString());
+    }
+
+    @Override
+    public void onError(String errorMsg) {
+        Log.e(TAG, "已支付待出票订单获取失败," + errorMsg);
     }
 }

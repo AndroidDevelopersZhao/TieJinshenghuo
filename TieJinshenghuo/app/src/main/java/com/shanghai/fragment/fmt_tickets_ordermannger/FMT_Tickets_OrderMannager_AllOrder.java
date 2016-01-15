@@ -16,6 +16,7 @@ import com.shanghai.App;
 import com.shanghai.R;
 import com.shanghai.data.data_robtickets.OrderStatus_O_Data;
 import com.shanghai.data.data_robtickets.RespData_order;
+import com.shanghai.listener.listener_aty_moudel.OnGetRobTicketsOrderListener;
 import com.shanghai.listener.listener_tickets.OnGetOrderIdListener;
 import com.shanghai.soeasylib.util.XXHttpClient;
 import com.shanghai.utils.Util;
@@ -29,58 +30,27 @@ import cn.smssdk.gui.layout.Res;
  * //TODO 全部订单。到后台取数据并且在后台确认订单最后状态
  * Created by Administrator on 2016/1/11.
  */
-public class FMT_Tickets_OrderMannager_AllOrder extends android.support.v4.app.Fragment {
+public class FMT_Tickets_OrderMannager_AllOrder extends android.support.v4.app.Fragment implements OnGetOrderIdListener {
     private View view;
-    private String url = Util.url_my;
     private final String TAG = "NewClient";
-    private Handler handler = null;
-    /**
-     * 1.交换秘钥    -----成功例子-----{"code"=200,"data"="key"}
-     * 2.注册账号    -----成功例子-----{"code"=200,"data"="注册成功"}
-     * 3.登陆账号    -----成功例子-----{"code"=200,"data"="验证通过"}
-     * 4.找回密码    -----成功例子-----{"code"=200,"data"="新密码设置成功"}
-     * 5.查询余额    -----成功例子-----{"code"=200,"data"="100.25"}
-     * 6.插入购票人信息  -----成功例子-----{"code"=200,"data"="数据插入成功"}
-     * 7.查询购票人信息       未支付、带出票、待出行、
-     * 8.插入订单信息
-     * 9.更新车票订单信息表
-     * 10.获取全部订单
-     * 11.获取未支付订单
-     * 12.获取待出票订单
-     * 13.获取出票成功的订单
-     */
+    private String username = App.username;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fmt_tickets_ordermannager_allorder,null);
-
-        XXHttpClient client= new XXHttpClient(Util.url_my, true, new XXHttpClient.XXHttpResponseListener() {
-            @Override
-            public void onSuccess(int i, byte[] bytes) {
-                Log.d(TAG,"全部订单返回："+new String(bytes));
-//                RespData_order order = new Gson().fromJson(new String(bytes), RespData_order.class);
-//                Log.d(TAG,"用户全部订单号："+order.getOrders().toString());
-//                Log.d(TAG,"返回码："+order.getCode());
-
-            }
-
-            @Override
-            public void onError(int i, Throwable throwable) {
-
-            }
-
-            @Override
-            public void onProgress(long l, long l1) {
-
-            }
-        });
-        client.put("type",10);
-        client.put("username",App.username);
-        client.doPost(15000);
-        Log.w(TAG,"进入全部订单页面");
-
+        view = inflater.inflate(R.layout.fmt_tickets_ordermannager_allorder, null);
+        Util.getOrderIdFromService(username, 10, this);//获取所有订单
         return view;
     }
 
 
+    @Override
+    public void onSucc(ArrayList<String> orders) {
+        Log.d(TAG, "所有订单获取成功，" + orders.toString());
+    }
+
+    @Override
+    public void onError(String errorMsg) {
+        Log.e(TAG, "所有订单获取失败," + errorMsg);
+    }
 }
