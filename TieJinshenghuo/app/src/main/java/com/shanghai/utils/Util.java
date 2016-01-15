@@ -42,6 +42,7 @@ import android.telephony.TelephonyManager;
 import android.util.Log;
 
 import com.google.gson.Gson;
+import com.shanghai.data.data_robtickets.OrderStatus_O_Data;
 import com.shanghai.data.data_robtickets.RespData_order;
 import com.shanghai.listener.listener_tickets.OnGetOrderIdListener;
 import com.shanghai.soeasylib.util.XXHttpClient;
@@ -98,6 +99,8 @@ public class Util {
             bundle.putString("data", object.toString());
         } else if (object instanceof ArrayList<?>) {
             bundle.putStringArrayList("data", (ArrayList) object);
+        } else if (object instanceof OrderStatus_O_Data) {
+            bundle.putSerializable("data", (OrderStatus_O_Data)object);
         } else {
             bundle.putString("data", "参数类型未定义,请至工具类定义");
         }

@@ -1,9 +1,11 @@
 package com.shanghai.data.data_robtickets;
 
+import java.io.Serializable;
+
 /**
  * Created by Administrator on 2016/1/10.
  */
-public class OrderStatus_O_Data {
+public class OrderStatus_O_Data implements Serializable{
     private String reason=null;
     private int error_code =-1;
     private OrderStatus_O_Result_Data result=null;

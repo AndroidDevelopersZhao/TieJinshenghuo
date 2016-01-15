@@ -40,7 +40,6 @@ public class OrderInfo_Aty extends FragmentActivity{
         vp = (ViewPager) findViewById(R.id.vp);
         List<android.support.v4.app.Fragment> fragments = new ArrayList<>();
 
-
         List<String> strs = new ArrayList<>();
         strs.add("全部订单");
         strs.add("待支付");
