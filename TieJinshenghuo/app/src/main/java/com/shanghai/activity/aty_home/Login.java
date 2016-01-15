@@ -38,6 +38,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
+import com.shanghai.App;
 import com.shanghai.R;
 import com.shanghai.data.data_utils.RespData;
 import com.shanghai.soeasylib.util.Base64Utils;
@@ -75,9 +76,44 @@ public class Login extends Activity implements View.OnClickListener {
 
         initView();
         initData();
+//        {
+//            for (int h = 0; h < 10; h++) {
+//
+//
+//                final int finalH = h;
+//                Log.d(TAG,"开始第"+h+"次请求");
+//                final int finalH1 = h;
+//                XXHttpClient client= new XXHttpClient(Util.url_my, true, new XXHttpClient.XXHttpResponseListener() {
+//                @Override
+//                public void onSuccess(int i, byte[] bytes) {
+//                    Log.d(TAG, finalH +"第"+ finalH1 +"次请求返回："+new String(bytes).trim());
+////                RespData_order order = new Gson().fromJson(new String(bytes), RespData_order.class);
+////                Log.d(TAG,"用户全部订单号："+order.getOrders().toString());
+////                Log.d(TAG,"返回码："+order.getCode());
+//
+//                }
+//
+//                @Override
+//                public void onError(int i, Throwable throwable) {
+//                    //网络异常
+//                    Log.d(TAG,"网络异常");
+//                }
+//
+//                @Override
+//                public void onProgress(long l, long l1) {
+//
+//                }
+//            });
+//            client.put("type",10);
+//            client.put("username", "15221340931");
+//            client.doPost(15000);
+////            Log.w(TAG,"进入全部订单页面");
+//
+//        }
+//        }
     }
 
-    private void initData() {
+    synchronized  private void initData() {
         XXSharedPreferences sharedPreferences = new XXSharedPreferences("User_Num");
         if (sharedPreferences.get(this, "username", "").toString().equals("") ||
                 sharedPreferences.get(this, "password", "").toString().equals("")) {

@@ -37,9 +37,9 @@ public class FMT_Tickets_OrderMannager_NoPayOrder extends android.support.v4.app
             @Override
             public void onSuccess(int i, byte[] bytes) {
                 Log.d(TAG,"未支付订单返回："+new String(bytes));
-                RespData_order order = new Gson().fromJson(new String(bytes), RespData_order.class);
-                Log.d(TAG,"用户未支付订单号："+order.getOrders().toString());
-                Log.d(TAG,"返回码："+order.getCode());
+//                RespData_order order = new Gson().fromJson(new String(bytes), RespData_order.class);
+//                Log.d(TAG,"用户未支付订单号："+order.getOrders().toString());
+//                Log.d(TAG,"返回码："+order.getCode());
             }
 
             @Override

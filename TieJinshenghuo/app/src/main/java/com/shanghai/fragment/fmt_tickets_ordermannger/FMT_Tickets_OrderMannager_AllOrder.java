@@ -58,9 +58,9 @@ public class FMT_Tickets_OrderMannager_AllOrder extends android.support.v4.app.F
             @Override
             public void onSuccess(int i, byte[] bytes) {
                 Log.d(TAG,"全部订单返回："+new String(bytes));
-                RespData_order order = new Gson().fromJson(new String(bytes), RespData_order.class);
-                Log.d(TAG,"用户全部订单号："+order.getOrders().toString());
-                Log.d(TAG,"返回码："+order.getCode());
+//                RespData_order order = new Gson().fromJson(new String(bytes), RespData_order.class);
+//                Log.d(TAG,"用户全部订单号："+order.getOrders().toString());
+//                Log.d(TAG,"返回码："+order.getCode());
 
             }
 

@@ -67,7 +67,7 @@ public class Util {
 //    public static String url_Insert = "http://221.228.88.249:8080/NewClient_Service/UpDataOrder";
 //    public static String url_GetAllOrder = "http://221.228.88.249:8080/NewClient_Service/GetAllOrder";
 
-    public static String url_my = "http://192.168.13.101:8080/NewClient_Service/getPK_Service";
+    public static String url_my = "http://192.168.13.112:8080/NewClient_Service/getPK_Service";
 
 
     public static final String appid_news = "b20a98d285a0608d3bc1cfc08544adb8";
