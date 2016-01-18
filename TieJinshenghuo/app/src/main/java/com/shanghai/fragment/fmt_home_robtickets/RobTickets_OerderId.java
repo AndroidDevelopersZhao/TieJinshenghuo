@@ -202,6 +202,7 @@ public class RobTickets_OerderId extends Fragment implements View.OnClickListene
                                 }
                             };
                             //向服务器发送订单状态以及数据
+
                             sendTickestStatusAndDataToServiceMySQL(username, oerderId, result_data, result_data.getPassengers()[0], result_data.getPassengers()[0].getReturntickets());
 
 

@@ -7,7 +7,16 @@ public class TicketsPerson {
 	private String sex =null;
 	private String cardNo =null;
 	private String phoneNum =null;
-	
+	private boolean flag=false;
+
+	public boolean getFlag() {
+		return flag;
+	}
+
+	public void setFlag(boolean flag) {
+		this.flag = flag;
+	}
+
 	public TicketsPerson(String name, String year, String city, String sex,
 			String cardNo, String phoneNum) {
 		super();

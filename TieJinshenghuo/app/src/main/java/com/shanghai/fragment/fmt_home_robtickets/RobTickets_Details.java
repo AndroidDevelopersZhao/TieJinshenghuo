@@ -39,6 +39,7 @@ import com.shanghai.utils.Util;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 import xinfu.com.pidanview.alerterview.alerterview.AlertView;
@@ -350,7 +351,9 @@ public class RobTickets_Details extends Fragment implements View.OnClickListener
     private String cc_name = null;
 
     private Handler handler = null;
-    private  CheckBox tv_pop_ck;
+    private CheckBox tv_pop_ck;
+    private XXListViewAdapter<TicketsPerson> adapter;
+
     private void pay_qid(String amount, String cc_code, String cc_name) {
         this.amount = amount;
         this.cc_code = cc_code;
@@ -426,18 +429,21 @@ public class RobTickets_Details extends Fragment implements View.OnClickListener
                         ListView listView = (ListView) view.findViewById(R.id.lv_pop);
                         Button btn_pop_ok = (Button) view.findViewById(R.id.btn_pop_ok);
                         listView.setOnItemClickListener(RobTickets_Details.this);
-                        XXListViewAdapter<TicketsPerson> adapter =
+                        adapter =
                                 new XXListViewAdapter<TicketsPerson>(getActivity(), R.layout.item_lv_pop) {
                                     @Override
                                     public void initGetView(int i, View view, ViewGroup viewGroup) {
+
                                         TextView tv_pop_name = (TextView) view.findViewById(R.id.tv_pop_name);
                                         TextView tv_pop_cardno = (TextView) view.findViewById(R.id.tv_pop_cardno);
-                                         tv_pop_ck = (CheckBox) view.findViewById(R.id.tv_pop_ck);
+                                        tv_pop_ck = (CheckBox) view.findViewById(R.id.tv_pop_ck);
                                         tv_pop_cardno.setText(getItem(i).getCardNo());
                                         tv_pop_name.setText(getItem(i).getName());
+                                        tv_pop_ck.setChecked(getItem(i).getFlag());
                                     }
                                 };
                         listView.setAdapter(adapter);
+                        listView.setOnItemClickListener(RobTickets_Details.this);
                         for (TicketsPerson person : userInfo.getUsers()) {
                             Log.d(TAG, "数据：" + person.getName());
                             adapter.addItem(person);
@@ -456,7 +462,20 @@ public class RobTickets_Details extends Fragment implements View.OnClickListener
                                     popupWindow.dismiss();
                                 }
                                 //拿到用户选择的对象
+                                ArrayList<TicketsPerson> persons = new ArrayList<TicketsPerson>();
+                                for (int i = 0; i < adapter.getCount(); i++) {
+                                    if (adapter.getItem(i).getFlag()) {
+                                        Log.d(TAG, "最后选择了：" + adapter.getItem(i).getName());
+                                        persons.add(adapter.getItem(i));
+                                    }
 
+
+                                }
+                                if (persons.size()!=0){
+                                    svProgressHUD.showWithStatus(getActivity(), "开始下单...");
+                                    Log.d(TAG, "接收到handle:" + userInfo);
+                                    pay(persons);
+                                }
                             }
                         });
 //                        new Thread(new Runnable() {
@@ -486,9 +505,7 @@ public class RobTickets_Details extends Fragment implements View.OnClickListener
 //                                                            //取消
 //                                                        } else {
 //                                                            //确定下单
-//                                                            svProgressHUD.showWithStatus(getActivity(), "开始下单...");
-//                                                            Log.d(TAG, "接收到handle:" + userInfo);
-//                                                            pay(userInfo);
+//
 //                                                        }
 //                                                        Log.d(TAG, "" + position);
 //                                                    }
@@ -525,19 +542,85 @@ public class RobTickets_Details extends Fragment implements View.OnClickListener
     /**
      * 下单
      *
-     * @param data
+     * @param persons
      */
-    private void pay(TicketsPerson data) {
-        String name = data.getName();
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append(data.getYear().substring(0, 4)).append("-").append(data.getYear().substring(4, 6)).append("-")
-                .append(data.getYear().substring(6, data.getYear().length()));
-        String year = stringBuffer.toString();
-        String city = data.getCity();
-        String sex = data.getSex();
-        String cardNo = data.getCardNo();
-        String phoneNum = data.getPhoneNum();
+    private void pay(ArrayList<TicketsPerson> persons) {
+        ArrayList<PassengersArrData> lists = new ArrayList<>();
+        for (int i = 0; i < persons.size(); i++) {
+            TicketsPerson data = persons.get(i);
 
+            PassengersArrData passengersArrData = new PassengersArrData();
+
+            String name = data.getName();
+            StringBuffer stringBuffer = new StringBuffer();
+            stringBuffer.append(data.getYear().substring(0, 4)).append("-").append(data.getYear().substring(4, 6)).append("-")
+                    .append(data.getYear().substring(6, data.getYear().length()));
+            String year = stringBuffer.toString();
+            String city = data.getCity();
+            String sex = data.getSex();
+            String cardNo = data.getCardNo();
+            String phoneNum = data.getPhoneNum();
+
+
+            PassengersInsuranceData passengersInsuranceData = new PassengersInsuranceData();
+
+
+//
+//
+            passengersInsuranceData.setName(name);
+            passengersInsuranceData.setBirth(year);
+            passengersInsuranceData.setCity(city);
+            if (sex.equals("男")) {
+                passengersInsuranceData.setGender("M");//性别 M男
+            } else {
+                passengersInsuranceData.setGender("F");//性别 F女
+            }
+
+            passengersInsuranceData.setIdcard(cardNo);
+            passengersInsuranceData.setMobile(phoneNum);
+
+            XXSharedPreferences userid = new XXSharedPreferences("UserId");
+            int a = Integer.valueOf(userid.get(getActivity(), "ID", -1) + "".trim());
+            if (a == -1) {
+                userid.put(getActivity(), "ID", 1);
+                a = Integer.valueOf(userid.get(getActivity(), "ID", -1) + "".trim());
+                passengersArrData.setPassengerid(String.valueOf(a));
+            } else {
+
+                passengersArrData.setPassengerid(String.valueOf((a++)));
+            }
+
+
+            passengersArrData.setPassengersename(name);
+            passengersArrData.setPiaotype("1");//1。其中，1 :成人票,2 :儿童票,4 :残军票
+            passengersArrData.setPiaotypename("成人票");//成人票。票种名称，和上面的piaotype对应
+            passengersArrData.setPassporttypeseid("1");//1。其中，1:二代身份证,2:一代身份证,C:港澳通行证,B:护照,G:台湾通行证
+            passengersArrData.setPassporttypeseidname("二代身份证");//二代身份证。证件类型名称，和上面的passporttypeseid对应
+            passengersArrData.setPassportseno(cardNo);//420205199207231234。乘客证件号码
+            passengersArrData.setPrice(amount);//票价
+            if (cc_code != null) {
+                passengersArrData.setZwcode(cc_code);//表示座位编码，其中9:商务座,P:特等座, M:一等座, O（大写字母O，不是数字0）:二等座, //6:高级软卧, 4:软卧,3:硬卧, 2:软座,1:硬座。
+            }
+            if (cc_name != null) {
+                passengersArrData.setZwname(cc_name);//如：硬座。表示座位名称，和上面的座位编码对应，注意：无座没有zwnam
+            }
+
+
+            passengersArrData.setInsurance(passengersInsuranceData);
+            passengersArrData.setData(new Gson().toJson(passengersArrData));
+            PassengersData passengersData = new PassengersData();
+            passengersData.setPassengersArrDatas(new PassengersArrData[]{passengersArrData});
+
+            passengersData.setData(new Gson().toJson(passengersData));
+
+            lists.add(passengersArrData);
+
+        }
+        for (int i = 0; i < lists.size(); i++) {
+            Log.d(TAG, "确定最后的购票人信息" + lists.get(i).getInsurance().getName());
+        }
+        Log.d(TAG,"-----------上送数组如下："+lists.toString());
+        //
         XXHttpClient client = new XXHttpClient(Util.url_ticket3, true, new XXHttpClient.XXHttpResponseListener() {
             @Override
             public void onSuccess(int i, final byte[] bytes) {
@@ -602,55 +685,7 @@ public class RobTickets_Details extends Fragment implements View.OnClickListener
 
             }
         });
-        PassengersInsuranceData passengersInsuranceData = new PassengersInsuranceData();
-
-        passengersInsuranceData.setName(name);
-        passengersInsuranceData.setBirth(year);
-        passengersInsuranceData.setCity(city);
-        if (sex.equals("男")) {
-            passengersInsuranceData.setGender("M");//性别 M男
-        } else {
-            passengersInsuranceData.setGender("F");//性别 F女
-        }
-
-        passengersInsuranceData.setIdcard(cardNo);
-        passengersInsuranceData.setMobile(phoneNum);
-
-        PassengersArrData passengersArrData = new PassengersArrData();
-        XXSharedPreferences userid = new XXSharedPreferences("UserId");
-        int a = Integer.valueOf(userid.get(getActivity(), "ID", -1) + "".trim());
-        if (a == -1) {
-            userid.put(getActivity(), "ID", 1);
-            a = Integer.valueOf(userid.get(getActivity(), "ID", -1) + "".trim());
-            passengersArrData.setPassengerid(String.valueOf(a));
-        } else {
-
-            passengersArrData.setPassengerid(String.valueOf((a++)));
-        }
-
-
-        passengersArrData.setPassengersename(name);
-        passengersArrData.setPiaotype("1");//1。其中，1 :成人票,2 :儿童票,4 :残军票
-        passengersArrData.setPiaotypename("成人票");//成人票。票种名称，和上面的piaotype对应
-        passengersArrData.setPassporttypeseid("1");//1。其中，1:二代身份证,2:一代身份证,C:港澳通行证,B:护照,G:台湾通行证
-        passengersArrData.setPassporttypeseidname("二代身份证");//二代身份证。证件类型名称，和上面的passporttypeseid对应
-        passengersArrData.setPassportseno(cardNo);//420205199207231234。乘客证件号码
-        passengersArrData.setPrice(amount);//票价
-        if (cc_code != null) {
-            passengersArrData.setZwcode(cc_code);//表示座位编码，其中9:商务座,P:特等座, M:一等座, O（大写字母O，不是数字0）:二等座, //6:高级软卧, 4:软卧,3:硬卧, 2:软座,1:硬座。
-        }
-        if (cc_name != null) {
-            passengersArrData.setZwname(cc_name);//如：硬座。表示座位名称，和上面的座位编码对应，注意：无座没有zwnam
-        }
-
-
-        passengersArrData.setInsurance(passengersInsuranceData);
-        passengersArrData.setData(new Gson().toJson(passengersArrData));
-        PassengersData passengersData = new PassengersData();
-        passengersData.setPassengersArrDatas(new PassengersArrData[]{passengersArrData});
-
-        passengersData.setData(new Gson().toJson(passengersData));
-        client.put("key", Util.appid_ticket);
+                client.put("key", Util.appid_ticket);
         String qid = new Date().getTime() + "".trim();
         client.put("user_orderid", qid);//订单号
         Log.d(TAG, "当前生成订单号：" + qid);
@@ -660,11 +695,10 @@ public class RobTickets_Details extends Fragment implements View.OnClickListener
         client.put("to_station_code", stop_code);
         client.put("to_station_name", stop_name);
         client.put("checi", trade_code);
-        client.put("passengers", "[" + passengersArrData.toString() + "]");
+        client.put("passengers", lists.toString());
 
         Log.d(TAG, client.getAllParams() + "");
         client.doGet(15000);
-
     }
 
     private Handler handler_subOrderIdToServiceMySQL = null;//用来接收向服务器发送订单号的返回数据
@@ -750,6 +784,12 @@ public class RobTickets_Details extends Fragment implements View.OnClickListener
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        XXSharedPreferences preferences = new XXSharedPreferences("isChecked");
+        Log.d(TAG, "dianji ");
+        CheckBox box = (CheckBox) view.findViewById(R.id.tv_pop_ck);
+        box.toggle();
+        adapter.getItem(position).setFlag(box.isChecked());
+//        adapter.notifyDataSetChanged();
 
     }
 

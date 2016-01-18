@@ -43,7 +43,10 @@
             android:id="@+id/tv_pop_ck"
             android:layout_width="0sp"
             android:layout_height="match_parent"
-            android:layout_weight="0.5" />
+            android:layout_weight="0.5"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
     </LinearLayout>
 
     <View
