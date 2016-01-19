@@ -31,7 +31,7 @@ import com.shanghai.listener.listener_location.Listener_location;
 import com.shanghai.soeasylib.util.XXHttpClient;
 import com.shanghai.soeasylib.util.XXUtils;
 
-import com.shanghai.utils.Location_Client;
+import com.shanghai.utils.util_getlocation.Location_Client;
 import com.shanghai.utils.Util;
 
 import java.util.List;
@@ -139,6 +139,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_video.setOnClickListener(this);
         wechat.setOnClickListener(this);
         yuliu_1.setOnClickListener(this);
+        yuliu_2.setOnClickListener(this);
         tv_play = (TextView) findViewById(R.id.tv_play);
         final MediaPlayer mediaPlayer01;
          alertView=new AlertView("作者Q：3648415", null, "返回", new String[]{"更换账号"},
@@ -206,6 +207,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.yuliu_1:
                 intent.putExtra("id", 8);
+                intent.putExtra("username",username);
+                break;
+            case R.id.yuliu_2:
+                intent.putExtra("id", 9);
                 intent.putExtra("username",username);
                 break;
 

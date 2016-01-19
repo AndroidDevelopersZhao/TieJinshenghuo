@@ -44,7 +44,7 @@ import com.shanghai.data.data_wechat.Data_WeChatSelection;
 import com.shanghai.listener.listener_util.GetDataListener;
 import com.shanghai.soeasylib.adapter.XXListViewAdapter;
 import com.shanghai.view.CustomListView;
-import com.shanghai.utils.GetDataFromService;
+import com.shanghai.utils.util_getlocation.GetDataFromService;
 import com.tencent.connect.share.QQShare;
 import com.tencent.tauth.Tencent;
 

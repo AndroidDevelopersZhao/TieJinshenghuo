@@ -349,7 +349,7 @@
                         android:layout_height="20sp"
                         android:layout_marginTop="2sp"
                         android:gravity="center"
-                        android:text="预留功能"
+                        android:text="导航"
                         android:textColor="#FF002556"
                         android:textSize="14sp" />
                 </LinearLayout>

@@ -30,6 +30,8 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.baidu.navisdk.adapter.BaiduNaviManager;
+
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -56,6 +58,8 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         SMSSDK.initSDK(getApplicationContext(), appkey, acept);
+
     }
     public static String username = null;
+
 }

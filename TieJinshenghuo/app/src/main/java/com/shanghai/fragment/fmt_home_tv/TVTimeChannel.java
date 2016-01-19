@@ -46,7 +46,6 @@ public class TVTimeChannel extends Fragment implements AdapterView.OnItemClickLi
         initData();
         return view;
     }
-
     private void initData() {
         AsyncHttpClient client = new AsyncHttpClient(true, 80, 443);
 
@@ -54,7 +53,6 @@ public class TVTimeChannel extends Fragment implements AdapterView.OnItemClickLi
 
         params.put("pId", pId);
         params.put("key", "9273a0ef78e31f8428200cca1eb407fd");
-
         client.get("http://japi.juhe.cn/tv/getChannel", params, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int i, Header[] headers, byte[] bytes) {

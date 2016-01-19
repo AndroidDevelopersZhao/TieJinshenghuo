@@ -53,7 +53,7 @@ import java.util.List;
 
 import xinfu.com.pidanview.alerterview.progress.SVProgressHUD;
 import com.shanghai.R;
-import com.shanghai.utils.GetDataFromService;
+import com.shanghai.utils.util_getlocation.GetDataFromService;
 
 /**
  * 项目名称： NewsClient

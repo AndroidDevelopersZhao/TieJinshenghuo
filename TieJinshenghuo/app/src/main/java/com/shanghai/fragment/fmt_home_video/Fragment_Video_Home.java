@@ -47,8 +47,8 @@ import com.shanghai.data.data_video.Data_Video_Home;
 import com.shanghai.listener.listener_util.GetDataListener;
 import com.shanghai.listener.listener_location.Listener_location;
 import com.shanghai.soeasylib.adapter.XXListViewAdapter;
-import com.shanghai.utils.GetDataFromService;
-import com.shanghai.utils.Location_Client;
+import com.shanghai.utils.util_getlocation.GetDataFromService;
+import com.shanghai.utils.util_getlocation.Location_Client;
 
 import org.json.JSONArray;
 import org.json.JSONException;
