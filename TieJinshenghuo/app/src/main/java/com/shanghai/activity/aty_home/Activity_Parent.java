@@ -29,6 +29,7 @@ import android.app.Fragment;
 import android.os.Bundle;
 
 import com.shanghai.R;
+import com.shanghai.fragment.fmt_home_drivers.DriversTest_Select_Questions;
 import com.shanghai.fragment.fmt_home_navigation.NavigationFirstView;
 import com.shanghai.fragment.fmt_home_newclient.NewsHome;
 import com.shanghai.fragment.fmt_home_robtickets.RobTickets;
@@ -73,6 +74,8 @@ public class Activity_Parent extends Activity {
         fragmentList.add(new WeChatSelection());
         fragmentList.add(new RobTickets());
         fragmentList.add(new NavigationFirstView());
+        fragmentList.add(new DriversTest_Select_Questions());
+
         mainView = R.id.mainView;
 //        newsHome = ;
 //        weatherHome = ;
@@ -129,6 +132,14 @@ public class Activity_Parent extends Activity {
                     bundle.putString("username",getIntent().getExtras().getString("username"));
                     fragmentList.get(8).setArguments(bundle);
                     repleace(fragmentList.get(8));
+                }
+                break;
+            case 10:
+                if (!fragmentList.get(9).isVisible()) {
+                    Bundle bundle = new Bundle();
+                    bundle.putString("username",getIntent().getExtras().getString("username"));
+                    fragmentList.get(9).setArguments(bundle);
+                    repleace(fragmentList.get(9));
                 }
                 break;
         }

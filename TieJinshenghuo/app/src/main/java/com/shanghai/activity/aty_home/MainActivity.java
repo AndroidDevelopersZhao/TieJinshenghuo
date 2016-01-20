@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private String url = "http://221.228.88.249:8080/NewClient_Service/MyInfo";
     private String TAG = "NewClient";
     private AlertView alertView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //    });
 
         username = getIntent().getExtras().getString("username");
-        App.username=username;
+        App.username = username;
         view = findViewById(R.id.view_snacbay);
         toolbar = (Toolbar) findViewById(R.id.tb);
         setSupportActionBar(toolbar);
@@ -140,11 +141,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         wechat.setOnClickListener(this);
         yuliu_1.setOnClickListener(this);
         yuliu_2.setOnClickListener(this);
+        yuliu_3.setOnClickListener(this);
         tv_play = (TextView) findViewById(R.id.tv_play);
         final MediaPlayer mediaPlayer01;
-         alertView=new AlertView("作者Q：3648415", null, "返回", new String[]{"更换账号"},
+        alertView = new AlertView("作者Q：3648415", null, "返回", new String[]{"更换账号"},
                 new String[]{"个人中心", "更多设置"}, MainActivity.this
-                , AlertView.Style.ActionSheet,MainActivity.this);
+                , AlertView.Style.ActionSheet, MainActivity.this);
         mediaPlayer01 = MediaPlayer.create(getBaseContext(), R.raw.map);
         new AlertView("提示", "是否播放背景音乐？", null, new String[]{"取消"}, new String[]{"播放"}, this, AlertView.Style.Alert, new OnItemClickListener() {
             @Override
@@ -207,11 +209,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.yuliu_1:
                 intent.putExtra("id", 8);
-                intent.putExtra("username",username);
+                intent.putExtra("username", username);
                 break;
             case R.id.yuliu_2:
                 intent.putExtra("id", 9);
-                intent.putExtra("username",username);
+                intent.putExtra("username", username);
+                break;
+            case R.id.yuliu_3:
+                intent.putExtra("id", 10);
+                intent.putExtra("username", username);
                 break;
 
         }
@@ -300,6 +306,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case 0:
                 Log.d(TAG, "更换账号");
+                startActivity(new Intent(MainActivity.this, Login.class));
+                this.finish();
                 break;
             case 1:
                 Log.d(TAG, "个人中心");
@@ -310,16 +318,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         try {
                             Thread.sleep(400);
 //                            if (!alertView.isShowing()){
-                                Intent intent = new Intent(MainActivity.this, MyInfo_Aty.class);
-                                intent.putExtra("username", username);
-                                startActivity(intent);
+                            Intent intent = new Intent(MainActivity.this, MyInfo_Aty.class);
+                            intent.putExtra("username", username);
+                            startActivity(intent);
 //                            }
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
                     }
                 }).start();
-
 
 
                 break;

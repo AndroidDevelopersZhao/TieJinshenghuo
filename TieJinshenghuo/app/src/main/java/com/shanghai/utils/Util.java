@@ -42,10 +42,13 @@ import android.telephony.TelephonyManager;
 import android.util.Log;
 
 import com.google.gson.Gson;
+import com.shanghai.data.data_drivers.Result;
 import com.shanghai.data.data_robtickets.OrderStatus_O_Data;
 import com.shanghai.data.data_robtickets.RespData_order;
+import com.shanghai.listener.listener_getimages.OnGetImagesListener;
 import com.shanghai.listener.listener_tickets.OnGetOrderIdListener;
 import com.shanghai.soeasylib.util.XXHttpClient;
+import com.shanghai.soeasylib.util.XXUtils;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -69,7 +72,7 @@ public class Util {
 //    public static String url_Insert = "http://221.228.88.249:8080/NewClient_Service/UpDataOrder";
 //    public static String url_GetAllOrder = "http://221.228.88.249:8080/NewClient_Service/GetAllOrder";
 
-//    public static String url_my = "http://192.168.13.112:8080/NewClient_Service/getPK_Service";
+    //    public static String url_my = "http://192.168.13.112:8080/NewClient_Service/getPK_Service";
     public static final String TAG = "NewClient";
 
     public static final String appid_news = "b20a98d285a0608d3bc1cfc08544adb8";
@@ -83,9 +86,32 @@ public class Util {
     public static final String url_ticket4 = "http://op.juhe.cn/trainTickets/pay";
     public static final String url_ticket5 = "http://op.juhe.cn/trainTickets/orderStatus";
 
+    public static final String url_GETTESTREQUESTIONS = "http://api2.juheapi.com/jztk/query";
+
 
     public static final int STARTADDRESS = 0x01;
     public static final int STOPADDRESS = 0x02;
+
+    public static void getImagesFromInternet(String url, final OnGetImagesListener listener) {
+        XXHttpClient client = new XXHttpClient(url, true, new XXHttpClient.XXHttpResponseListener() {
+            @Override
+            public void onSuccess(int i, byte[] bytes) {
+                Bitmap bitmap = XXUtils.bytesToBimap(bytes);
+                listener.onSucc(bitmap);
+            }
+
+            @Override
+            public void onError(int i, Throwable throwable) {
+                listener.onError("网络错误");
+            }
+
+            @Override
+            public void onProgress(long l, long l1) {
+
+            }
+        });
+        client.doGet(15000);
+    }
 
     public static void sendMsgToHandler(Handler handler, Object object, boolean isSucc) {
         if (handler == null || object == null) {
@@ -100,7 +126,9 @@ public class Util {
         } else if (object instanceof ArrayList<?>) {
             bundle.putStringArrayList("data", (ArrayList) object);
         } else if (object instanceof OrderStatus_O_Data) {
-            bundle.putSerializable("data", (OrderStatus_O_Data)object);
+            bundle.putSerializable("data", (OrderStatus_O_Data) object);
+        } else if (object instanceof Result) {
+            bundle.putSerializable("data", (Result) object);
         } else {
             bundle.putString("data", "参数类型未定义,请至工具类定义");
         }
@@ -119,7 +147,7 @@ public class Util {
      * @param username             用户名
      * @param type                 要获取的订单号类型
      * @param onGetOrderIdListener 获取结果回调
-     *                             <p/>
+     *                             <p>
      *                             * 1.交换秘钥    -----成功例子-----{"code"=200,"data"="key"}
      *                             2.注册账号    -----成功例子-----{"code"=200,"data"="注册成功"}
      *                             3.登陆账号    -----成功例子-----{"code"=200,"data"="验证通过"}
@@ -310,7 +338,7 @@ public class Util {
      * @return
      */
     public static Bitmap getbitmap(String imageUri) {
-        Log.v("new Client", "getbitmap:" + imageUri);
+        Log.v("NewClient", "getbitmap:" + imageUri);
         // 显示网络上的图片
         Bitmap bitmap = null;
         try {
@@ -323,13 +351,13 @@ public class Util {
             bitmap = BitmapFactory.decodeStream(is);
             is.close();
 
-            Log.v("new Client", "image download finished." + imageUri);
+            Log.v("NewClient", "image download finished." + imageUri);
         } catch (OutOfMemoryError e) {
             e.printStackTrace();
             bitmap = null;
         } catch (IOException e) {
             e.printStackTrace();
-            Log.v("new Client", "getbitmap bmp fail---");
+            Log.v("NewClient", "getbitmap bmp fail---");
             bitmap = null;
         }
         return bitmap;
