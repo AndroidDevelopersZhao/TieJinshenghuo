@@ -338,4 +338,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
+
+    @Override
+    protected void onDestroy() {
+        Log.d("NewClient", "MainActivity页面被销毁");
+
+        super.onDestroy();
+        Log.d(TAG,"发送广播");
+        new App();
+    }
 }

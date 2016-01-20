@@ -38,6 +38,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import cn.jpush.android.api.JPushInterface;
 import cn.smssdk.EventHandler;
 import cn.smssdk.SMSSDK;
 import cn.smssdk.gui.RegisterPage;
@@ -58,8 +59,11 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         SMSSDK.initSDK(getApplicationContext(), appkey, acept);
-
+        JPushInterface.setDebugMode(true);
+        JPushInterface.init(this);
     }
     public static String username = null;
+
+
 
 }

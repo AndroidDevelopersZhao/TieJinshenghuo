@@ -180,26 +180,6 @@ public class DriversTest_RandomTestView extends Fragment implements View.OnClick
 
     @Override
     public void onClick(View v) {
-//        boolean isA = rb_drivers_item1.isChecked();
-//        boolean isB = rb_drivers_item2.isChecked();
-//        boolean isC = rb_drivers_item3.isChecked();
-//        boolean isD = rb_drivers_item4.isChecked();
-//        int aswer = -1;
-//        if (isA) {
-//            aswer = 1;
-//        }
-//
-//        if (isB) {
-//            aswer = 2;
-//        }
-//
-//        if (isC) {
-//            aswer = 3;
-//        }
-//
-//        if (isD) {
-//            aswer = 4;
-//        }
         if (aswer == -1) {
             Toast.makeText(getActivity(), "请选择后再点击提交按钮", Toast.LENGTH_LONG).show();
             return;

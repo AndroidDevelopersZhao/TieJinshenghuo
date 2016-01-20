@@ -33,6 +33,9 @@ import android.util.Log;
 
 import com.shanghai.soeasylib.util.XXSharedPreferences;
 import com.shanghai.R;
+
+import cn.jpush.android.api.JPushInterface;
+
 /**
  *  项目名称： NewsClient
  *  创建日期： 2015/12/25  16:48
@@ -76,5 +79,23 @@ public class WaitAty extends Activity {
             }
         }).start();
 
+    }
+
+    @Override
+    protected void onResume() {
+        JPushInterface.onResume(this);
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        JPushInterface.onPause(this);
+        super.onPause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.d("NewClient","Wait页面被销毁");
+        super.onDestroy();
     }
 }
