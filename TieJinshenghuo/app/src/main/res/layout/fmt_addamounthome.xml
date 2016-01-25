@@ -21,7 +21,7 @@
         <RadioButton
             android:id="@+id/amount_10"
             android:layout_width="100sp"
-            android:layout_height="35sp"
+            android:layout_height="27sp"
             android:layout_marginLeft="30sp"
             android:text="10元"
             android:textColor="#f91e06"
@@ -31,7 +31,7 @@
         <RadioButton
             android:id="@+id/amount_20"
             android:layout_width="match_parent"
-            android:layout_height="35sp"
+            android:layout_height="27sp"
             android:layout_marginLeft="30sp"
             android:text="20元"
             android:textColor="#f91e06"
@@ -40,7 +40,7 @@
         <RadioButton
             android:id="@+id/amount_30"
             android:layout_width="match_parent"
-            android:layout_height="35sp"
+            android:layout_height="27sp"
             android:layout_marginLeft="30sp"
             android:text="30元"
             android:textColor="#f91e06"
@@ -49,7 +49,7 @@
         <RadioButton
             android:id="@+id/amount_50"
             android:layout_width="match_parent"
-            android:layout_height="35sp"
+            android:layout_height="27sp"
             android:layout_marginLeft="30sp"
             android:text="50元"
             android:textColor="#f91e06"
@@ -58,7 +58,7 @@
         <RadioButton
             android:id="@+id/amount_100"
             android:layout_width="match_parent"
-            android:layout_height="35sp"
+            android:layout_height="27sp"
             android:layout_marginLeft="30sp"
             android:text="100元"
             android:textColor="#f91e06"
@@ -67,7 +67,7 @@
         <RadioButton
             android:id="@+id/amount_200"
             android:layout_width="match_parent"
-            android:layout_height="35sp"
+            android:layout_height="27sp"
             android:layout_marginLeft="30sp"
             android:text="200元"
             android:textColor="#f91e06"
@@ -76,7 +76,7 @@
         <RadioButton
             android:id="@+id/amount_300"
             android:layout_width="match_parent"
-            android:layout_height="35sp"
+            android:layout_height="27sp"
             android:layout_marginLeft="30sp"
             android:text="300元"
             android:textColor="#f91e06"
@@ -85,7 +85,7 @@
         <RadioButton
             android:id="@+id/amount_500"
             android:layout_width="match_parent"
-            android:layout_height="35sp"
+            android:layout_height="27sp"
             android:layout_marginLeft="30sp"
             android:text="500元"
             android:textColor="#f91e06"
@@ -112,7 +112,7 @@
         android:textSize="20sp" />
 
     <View
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="10sp"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#868384" />
