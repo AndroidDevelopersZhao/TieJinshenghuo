@@ -1,1 +1,1 @@
-include ':app', ':pidanview', ':sMSSDK'
+include ':app', ':pidanview', ':sMSSDK', ':social_sdk_library_project'

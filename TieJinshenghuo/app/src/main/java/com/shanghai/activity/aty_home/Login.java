@@ -46,6 +46,11 @@ import com.shanghai.soeasylib.util.XXHttpClient;
 import com.shanghai.soeasylib.util.XXRSAUtils;
 import com.shanghai.soeasylib.util.XXSharedPreferences;
 import com.shanghai.utils.Util;
+import com.umeng.socialize.UMAuthListener;
+import com.umeng.socialize.UMShareAPI;
+import com.umeng.socialize.bean.SHARE_MEDIA;
+
+import java.util.Map;
 
 import xinfu.com.pidanview.alerterview.progress.SVProgressHUD;
 
@@ -65,8 +70,8 @@ public class Login extends Activity implements View.OnClickListener {
     private CheckBox cb;
     private String url = Util.url_my;
     private TextView et_register, tv_forgotpsw;
-//    private String url = "http://192.168.51.112:8080/NewClient_Service/getPK_Service";
-
+    //    private String url = "http://192.168.51.112:8080/NewClient_Service/getPK_Service";
+    private ImageView qqLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,7 +118,7 @@ public class Login extends Activity implements View.OnClickListener {
 //        }
     }
 
-    synchronized  private void initData() {
+    synchronized private void initData() {
         XXSharedPreferences sharedPreferences = new XXSharedPreferences("User_Num");
         if (sharedPreferences.get(this, "username", "").toString().equals("") ||
                 sharedPreferences.get(this, "password", "").toString().equals("")) {
@@ -122,6 +127,8 @@ public class Login extends Activity implements View.OnClickListener {
         et_username.setText(sharedPreferences.get(this, "username", "").toString());
         et_password.setText(sharedPreferences.get(this, "password", "").toString());
     }
+
+    private UMShareAPI mShareAPI;
 
     private void initView() {
         sharedPreferences = new XXSharedPreferences("RSA_KEY");//
@@ -136,7 +143,53 @@ public class Login extends Activity implements View.OnClickListener {
         tv_forgotpsw = (TextView) findViewById(R.id.tv_forgotpsw);
         et_register.setOnClickListener(this);
         tv_forgotpsw.setOnClickListener(this);
+        qqLogin = (ImageView) findViewById(R.id.qqLogin);
+        qqLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mShareAPI = UMShareAPI.get(Login.this);
+                SHARE_MEDIA platform = SHARE_MEDIA.WEIXIN;
+                mShareAPI.doOauthVerify(Login.this, platform, umAuthListener);
+//                mShareAPI.doOauthVerify(Login.this, platform, new UMAuthListener() {
+//                    @Override
+//                    public void onComplete(SHARE_MEDIA share_media, int i, Map<String, String> map) {
+//                        Log.d(TAG, "onComplete:" + map.toString());
+//                        Toast.makeText(getApplicationContext(), "Authorize succeed", Toast.LENGTH_SHORT).show();
+//                    }
+//
+//                    @Override
+//                    public void onError(SHARE_MEDIA share_media, int i, Throwable throwable) {
+//                        Log.d(TAG, "onError:" + throwable.getMessage());
+//                        Toast.makeText(getApplicationContext(), "Authorize fail", Toast.LENGTH_SHORT).show();
+//                    }
+//
+//                    @Override
+//                    public void onCancel(SHARE_MEDIA share_media, int i) {
+//                        Log.d(TAG, "onCancel:" + share_media.toString());
+//                        Toast.makeText(getApplicationContext(), "Authorize cancel", Toast.LENGTH_SHORT).show();
+//                    }
+//                });
+
+
+            }
+        });
     }
+    private UMAuthListener umAuthListener = new UMAuthListener() {
+        @Override
+        public void onComplete(SHARE_MEDIA platform, int action, Map<String, String> data) {
+            Toast.makeText( getApplicationContext(), "Authorize succeed", Toast.LENGTH_SHORT).show();
+        }
+
+        @Override
+        public void onError(SHARE_MEDIA platform, int action, Throwable t) {
+            Toast.makeText( getApplicationContext(), "Authorize fail", Toast.LENGTH_SHORT).show();
+        }
+
+        @Override
+        public void onCancel(SHARE_MEDIA platform, int action) {
+            Toast.makeText( getApplicationContext(), "Authorize cancel", Toast.LENGTH_SHORT).show();
+        }
+    };
 
     @Override
     public void onClick(View v) {

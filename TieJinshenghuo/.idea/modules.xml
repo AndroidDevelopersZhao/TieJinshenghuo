@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/pidanview/pidanview.iml" filepath="$PROJECT_DIR$/pidanview/pidanview.iml" />
       <module fileurl="file://$PROJECT_DIR$/sMSSDK/sMSSDK.iml" filepath="$PROJECT_DIR$/sMSSDK/sMSSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/social_sdk_library_project/social_sdk_library_project.iml" filepath="$PROJECT_DIR$/social_sdk_library_project/social_sdk_library_project.iml" />
     </modules>
   </component>
 </project>

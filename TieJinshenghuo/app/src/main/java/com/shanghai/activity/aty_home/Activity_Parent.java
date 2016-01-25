@@ -29,6 +29,7 @@ import android.app.Fragment;
 import android.os.Bundle;
 
 import com.shanghai.R;
+import com.shanghai.fragment.fmt_home_addphoneamount.AddAmountHome;
 import com.shanghai.fragment.fmt_home_drivers.DriversTest_Select_Questions;
 import com.shanghai.fragment.fmt_home_navigation.NavigationFirstView;
 import com.shanghai.fragment.fmt_home_newclient.NewsHome;
@@ -75,6 +76,7 @@ public class Activity_Parent extends Activity {
         fragmentList.add(new RobTickets());
         fragmentList.add(new NavigationFirstView());
         fragmentList.add(new DriversTest_Select_Questions());
+        fragmentList.add(new AddAmountHome());
 
         mainView = R.id.mainView;
 //        newsHome = ;
@@ -140,6 +142,14 @@ public class Activity_Parent extends Activity {
                     bundle.putString("username",getIntent().getExtras().getString("username"));
                     fragmentList.get(9).setArguments(bundle);
                     repleace(fragmentList.get(9));
+                }
+                break;
+            case 11:
+                if (!fragmentList.get(10).isVisible()) {
+                    Bundle bundle = new Bundle();
+                    bundle.putString("username",getIntent().getExtras().getString("username"));
+                    fragmentList.get(10).setArguments(bundle);
+                    repleace(fragmentList.get(10));
                 }
                 break;
         }

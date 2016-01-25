@@ -87,7 +87,7 @@ public class Util {
     public static final String url_ticket5 = "http://op.juhe.cn/trainTickets/orderStatus";
 
     public static final String url_GETTESTREQUESTIONS = "http://api2.juheapi.com/jztk/query";
-
+    public static final String appkey_phonenumber = "5cf2d9a4c19ad3e7c81498ede38b3556";//手机充值
 
     public static final int STARTADDRESS = 0x01;
     public static final int STOPADDRESS = 0x02;
@@ -147,7 +147,7 @@ public class Util {
      * @param username             用户名
      * @param type                 要获取的订单号类型
      * @param onGetOrderIdListener 获取结果回调
-     *                             <p>
+     *                             <p/>
      *                             * 1.交换秘钥    -----成功例子-----{"code"=200,"data"="key"}
      *                             2.注册账号    -----成功例子-----{"code"=200,"data"="注册成功"}
      *                             3.登陆账号    -----成功例子-----{"code"=200,"data"="验证通过"}

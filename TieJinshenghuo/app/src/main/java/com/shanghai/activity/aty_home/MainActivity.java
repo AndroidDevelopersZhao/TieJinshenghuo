@@ -142,6 +142,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         yuliu_1.setOnClickListener(this);
         yuliu_2.setOnClickListener(this);
         yuliu_3.setOnClickListener(this);
+        yuliu_4.setOnClickListener(this);
         tv_play = (TextView) findViewById(R.id.tv_play);
         final MediaPlayer mediaPlayer01;
         alertView = new AlertView("作者Q：3648415", null, "返回", new String[]{"更换账号"},
@@ -217,6 +218,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.yuliu_3:
                 intent.putExtra("id", 10);
+                intent.putExtra("username", username);
+                break;
+            case R.id.yuliu_4:
+                intent.putExtra("id", 11);
                 intent.putExtra("username", username);
                 break;
 
