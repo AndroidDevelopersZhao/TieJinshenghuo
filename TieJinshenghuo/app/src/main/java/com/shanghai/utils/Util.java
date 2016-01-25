@@ -42,6 +42,7 @@ import android.telephony.TelephonyManager;
 import android.util.Log;
 
 import com.google.gson.Gson;
+import com.shanghai.data.data_addamount.AddRespData;
 import com.shanghai.data.data_drivers.Result;
 import com.shanghai.data.data_robtickets.OrderStatus_O_Data;
 import com.shanghai.data.data_robtickets.RespData_order;
@@ -54,6 +55,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.security.MessageDigest;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -87,10 +89,41 @@ public class Util {
     public static final String url_ticket5 = "http://op.juhe.cn/trainTickets/orderStatus";
 
     public static final String url_GETTESTREQUESTIONS = "http://api2.juheapi.com/jztk/query";
-    public static final String appkey_phonenumber = "5cf2d9a4c19ad3e7c81498ede38b3556";//手机充值
+    public static final String APPKEY_ADDAMOUNT = "5cf2d9a4c19ad3e7c81498ede38b3556";//手机充值
+    public static final String URL_ADDAMOUNT_GETNEWAMOUNT = "http://v.juhe.cn/huafei/telcheck";//手机充值
+    public static final String URL_ADDAMOUNT_ADD = "http://v.juhe.cn/huafei/recharge";//手机充值
+
 
     public static final int STARTADDRESS = 0x01;
     public static final int STOPADDRESS = 0x02;
+
+    public static String MD5(String str) {
+        MessageDigest md5 = null;
+        try {
+            md5 = MessageDigest.getInstance("MD5");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "";
+        }
+
+        char[] charArray = str.toCharArray();
+        byte[] byteArray = new byte[charArray.length];
+
+        for (int i = 0; i < charArray.length; i++) {
+            byteArray[i] = (byte) charArray[i];
+        }
+        byte[] md5Bytes = md5.digest(byteArray);
+
+        StringBuffer hexValue = new StringBuffer();
+        for (int i = 0; i < md5Bytes.length; i++) {
+            int val = ((int) md5Bytes[i]) & 0xff;
+            if (val < 16) {
+                hexValue.append("0");
+            }
+            hexValue.append(Integer.toHexString(val));
+        }
+        return hexValue.toString();
+    }
 
     public static void getImagesFromInternet(String url, final OnGetImagesListener listener) {
         XXHttpClient client = new XXHttpClient(url, true, new XXHttpClient.XXHttpResponseListener() {
@@ -129,6 +162,8 @@ public class Util {
             bundle.putSerializable("data", (OrderStatus_O_Data) object);
         } else if (object instanceof Result) {
             bundle.putSerializable("data", (Result) object);
+        } else if (object instanceof AddRespData) {
+            bundle.putSerializable("data", (AddRespData) object);
         } else {
             bundle.putString("data", "参数类型未定义,请至工具类定义");
         }

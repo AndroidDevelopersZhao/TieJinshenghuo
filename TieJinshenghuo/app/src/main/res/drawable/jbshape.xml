@@ -3,11 +3,11 @@
 
     <gradient
         android:angle="270"
-        android:centerColor="#33aec4"
+        android:centerColor="#3377c4"
         android:centerX="0.5"
         android:centerY="0.2"
-        android:endColor="#02d5fa"
-        android:startColor="#181717" />
+        android:endColor="#596ec4"
+        android:startColor="#6396ed" />
 
     <padding
         android:bottom="7dp"
