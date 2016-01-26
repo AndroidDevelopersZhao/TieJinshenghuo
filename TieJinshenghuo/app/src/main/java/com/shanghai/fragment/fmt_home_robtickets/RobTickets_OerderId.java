@@ -113,15 +113,25 @@ public class RobTickets_OerderId extends Fragment implements View.OnClickListene
                 tv_order_to_station_name.setText(getItem(i).getResult().getTo_station_name());
                 tv_order_orderid.setText(getItem(i).getResult().getOrderid());
                 tv_order_status.setText(getItem(i).getResult().getMsg());
-                tv_order_price.setText(getItem(i).getResult().getPassengers()[0].getPrice());
+                tv_order_price.setText(getItem(i).getResult().getOrderamount());
 
                 tv_order_submit_time.setText(getItem(i).getResult().getSubmit_time());
 
-                tv_order_passengersename.setText(getItem(i).getResult().getPassengers()[0].getPassengersename());
+                StringBuffer name = new StringBuffer();
+                StringBuffer type = new StringBuffer();
+                StringBuffer no = new StringBuffer();
 
-                tv_order_passporttypeseidname.setText(getItem(i).getResult().getPassengers()[0].getPassporttypeseidname());
+                for (int q = 0; q < getItem(i).getResult().getPassengers().length; q++) {
+                    name.append(getItem(i).getResult().getPassengers()[q].getPassengersename()).append(",");
+                    type.append(getItem(i).getResult().getPassengers()[q].getPassporttypeseidname()).append(",");
+                    no.append(getItem(i).getResult().getPassengers()[q].getPassportseno()).append(",");
 
-                tv_order_passportseno.setText(getItem(i).getResult().getPassengers()[0].getPassportseno());
+                }
+                tv_order_passengersename.setText(name.toString().substring(0, name.toString().length() - 1));
+
+                tv_order_passporttypeseidname.setText(type.toString().substring(0, type.toString().length() - 1));
+
+                tv_order_passportseno.setText(no.toString().substring(0, no.toString().length() - 1));
 
                 btn_order_sub.setEnabled(false);
                 if (result_data.getStatus().equals("2")) {
@@ -160,65 +170,72 @@ public class RobTickets_OerderId extends Fragment implements View.OnClickListene
                 lv_orderId.onRefreshComplete();
                 if (msg.what == 1) {
 //
-                    final OrderStatus_O_Data orderStatus_o_data = new Gson().fromJson(data, OrderStatus_O_Data.class);
-                    if (orderStatus_o_data.getError_code() == 0) {
+                    final OrderStatus_O_Data all = new Gson().fromJson(data, OrderStatus_O_Data.class);
+                    if (all.getError_code() == 0) {
 
-                        result_data = orderStatus_o_data.getResult();
-                        int i = 0;
-                        for (OrderStatus_O_Passengers_Data passengers_data : result_data.getPassengers()) {
-                            Log.d(TAG, "第" + (i++) + "个 passengers_data对象");
-                        }
-                        if (i >= 0 && orderStatus_o_data != null && result_data != null) {
-                            Log.d(TAG, "查询结果已全部解析完成,改变UI在送望SQL数据库后执行");
-                            //TODO 当数据成功存入数据库时刷新UI
-
-                            getHandler_serchOrderid_sendToServiceSQl = new Handler() {
-                                @Override
-                                public void handleMessage(Message msg) {
-                                    if (svProgressHUD.isShowing(getActivity())) {
-                                        svProgressHUD.dismiss(getActivity());
-                                    }
-                                    switch (msg.what) {
-                                        case 1:
-                                            //添加到数据库成功，刷新UI
-                                            if (result_data.getStatus().equals("2")) {
-//                            btn_order_sub.setEnabled(true);
-                                                tv_order_ticket_no.setText(result_data.getPassengers()[0].getTicket_no());
-                                                tv_order_cxin.setText(result_data.getPassengers()[0].getCxin());
-                                                //服务器存储待支付订单。用户可通过待支付页面支付订单
-                                            }
-                                            if (result_data.getStatus().equals("4")) {
-                                                tv_order_ordernumber.setText(result_data.getOrdernumber());
-
-                                            }
-                                            adapter.addItem(orderStatus_o_data);
-                                            adapter.notifyDataSetChanged();
-                                            break;
-                                        case -1:
-                                            //添加到数据库失败，请重新刷新
-                                            Toast.makeText(getActivity(), msg.getData().getString("data"), Toast.LENGTH_LONG).show();
-                                            break;
-                                    }
+//                        result_data = orderStatus_o_data.getResult();
+//                        int i = 0;
+//                        for (OrderStatus_O_Passengers_Data passengers_data : result_data.getPassengers()) {
+//                            Log.d(TAG, "第" + (i++) + "个 passengers_data对象");
+//                        }
+//                        if (i >= 0 && orderStatus_o_data != null && result_data != null) {
+//                            Log.d(TAG, "查询结果已全部解析完成,改变UI在送望SQL数据库后执行");
+//                            //TODO 当数据成功存入数据库时刷新UI
+//
+                        getHandler_serchOrderid_sendToServiceSQl = new Handler() {
+                            @Override
+                            public void handleMessage(Message msg) {
+                                if (svProgressHUD.isShowing(getActivity())) {
+                                    svProgressHUD.dismiss(getActivity());
                                 }
-                            };
-                            //向服务器发送订单状态以及数据
+                                result_data = all.getResult();
+                                switch (msg.what) {
+                                    case 1:
+                                        //添加到数据库成功，刷新UI
+                                        if (result_data.getStatus().equals("2")) {
+//                            btn_order_sub.setEnabled(true);
+                                            StringBuffer order_ticket_no = new StringBuffer();
+                                            StringBuffer order_cxin = new StringBuffer();
+                                            for (int i = 0; i < result_data.getPassengers().length; i++) {
+                                                order_ticket_no.append(result_data.getPassengers()[i].getTicket_no()).append(",");
+                                                order_cxin.append(result_data.getPassengers()[i].getCxin()).append(",");
 
-                            sendTickestStatusAndDataToServiceMySQL(username, oerderId, result_data, result_data.getPassengers()[0], result_data.getPassengers()[0].getReturntickets());
-
-
-                        } else {
-                            if (svProgressHUD.isShowing(getActivity())) {
-                                svProgressHUD.dismiss(getActivity());
+                                            }
+                                            tv_order_ticket_no.setText(order_ticket_no.toString().substring(0, order_ticket_no.length() - 1));
+                                            tv_order_cxin.setText(order_cxin.toString().substring(0, order_cxin.length() - 1));
+                                            //服务器存储待支付订单。用户可通过待支付页面支付订单
+                                        }
+                                        if (result_data.getStatus().equals("4")) {
+                                            tv_order_ordernumber.setText(result_data.getOrdernumber());
+                                        }
+                                        adapter.addItem(all);
+                                        adapter.notifyDataSetChanged();
+                                        break;
+                                    case -1:
+                                        //添加到数据库失败，请重新刷新
+                                        Toast.makeText(getActivity(), msg.getData().getString("data"), Toast.LENGTH_LONG).show();
+                                        break;
+                                }
                             }
-                            Toast.makeText(getActivity(), "数据异常", Toast.LENGTH_LONG).show();
-                            return;
-                        }
+                        };
+                        //向服务器发送订单状态以及数据
+
+                        sendTickestStatusAndDataToServiceMySQL(username, oerderId, all);
+
+
+//                        } else {
+//                            if (svProgressHUD.isShowing(getActivity())) {
+//                                svProgressHUD.dismiss(getActivity());
+//                            }
+//                            Toast.makeText(getActivity(), "数据异常", Toast.LENGTH_LONG).show();
+//                            return;
+//                        }
                     } else {
 
                         if (svProgressHUD.isShowing(getActivity())) {
                             svProgressHUD.dismiss(getActivity());
                         }
-                        Toast.makeText(getActivity(), orderStatus_o_data.getReason(), Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(), all.getReason(), Toast.LENGTH_LONG).show();
                     }
                 } else {
 
@@ -267,9 +284,10 @@ public class RobTickets_OerderId extends Fragment implements View.OnClickListene
         Log.d(TAG, "查询订单状态提交的所有数据：" + client.getAllParams());
     }
 
-    private void sendTickestStatusAndDataToServiceMySQL(String username, String oerderId, OrderStatus_O_Result_Data result_data,
-                                                        OrderStatus_O_Passengers_Data passengers,
-                                                        OrderStatus_O_Passengers_Returntickets_Data returntickets_data) {
+    private void sendTickestStatusAndDataToServiceMySQL(String username, String oerderId, OrderStatus_O_Data o_data_all) {
+        OrderStatus_O_Data all = o_data_all;
+        OrderStatus_O_Result_Data result = all.getResult();
+        OrderStatus_O_Passengers_Data[] passengers_data = result.getPassengers();//陈科信息
         XXHttpClient client = new XXHttpClient(Util.url_my, true, new XXHttpClient.XXHttpResponseListener() {
             @Override
             public void onSuccess(int i, byte[] bytes) {
@@ -305,53 +323,100 @@ public class RobTickets_OerderId extends Fragment implements View.OnClickListene
         client.put("type", 9);
         client.put("username", username);
         client.put("orderId", oerderId);
-        client.put("user_orderid", result_data.getUser_orderid());
-        client.put("msg", result_data.getMsg());
-        client.put("orderamount", result_data.getOrderamount());
-        client.put("status", result_data.getStatus());
-        client.put("checi", result_data.getCheci());
-        client.put("ordernumber", result_data.getOrdernumber());
-        client.put("submit_time", result_data.getSubmit_time());
-        client.put("deal_time", result_data.getDeal_time());
-        client.put("cancel_time", result_data.getCancel_time());
-        client.put("pay_time", result_data.getPay_time());
-        client.put("finished_time", result_data.getFinished_time());
-        client.put("refund_time", result_data.getRefund_time());
-        client.put("juhe_refund_time", result_data.getJuhe_refund_time());
-        client.put("train_date", result_data.getTrain_date());
-        client.put("from_station_name", result_data.getFrom_station_name());
-        client.put("from_station_code", result_data.getFrom_station_code());
-        client.put("to_station_name", result_data.getTo_station_name());
-        client.put("to_station_code", result_data.getTo_station_code());
-        client.put("refund_money", result_data.getRefund_money());
+        client.put("user_orderid", result.getUser_orderid());
+        client.put("msg", result.getMsg());
+        client.put("orderamount", result.getOrderamount());
+        client.put("status", result.getStatus());
+        client.put("checi", result.getCheci());
+        client.put("ordernumber", result.getOrdernumber());
+        client.put("submit_time", result.getSubmit_time());
+        client.put("deal_time", result.getDeal_time());
+        client.put("cancel_time", result.getCancel_time());
+        client.put("pay_time", result.getPay_time());
+        client.put("finished_time", result.getFinished_time());
+        client.put("refund_time", result.getRefund_time());
+        client.put("juhe_refund_time", result.getJuhe_refund_time());
+        client.put("train_date", result.getTrain_date());
+        client.put("from_station_name", result.getFrom_station_name());
+        client.put("from_station_code", result.getFrom_station_code());
+        client.put("to_station_name", result.getTo_station_name());
+        client.put("to_station_code", result.getTo_station_code());
+        client.put("refund_money", result.getRefund_money());
+        StringBuffer passengerid = new StringBuffer();
+        StringBuffer passengersename = new StringBuffer();
+        StringBuffer piaotype = new StringBuffer();
+        StringBuffer piaotypename = new StringBuffer();
+        StringBuffer passporttypeseid = new StringBuffer();
+        StringBuffer passporttypeseidname = new StringBuffer();
+        StringBuffer passportseno = new StringBuffer();
+        StringBuffer price = new StringBuffer();
+        StringBuffer zwcode = new StringBuffer();
+        StringBuffer zwname = new StringBuffer();
+        StringBuffer ticket_no = new StringBuffer();
+        StringBuffer cxin = new StringBuffer();
+        StringBuffer reason = new StringBuffer();
+
+        //退票小光
+
+        StringBuffer returnsuccess = new StringBuffer();
+        StringBuffer returnmoney = new StringBuffer();
+        StringBuffer returntime = new StringBuffer();
+        StringBuffer returnfailid = new StringBuffer();
+        StringBuffer returnfailmsg = new StringBuffer();
+        StringBuffer returntype = new StringBuffer();
+
+        for (int i = 0; i < passengers_data.length; i++) {
+            passengerid.append(passengers_data[i].getPassengerid()).append(",");
+            passengersename.append(passengers_data[i].getPassengersename()).append(",");
+            piaotype.append(passengers_data[i].getPiaotype()).append(",");
+            piaotypename.append(passengers_data[i].getPiaotypename()).append(",");
+            passporttypeseid.append(passengers_data[i].getPassporttypeseid()).append(",");
+            passporttypeseidname.append(passengers_data[i].getPassporttypeseidname()).append(",");
+            passportseno.append(passengers_data[i].getPassportseno()).append(",");
+            price.append(passengers_data[i].getPrice()).append(",");
+            zwcode.append(passengers_data[i].getZwcode()).append(",");
+            zwname.append(passengers_data[i].getZwname()).append(",");
+            ticket_no.append(passengers_data[i].getTicket_no()).append(",");
+            cxin.append(passengers_data[i].getCxin()).append(",");
+            reason.append(passengers_data[i].getReason()).append(",");
+            try {
+                returnsuccess.append(passengers_data[i].getReturntickets().isReturnsuccess());
+                returnmoney.append(passengers_data[i].getReturntickets().getReturnmoney());
+                returntime.append(passengers_data[i].getReturntickets().getReturntime());
+                returnfailid.append(passengers_data[i].getReturntickets().getReturnfailid());
+                returnfailmsg.append(passengers_data[i].getReturntickets().getReturnfailmsg());
+                returntype.append(passengers_data[i].getReturntickets().getReturntype());
+            } catch (Throwable t) {
+                Log.e(TAG, "退款部分数据抛出异常");
+            }
 
 
-        client.put("passengerid", passengers.getPassengerid());
-        client.put("passengersename", passengers.getPassengersename());
-        client.put("piaotype", passengers.getPiaotype());
-        client.put("piaotypename", passengers.getPiaotypename());
-        client.put("passporttypeseid", passengers.getPassporttypeseid());
-        client.put("passporttypeseidname", passengers.getPassporttypeseidname());
-        client.put("passportseno", passengers.getPassportseno());
-        client.put("price", passengers.getPrice());
-        client.put("zwcode", passengers.getZwcode());
-        client.put("zwname", passengers.getZwname());
-        client.put("ticket_no", passengers.getTicket_no());
-        client.put("cxin", passengers.getCxin());
-        client.put("reason", passengers.getReason());
+        }
+        client.put("passengerid", passengerid.toString().substring(0, passengerid.toString().length() - 1));
+        client.put("passengersename", passengersename.toString().substring(0, passengersename.toString().length() - 1));
+        client.put("piaotype", piaotype.toString().substring(0, piaotype.toString().length() - 1));
+        client.put("piaotypename", piaotypename.toString().substring(0, piaotypename.toString().length() - 1));
+        client.put("passporttypeseid", passporttypeseid.toString().substring(0, passporttypeseid.toString().length() - 1));
+        client.put("passporttypeseidname", passporttypeseidname.toString().substring(0, passporttypeseidname.toString().length() - 1));
+        client.put("passportseno", passportseno.toString().substring(0, passportseno.toString().length() - 1));
+
+        client.put("price", price.toString().substring(0, price.toString().length() - 1));
+        client.put("zwcode", zwcode.toString().substring(0, zwcode.toString().length() - 1));
+        client.put("zwname", zwname.toString().substring(0, zwname.toString().length() - 1));
+        client.put("ticket_no", ticket_no.toString().substring(0, ticket_no.toString().length() - 1));
+        client.put("cxin", cxin.toString().substring(0, cxin.toString().length() - 1));
+        client.put("reason", reason.toString().substring(0, reason.toString().length() - 1));
 
         try {
-            client.put("returnsuccess", returntickets_data.isReturnsuccess());
-            client.put("returnmoney", returntickets_data.getReturnmoney());
-            client.put("returntime", returntickets_data.getReturntime());
-            client.put("returnfailid", returntickets_data.getReturnfailid());
-            client.put("returnfailmsg", returntickets_data.getReturnfailmsg());
-            client.put("returntype", returntickets_data.getReturntype());
-        }catch (Throwable throwable){
-            Log.e(TAG,"退款部分数据抛出异常");
+            client.put("returnsuccess", returnsuccess.toString().substring(0, returnsuccess.length() - 1));
+            client.put("returnmoney", returnmoney.toString().substring(0, returnmoney.length() - 1));
+            client.put("returntime", returntime.toString().substring(0, returntime.length() - 1));
+            client.put("returnfailid", returnfailid.toString().substring(0, returnfailid.length() - 1));
+            client.put("returnfailmsg", returnfailmsg.toString().substring(0, returnfailmsg.length() - 1));
+            client.put("returntype", returntype.toString().substring(0, returntype.length() - 1));
+        } catch (Throwable throwable) {
+            Log.e(TAG, "退款部分数据抛出异常");
         }
-
-
 
 
         client.doPost(15000);
@@ -447,7 +512,7 @@ public class RobTickets_OerderId extends Fragment implements View.OnClickListene
                     case 1:
                         Double amount = Double.valueOf(msg.getData().getString("data"));
                         Double price = Double.valueOf(tv_order_price.getText().toString().trim());
-                        if (amount <= price) {
+                        if (amount < price) {
                             new Thread(new Runnable() {
                                 @Override
                                 public void run() {
