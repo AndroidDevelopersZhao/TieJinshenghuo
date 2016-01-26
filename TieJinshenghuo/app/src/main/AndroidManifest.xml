@@ -80,6 +80,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -88,22 +89,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <!--<activity-->
-            <!--android:name="com.tencent.tauth.AuthActivity"-->
-            <!--android:launchMode="singleTask"-->
-            <!--android:noHistory="true">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.VIEW" />-->
+        <!--android:name="com.tencent.tauth.AuthActivity"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:noHistory="true">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.VIEW" />-->
 
-                <!--<category android:name="android.intent.category.DEFAULT" />-->
-                <!--<category android:name="android.intent.category.BROWSABLE" />-->
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
+        <!--<category android:name="android.intent.category.BROWSABLE" />-->
 
-                <!--<data android:scheme="tencent1104950333" />-->
-            <!--</intent-filter>-->
+        <!--<data android:scheme="tencent1104950333" />-->
+        <!--</intent-filter>-->
         <!--</activity>-->
         <!--<activity-->
-            <!--android:name="com.tencent.connect.common.AssistActivity"-->
-            <!--android:configChanges="orientation|keyboardHidden|screenSize"-->
-            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
+        <!--android:name="com.tencent.connect.common.AssistActivity"-->
+        <!--android:configChanges="orientation|keyboardHidden|screenSize"-->
+        <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
         <!--android:value="3VkDKkstm986eYzSBsiouF2z" />-->
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
@@ -283,8 +284,6 @@
             android:value="574a43de5602bd4d41d68443" />
 
 
-
-
         <!-- 友盟相关-->
         <activity
             android:name="com.umeng.socialize.editorpage.ShareActivity"
@@ -294,10 +293,11 @@
         <meta-data
             android:name="UMENG_APPKEY"
             android:value="56a1d9dce0f55a792f000594"></meta-data>
+
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
-            android:noHistory="true" >
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -311,8 +311,17 @@
             android:name="com.tencent.connect.common.AssistActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- app安装完成的广播-->
+        <receiver
+            android:name="com.shanghai.activity.aty_home.WaitAty$WaitReciver"
+            android:enabled="true">
+            <intent-filter>
 
+                <action android:name="android.intent.action.action.PACKAGE_ADDED" />
 
+                <category android:name="com.shanghai" />
+            </intent-filter>
+        </receiver>
     </application>
 
 

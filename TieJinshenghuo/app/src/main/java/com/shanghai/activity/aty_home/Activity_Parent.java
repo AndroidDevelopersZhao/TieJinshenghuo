@@ -27,6 +27,8 @@ package com.shanghai.activity.aty_home;
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
 
 import com.shanghai.R;
 import com.shanghai.fragment.fmt_home_addphoneamount.AddAmountHome;
@@ -43,6 +45,9 @@ import com.shanghai.fragment.fmt_home_youdao.YoudaoHome;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import xinfu.com.pidanview.alerterview.alerterview.AlertView;
+import xinfu.com.pidanview.alerterview.alerterview.OnItemClickListener;
 
 
 /**
@@ -123,7 +128,7 @@ public class Activity_Parent extends Activity {
             case 8:
                 if (!fragmentList.get(7).isVisible()) {
                     Bundle bundle = new Bundle();
-                    bundle.putString("username",getIntent().getExtras().getString("username"));
+                    bundle.putString("username", getIntent().getExtras().getString("username"));
                     fragmentList.get(7).setArguments(bundle);
                     repleace(fragmentList.get(7));
                 }
@@ -131,7 +136,7 @@ public class Activity_Parent extends Activity {
             case 9:
                 if (!fragmentList.get(8).isVisible()) {
                     Bundle bundle = new Bundle();
-                    bundle.putString("username",getIntent().getExtras().getString("username"));
+                    bundle.putString("username", getIntent().getExtras().getString("username"));
                     fragmentList.get(8).setArguments(bundle);
                     repleace(fragmentList.get(8));
                 }
@@ -139,18 +144,31 @@ public class Activity_Parent extends Activity {
             case 10:
                 if (!fragmentList.get(9).isVisible()) {
                     Bundle bundle = new Bundle();
-                    bundle.putString("username",getIntent().getExtras().getString("username"));
+                    bundle.putString("username", getIntent().getExtras().getString("username"));
                     fragmentList.get(9).setArguments(bundle);
                     repleace(fragmentList.get(9));
                 }
                 break;
             case 11:
-                if (!fragmentList.get(10).isVisible()) {
-                    Bundle bundle = new Bundle();
-                    bundle.putString("username",getIntent().getExtras().getString("username"));
-                    fragmentList.get(10).setArguments(bundle);
-                    repleace(fragmentList.get(10));
-                }
+                new AlertView("提示", "选择进入类型", null, new String[]{"充值"}, new String[]{"订单查看"}, Activity_Parent.this, AlertView.Style.Alert, new OnItemClickListener() {
+                    @Override
+                    public void onItemClick(Object o, int position) {
+                        Log.d("NewClient", "po:" + position);
+                        if (position == 0) {
+                            if (!fragmentList.get(10).isVisible()) {
+                                Bundle bundle = new Bundle();
+                                bundle.putString("username", getIntent().getExtras().getString("username"));
+                                fragmentList.get(10).setArguments(bundle);
+                                repleace(fragmentList.get(10));
+                            }
+                        } else {
+
+                            Toast.makeText(Activity_Parent.this, "预留", Toast.LENGTH_LONG).show();
+                            finish();
+                        }
+                    }
+                }).show();
+
                 break;
         }
     }

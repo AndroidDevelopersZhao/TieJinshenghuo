@@ -1,11 +1,11 @@
 [
     {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\messenger_button_white_bg_round.xml",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\drawable\\messenger_button_white_bg_round.xml"
-    },
-    {
         "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_red_blue.xml",
         "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_red_blue.xml"
+    },
+    {
+        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\messenger_button_white_bg_round.xml",
+        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\drawable\\messenger_button_white_bg_round.xml"
     },
     {
         "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_grey.9.png",
@@ -16,12 +16,12 @@
         "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_wechat.png"
     },
     {
-        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_kakao_gray.png",
-        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_kakao_gray.png"
-    },
-    {
         "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_login_pressed.png",
         "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_login_pressed.png"
+    },
+    {
+        "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_kakao_gray.png",
+        "source": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_kakao_gray.png"
     },
     {
         "merged": "G:\\Github\\TieJinshenghuo\\TieJinshenghuo\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_left_normal.png",

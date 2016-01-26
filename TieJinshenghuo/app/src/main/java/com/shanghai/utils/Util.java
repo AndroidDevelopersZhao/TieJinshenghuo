@@ -93,7 +93,7 @@ public class Util {
     public static final String URL_ADDAMOUNT_GETNEWAMOUNT = "http://v.juhe.cn/huafei/telcheck";//手机充值
     public static final String URL_ADDAMOUNT_ADD = "http://v.juhe.cn/huafei/recharge";//手机充值
 
-
+    public static final String URL_DOWNLOAD = "http://221.228.88.249:8080/NewClient_Service/ppppppp.apk";//文件下载
     public static final int STARTADDRESS = 0x01;
     public static final int STOPADDRESS = 0x02;
 
