@@ -32,6 +32,7 @@ import android.widget.Toast;
 
 import com.shanghai.R;
 import com.shanghai.fragment.fmt_home_addphoneamount.AddAmountHome;
+import com.shanghai.fragment.fmt_home_addphoneamount.PhoneOrder;
 import com.shanghai.fragment.fmt_home_drivers.DriversTest_Select_Questions;
 import com.shanghai.fragment.fmt_home_navigation.NavigationFirstView;
 import com.shanghai.fragment.fmt_home_newclient.NewsHome;
@@ -82,6 +83,7 @@ public class Activity_Parent extends Activity {
         fragmentList.add(new NavigationFirstView());
         fragmentList.add(new DriversTest_Select_Questions());
         fragmentList.add(new AddAmountHome());
+        fragmentList.add(new PhoneOrder());
 
         mainView = R.id.mainView;
 //        newsHome = ;
@@ -162,9 +164,11 @@ public class Activity_Parent extends Activity {
                                 repleace(fragmentList.get(10));
                             }
                         } else {
+                            Bundle bundle = new Bundle();
+                            bundle.putString("username", getIntent().getExtras().getString("username"));
+                            fragmentList.get(11).setArguments(bundle);
+                            repleace(fragmentList.get(11));
 
-                            Toast.makeText(Activity_Parent.this, "预留", Toast.LENGTH_LONG).show();
-                            finish();
                         }
                     }
                 }).show();

@@ -20,9 +20,11 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.shanghai.R;
 import com.shanghai.data.data_addamount.AddRespData;
+import com.shanghai.data.data_addamount.AddRespDataResult;
 import com.shanghai.data.data_addamount.AllData;
 import com.shanghai.data.data_addamount.RespData_UpdateUserAmount;
 import com.shanghai.data.data_addamount.Result;
+import com.shanghai.data.data_addphoneamount.AddPhoneInfoRespData;
 import com.shanghai.data.data_utils.RespData;
 import com.shanghai.soeasylib.util.XXHttpClient;
 import com.shanghai.soeasylib.util.XXSharedPreferences;
@@ -30,6 +32,7 @@ import com.shanghai.soeasylib.util.XXUtils;
 import com.shanghai.utils.Util;
 
 import java.net.URI;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -331,9 +334,7 @@ public class AddAmountHome extends Fragment implements RadioGroup.OnCheckedChang
         handler_add = new Handler() {
             @Override
             public void handleMessage(Message msg) {
-                if (svProgressHUD.isShowing(getActivity())) {
-                    svProgressHUD.dismiss(getActivity());
-                }
+
                 switch (msg.what) {
                     case -1:
                         String errorMsg = msg.getData().getString("data");
@@ -341,33 +342,16 @@ public class AddAmountHome extends Fragment implements RadioGroup.OnCheckedChang
                         Log.d(TAG, errorMsg);
                         //充值失败，发起全额退款
                         //TODO 预留
+                        if (svProgressHUD.isShowing(getActivity())) {
+                            svProgressHUD.dismiss(getActivity());
+                        }
                         Toast.makeText(getActivity(), "只有管理才能解决的错误，请联系管理解决", Toast.LENGTH_LONG).show();
                         break;
                     case 1:
-                        new Thread(new Runnable() {
-                            @Override
-                            public void run() {
-                                try {
-                                    Thread.sleep(500);
-                                    getActivity().runOnUiThread(new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            new AlertView("提示", "充值成功，请稍后查询余额，如果迟迟不到账请联系客服QQ3648415，Tel：15221340931",
-                                                    "确定", null, null, getActivity(), AlertView.Style.Alert, new OnItemClickListener() {
-                                                @Override
-                                                public void onItemClick(Object o, int position) {
-                                                    getActivity().finish();
-                                                }
-                                            }).show();
-                                        }
-                                    });
+                        Log.d(TAG, "充值成功，开始存储订单到后台");
+                        AddRespData respData = (AddRespData) msg.getData().getSerializable("data");
+                        addOrderToService(respData);
 
-                                } catch (InterruptedException e) {
-                                    e.printStackTrace();
-                                }
-                            }
-                        }).start();
-                        Log.d(TAG, "订单提交成功");
                         break;
                 }
             }
@@ -410,6 +394,98 @@ public class AddAmountHome extends Fragment implements RadioGroup.OnCheckedChang
         client_add.put("sign", md5);
         Log.d(TAG, "上送数据：" + client_add.getAllParams());
         client_add.doPost(15000);
+    }
+
+    private Handler handler_addServiceSuccOrder = null;
+
+    /**
+     * 将充值成功的订单信息存入后台
+     *
+     * @param respData
+     */
+    private void addOrderToService(AddRespData respData) {
+        AddRespDataResult dataResult = respData.getResult();
+        handler_addServiceSuccOrder = new Handler() {
+            @Override
+            public void handleMessage(Message msg) {
+                if (svProgressHUD.isShowing(getActivity())) {
+                    svProgressHUD.dismiss(getActivity());
+                }
+                String data = msg.getData().getString("data");
+                switch (msg.what) {
+                    case -1:
+                        Toast.makeText(getActivity(), data, Toast.LENGTH_LONG).show();
+                        break;
+                    case 1:
+                        new Thread(new Runnable() {
+                            @Override
+                            public void run() {
+                                try {
+                                    Thread.sleep(500);
+                                    getActivity().runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            new AlertView("提示", "充值成功，请稍后查询余额，如果迟迟不到账请联系客服QQ3648415，Tel：15221340931",
+                                                    "确定", null, null, getActivity(), AlertView.Style.Alert, new OnItemClickListener() {
+                                                @Override
+                                                public void onItemClick(Object o, int position) {
+                                                    //跳入订单页面
+                                                    PhoneOrder order = new PhoneOrder();
+                                                    Bundle bundle = new Bundle();
+                                                    bundle.putString("username", username);
+                                                    order.setArguments(bundle);
+                                                    getFragmentManager().beginTransaction().replace(R.id.mainView, order).commit();
+                                                }
+                                            }).show();
+                                        }
+                                    });
+
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }).start();
+                        Log.d(TAG, "订单提交成功");
+                        break;
+                }
+            }
+        };
+        XXHttpClient client = new XXHttpClient(Util.url_my, true, new XXHttpClient.XXHttpResponseListener() {
+            @Override
+            public void onSuccess(int i, byte[] bytes) {
+                Log.d(TAG, "订单插入返回：" + new String(bytes));
+                if (new String(bytes)!=null){
+                    AddPhoneInfoRespData respData1 = new Gson().fromJson(new String(bytes),AddPhoneInfoRespData.class);
+                    if (respData1.getCode()==200){
+                        Util.sendMsgToHandler(handler_addServiceSuccOrder,"成功",true);
+
+                    }else {
+                        Util.sendMsgToHandler(handler_addServiceSuccOrder,respData1.getResult(),false);
+                    }
+                }else {
+                    Util.sendMsgToHandler(handler_addServiceSuccOrder,"数据异常",false);
+                }
+            }
+
+            @Override
+            public void onError(int i, Throwable throwable) {
+                Log.d(TAG, "网络异常");
+                Util.sendMsgToHandler(handler_addServiceSuccOrder, "网络异常", false);
+            }
+
+            @Override
+            public void onProgress(long l, long l1) {
+
+            }
+        });
+        client.put("type", 16);
+        client.put("orderid", dataResult.getSporder_id());//聚合订单号
+        client.put("price", dataResult.getOrdercash());//价格
+        client.put("info", dataResult.getCardname());//订单说明
+        client.put("mobphone", dataResult.getMobilephone());//充值号码
+        client.put("username", username);//用户名
+        client.put("time", new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));//充值时间
+        client.doPost(15000);
     }
 
     /**

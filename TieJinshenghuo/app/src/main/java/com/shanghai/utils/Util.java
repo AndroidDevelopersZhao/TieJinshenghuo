@@ -43,6 +43,9 @@ import android.util.Log;
 
 import com.google.gson.Gson;
 import com.shanghai.data.data_addamount.AddRespData;
+import com.shanghai.data.data_addphoneamount.AddOrderInfo;
+import com.shanghai.data.data_addphoneamount.AddPhoneInfoRespData;
+import com.shanghai.data.data_addphoneamount.JuheOrderInfo;
 import com.shanghai.data.data_drivers.Result;
 import com.shanghai.data.data_robtickets.OrderStatus_O_Data;
 import com.shanghai.data.data_robtickets.RespData_order;
@@ -92,7 +95,7 @@ public class Util {
     public static final String APPKEY_ADDAMOUNT = "5cf2d9a4c19ad3e7c81498ede38b3556";//手机充值
     public static final String URL_ADDAMOUNT_GETNEWAMOUNT = "http://v.juhe.cn/huafei/telcheck";//手机充值
     public static final String URL_ADDAMOUNT_ADD = "http://v.juhe.cn/huafei/recharge";//手机充值
-
+    public static final String URL_ADDAMOUNT_STATE = "http://v.juhe.cn/huafei/status";//手机充值状态
     public static final String URL_DOWNLOAD = "http://221.228.88.249:8080/NewClient_Service/ppppppp.apk";//文件下载
     public static final int STARTADDRESS = 0x01;
     public static final int STOPADDRESS = 0x02;
@@ -164,6 +167,12 @@ public class Util {
             bundle.putSerializable("data", (Result) object);
         } else if (object instanceof AddRespData) {
             bundle.putSerializable("data", (AddRespData) object);
+        } else if (object instanceof AddPhoneInfoRespData) {
+            bundle.putSerializable("data", (AddPhoneInfoRespData) object);
+        } else if (object instanceof AddOrderInfo) {
+            bundle.putSerializable("data", (AddOrderInfo) object);
+        } else if (object instanceof JuheOrderInfo) {
+            bundle.putSerializable("data", (JuheOrderInfo) object);
         } else {
             bundle.putString("data", "参数类型未定义,请至工具类定义");
         }
