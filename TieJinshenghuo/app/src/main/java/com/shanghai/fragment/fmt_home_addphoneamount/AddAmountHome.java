@@ -147,7 +147,7 @@ public class AddAmountHome extends Fragment implements RadioGroup.OnCheckedChang
                                             new AlertView("提示", data, null, new String[]{"取消"}, null, getActivity(), AlertView.Style.Alert, new OnItemClickListener() {
                                                 @Override
                                                 public void onItemClick(Object o, int position) {
-                                                    Toast.makeText(getActivity(), "请至个人中心充值金额后再试", Toast.LENGTH_LONG).show();
+                                                    Toast.makeText(getActivity(), "请至主页-账户中心-个人中心-账户余额页面充值金额后再试", Toast.LENGTH_LONG).show();
                                                 }
                                             }).show();
                                         }

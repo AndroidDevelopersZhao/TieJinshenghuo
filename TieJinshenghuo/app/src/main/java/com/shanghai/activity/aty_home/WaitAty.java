@@ -325,19 +325,19 @@ public class WaitAty extends Activity {
         super.onDestroy();
     }
 
-    public class WaitReciver extends BroadcastReceiver {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            Log.e(TAG, "收到广播，ac=" + intent.getAction() + "name=" + intent.getDataString());
-            if (intent.getAction().equals("android.intent.action.PACKAGE_ADDED")) {
-                if (intent.getDataString().equals("com.shanghai")) {
-                    Intent intenta = new Intent(Intent.ACTION_MAIN);
-                    intenta.setComponent(new ComponentName("com.package.address", "com.shanghai.WaitAty"));
-                   startActivity(intenta);
-                }
-            }
-        }
-    }
+//    public class WaitReciver extends BroadcastReceiver {
+//        @Override
+//        public void onReceive(Context context, Intent intent) {
+//            Log.e(TAG, "收到广播，ac=" + intent.getAction() + "name=" + intent.getDataString());
+//            if (intent.getAction().equals("android.intent.action.PACKAGE_ADDED")) {
+//                if (intent.getDataString().equals("com.shanghai")) {
+//                    Intent intenta = new Intent(Intent.ACTION_MAIN);
+//                    intenta.setComponent(new ComponentName("com.package.address", "com.shanghai.WaitAty"));
+//                   startActivity(intenta);
+//                }
+//            }
+//        }
+//    }
 
 }
 /**

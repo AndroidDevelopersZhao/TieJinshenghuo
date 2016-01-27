@@ -311,17 +311,17 @@
             android:name="com.tencent.connect.common.AssistActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <!-- app安装完成的广播-->
-        <receiver
-            android:name="com.shanghai.activity.aty_home.WaitAty$WaitReciver"
-            android:enabled="true">
-            <intent-filter>
+        <!--&lt;!&ndash; app安装完成的广播&ndash;&gt;-->
+        <!--<receiver-->
+            <!--android:name="com.shanghai.activity.aty_home.WaitAty$WaitReciver"-->
+            <!--android:enabled="true">-->
+            <!--<intent-filter>-->
 
-                <action android:name="android.intent.action.action.PACKAGE_ADDED" />
+                <!--<action android:name="android.intent.action.action.PACKAGE_ADDED" />-->
 
-                <category android:name="com.shanghai" />
-            </intent-filter>
-        </receiver>
+                <!--<category android:name="com.shanghai" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
     </application>
 
 

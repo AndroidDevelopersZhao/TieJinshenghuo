@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#dbe2ea"
+    android:background="@drawable/loginbackground"
     android:orientation="vertical">
 
     <LinearLayout
@@ -11,6 +11,7 @@
         android:gravity="center">
 
         <ImageView
+            android:visibility="invisible"
             android:id="@+id/qqLogin"
             android:layout_width="140sp"
             android:layout_height="140sp"
@@ -128,5 +129,5 @@
         android:layout_gravity="center_horizontal"
         android:gravity="center"
         android:text="Forgot password"
-        android:textColor="#f7feffff" />
+        android:textColor="#f7121ded" />
 </LinearLayout>

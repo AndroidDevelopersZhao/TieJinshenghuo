@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.animation.AnimationSet;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.shanghai.App;
@@ -337,6 +338,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case 2:
                 Log.d(TAG, "更多设置");
+                Toast.makeText(MainActivity.this, "预留-更多设置", Toast.LENGTH_SHORT).show();
                 break;
             case -1:
                 Log.d(TAG, "返回");
@@ -349,7 +351,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.d("NewClient", "MainActivity页面被销毁");
 
         super.onDestroy();
-        Log.d(TAG,"发送广播");
+        Log.d(TAG, "发送广播");
         new App();
     }
 }

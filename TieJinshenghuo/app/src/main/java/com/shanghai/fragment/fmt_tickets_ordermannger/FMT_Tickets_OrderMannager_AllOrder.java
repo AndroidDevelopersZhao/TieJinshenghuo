@@ -372,7 +372,8 @@ public class FMT_Tickets_OrderMannager_AllOrder extends android.support.v4.app.F
     }
 
     public void errorToast(String errorMsg) {
-        Toast.makeText(getActivity(), errorMsg, Toast.LENGTH_LONG).show();
+        if (FMT_Tickets_OrderMannager_AllOrder.this.isVisible())
+            Toast.makeText(getActivity(), errorMsg, Toast.LENGTH_LONG).show();
     }
 
     public void showAlertView(String Msg, OnItemClickListener listener) {

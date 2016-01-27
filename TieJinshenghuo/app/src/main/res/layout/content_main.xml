@@ -66,11 +66,12 @@
                     android:layout_width="100sp"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:background="#829181"
-                    android:text="更多"
+                    android:background="#ff110d"
+                    android:text="账户中心"
                     android:textColor="#FFFFFF" />
 
                 <com.shanghai.view.AlwaysMarqueeTextView
+                    android:layout_marginLeft="5sp"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:textSize="30px"
@@ -78,7 +79,7 @@
                     android:ellipsize="marquee"
                     android:marqueeRepeatLimit="marquee_forever"
                     android:focusable="true"
-                    android:text="抢票神器页面待编写   抢票神器页面待编写   抢票神器页面待编写   抢票神器页面待编写   抢票神器页面待编写   抢票神器页面待编写   "
+                    android:text="购票系统目前维护中，请不要购票   购票系统目前维护中，请不要购票   购票系统目前维护中，请不要购票   "
                     />
             </LinearLayout>
 

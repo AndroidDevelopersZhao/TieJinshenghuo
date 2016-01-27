@@ -194,11 +194,12 @@ public class RobTickets_OerderId extends Fragment implements View.OnClickListene
                                         //添加到数据库成功，刷新UI
                                         if (result_data.getStatus().equals("2")) {
 //                            btn_order_sub.setEnabled(true);
+                                            OrderStatus_O_Passengers_Data[] passengers_datas=result_data.getPassengers();
                                             StringBuffer order_ticket_no = new StringBuffer();
                                             StringBuffer order_cxin = new StringBuffer();
-                                            for (int i = 0; i < result_data.getPassengers().length; i++) {
-                                                order_ticket_no.append(result_data.getPassengers()[i].getTicket_no()).append(",");
-                                                order_cxin.append(result_data.getPassengers()[i].getCxin()).append(",");
+                                            for (int i = 0; i < passengers_datas.length; i++) {
+                                                order_ticket_no.append(passengers_datas[i].getTicket_no()).append(",");
+                                                order_cxin.append(passengers_datas[i].getCxin()).append(",");
 
                                             }
                                             tv_order_ticket_no.setText(order_ticket_no.toString().substring(0, order_ticket_no.length() - 1));
