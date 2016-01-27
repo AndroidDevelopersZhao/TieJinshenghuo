@@ -15,6 +15,7 @@ import com.shanghai.R;
 import com.shanghai.activity.aty_home_myinfo.OrderInfo_Aty;
 import com.shanghai.activity.aty_home_myinfo.Amount_Aty;
 import com.shanghai.soeasylib.adapter.XXListViewAdapter;
+import com.umeng.update.UmengUpdateAgent;
 
 /**
  * Created by Administrator on 2016/1/9.
@@ -90,7 +91,8 @@ public class MyInfo_Aty extends Activity implements AdapterView.OnItemClickListe
                 Toast.makeText(MyInfo_Aty.this, "待编写-反馈意见", Toast.LENGTH_SHORT).show();
                 break;
             case "在线升级":
-                Toast.makeText(MyInfo_Aty.this, "待编写-在线升级", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MyInfo_Aty.this, "待编写-在线升级", Toast.LENGTH_SHORT).show();
+                UmengUpdateAgent.forceUpdate(this);
                 break;
             case "联系我们":
                 Toast.makeText(MyInfo_Aty.this, "待编写-联系我们", Toast.LENGTH_SHORT).show();

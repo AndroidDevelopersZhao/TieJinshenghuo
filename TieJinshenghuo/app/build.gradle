@@ -22,7 +22,8 @@ android {
             jniLibs.srcDirs = ['libs']
         }
     }
-    lintOptions {
+    lintOptions{
+        checkReleaseBuilds false
         abortOnError false
     }
 }
@@ -38,4 +39,5 @@ dependencies {
     compile files('libs/BaiduLBS_Android.jar')
     compile files('libs/jpush-android-2.0.6.jar')
     compile project(':social_sdk_library_project')
+    compile files('libs/umeng-update-v2.6.0.1.jar')
 }

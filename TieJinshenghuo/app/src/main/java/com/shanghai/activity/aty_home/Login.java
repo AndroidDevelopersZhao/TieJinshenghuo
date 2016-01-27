@@ -49,6 +49,7 @@ import com.shanghai.utils.Util;
 import com.umeng.socialize.UMAuthListener;
 import com.umeng.socialize.UMShareAPI;
 import com.umeng.socialize.bean.SHARE_MEDIA;
+import com.umeng.update.UmengUpdateAgent;
 
 import java.util.Map;
 
@@ -77,6 +78,7 @@ public class Login extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_aty);
+
 //        Toast.makeText(this, "长按登陆按钮可以注册哦", Toast.LENGTH_LONG).show();
 
         initView();

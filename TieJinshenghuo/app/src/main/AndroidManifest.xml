@@ -293,6 +293,9 @@
         <meta-data
             android:name="UMENG_APPKEY"
             android:value="56a1d9dce0f55a792f000594"></meta-data>
+        <meta-data
+            android:name="贴近生活"
+            android:value="Channel ID" />
 
         <activity
             android:name="com.tencent.tauth.AuthActivity"
@@ -311,16 +314,23 @@
             android:name="com.tencent.connect.common.AssistActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService"></service>
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
         <!--&lt;!&ndash; app安装完成的广播&ndash;&gt;-->
         <!--<receiver-->
-            <!--android:name="com.shanghai.activity.aty_home.WaitAty$WaitReciver"-->
-            <!--android:enabled="true">-->
-            <!--<intent-filter>-->
+        <!--android:name="com.shanghai.activity.aty_home.WaitAty$WaitReciver"-->
+        <!--android:enabled="true">-->
+        <!--<intent-filter>-->
 
-                <!--<action android:name="android.intent.action.action.PACKAGE_ADDED" />-->
+        <!--<action android:name="android.intent.action.action.PACKAGE_ADDED" />-->
 
-                <!--<category android:name="com.shanghai" />-->
-            <!--</intent-filter>-->
+        <!--<category android:name="com.shanghai" />-->
+        <!--</intent-filter>-->
         <!--</receiver>-->
     </application>
 

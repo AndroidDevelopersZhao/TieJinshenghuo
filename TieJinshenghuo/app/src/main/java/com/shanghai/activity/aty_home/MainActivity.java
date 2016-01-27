@@ -34,6 +34,7 @@ import com.shanghai.soeasylib.util.XXUtils;
 
 import com.shanghai.utils.util_getlocation.Location_Client;
 import com.shanghai.utils.Util;
+import com.umeng.update.UmengUpdateAgent;
 
 import java.util.List;
 
@@ -64,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+        UmengUpdateAgent.update(this);
         client = new Location_Client(this, this);
         client.start();
     }

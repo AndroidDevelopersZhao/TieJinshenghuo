@@ -32,6 +32,8 @@ import android.widget.Toast;
 
 import com.baidu.navisdk.adapter.BaiduNaviManager;
 import com.umeng.socialize.PlatformConfig;
+import com.umeng.update.UmengUpdateAgent;
+import com.umeng.update.UpdateConfig;
 
 import org.json.JSONObject;
 
@@ -62,6 +64,8 @@ public class App extends Application {
         SMSSDK.initSDK(getApplicationContext(), appkey, acept);
         JPushInterface.setDebugMode(true);
         JPushInterface.init(this);
+        UmengUpdateAgent.setUpdateOnlyWifi(false);
+        UpdateConfig.setDebug(true);
         {
             //微信    wx12342956d1cab4f9,a5ae111de7d9ea137e88a5e02c07c94d
             PlatformConfig.setWeixin("wx967daebe835fbeac", "5bb696d9ccd75a38c8a0bfe0675559b3");

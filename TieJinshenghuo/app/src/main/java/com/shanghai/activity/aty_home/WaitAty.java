@@ -48,6 +48,7 @@ import com.shanghai.soeasylib.util.XXSharedPreferences;
 import com.shanghai.R;
 import com.shanghai.soeasylib.util.XXUtils;
 import com.shanghai.utils.Util;
+import com.umeng.update.UmengUpdateAgent;
 
 import org.apache.http.Header;
 
@@ -78,8 +79,10 @@ public class WaitAty extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.waitactivity);
+//        UmengUpdateAgent.update(this);
 
-        getNewVersion();
+            startNewAty();
+//        getNewVersion();
     }
 
     /**
