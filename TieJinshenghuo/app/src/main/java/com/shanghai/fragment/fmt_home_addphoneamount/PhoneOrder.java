@@ -32,7 +32,7 @@ import xinfu.com.pidanview.alerterview.progress.SVProgressHUD;
 /**
  * Created by Administrator on 2016/1/26.
  */
-public class PhoneOrder extends Fragment {
+public class PhoneOrder extends Fragment implements CustomListView.OnRefreshListner {
     private View view;
     private CustomListView lv_phoneOrder;
     private XXListViewAdapter<AddOrderInfo> adapter;
@@ -43,7 +43,7 @@ public class PhoneOrder extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fmt_phoneorder, null);
-        SVProgressHUD.showWithStatus(getActivity(), "正在查询您的所有订单...");
+
         initView();
 
         return view;
@@ -69,6 +69,7 @@ public class PhoneOrder extends Fragment {
             }
         };
         lv_phoneOrder.setAdapter(adapter);
+        lv_phoneOrder.setOnRefreshListner(this);
         //向服务器请求订单号
         getOrder(username);
     }
@@ -76,6 +77,7 @@ public class PhoneOrder extends Fragment {
     private Handler handler_getOrder = null;
 
     private void getOrder(String username) {
+        SVProgressHUD.showWithStatus(getActivity(), "正在查询您的所有订单...");
         handler_getOrder = new Handler() {
 
             @Override
@@ -85,6 +87,7 @@ public class PhoneOrder extends Fragment {
                         if (SVProgressHUD.isShowing(getActivity())) {
                             SVProgressHUD.dismiss(getActivity());
                         }
+                        lv_phoneOrder.onRefreshComplete();
                         Toast.makeText(getActivity(), msg.getData().getString("data"), Toast.LENGTH_LONG).show();
                         break;
                     case 1:
@@ -148,6 +151,7 @@ public class PhoneOrder extends Fragment {
                         if (SVProgressHUD.isShowing(getActivity())) {
                             SVProgressHUD.dismiss(getActivity());
                         }
+                        lv_phoneOrder.onRefreshComplete();
                         String ms = msg.getData().getString("data");
                         Toast.makeText(getActivity(), ms, Toast.LENGTH_LONG).show();
                         break;
@@ -221,6 +225,7 @@ public class PhoneOrder extends Fragment {
                 if (SVProgressHUD.isShowing(getActivity())) {
                     SVProgressHUD.dismiss(getActivity());
                 }
+                lv_phoneOrder.onRefreshComplete();
                 switch (msg.what) {
                     case -1:
                     Toast.makeText(getActivity(),msg.getData().getString("data"),Toast.LENGTH_LONG).show();
@@ -269,6 +274,14 @@ public class PhoneOrder extends Fragment {
         client.put("info", juhe.getInfo());
         client.doPost(15000);
         Log.e(TAG,"请求更新订单的数据："+client.getAllParams());
+
+    }
+
+    @Override
+    public void onRefresh() {
+        adapter.removeAll();
+        adapter.notifyDataSetChanged();
+        getOrder(username);
 
     }
 }
